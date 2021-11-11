@@ -1,0 +1,35 @@
+<form class="form" [formGroup]="this.importForm" (ngSubmit)="importJSO()" *ngIf="!isEmpty">
+    <div class="field is-horizontal">
+        <div class="field-body">
+            <div class="field">
+                <div class="label">Satellite:</div>
+                <div class="select is-fullwidth">
+                    <select formControlName="satellite">
+                        <option [ngValue]="satellite" *ngFor="let satellite of this.jsoData.satellites">{{satellite.name}}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="field is-expanded">
+                <div class="label">Station:</div>
+                <div class="select is-fullwidth">
+                    <select formControlName="station">
+                        <option *ngFor="let station of this.jsoData.groundStations" [ngValue]="station">{{station.name}}</option>
+                    </select>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="field-body">
+        <div class="label">
+            <!-- Empty space -->
+        </div>
+        <div class="field is-grouped is-grouped-right">
+            <div class="control">
+                <button type="submit" class="button is-primary">Load</button>
+            </div>
+        </div>
+    </div>
+</form>
+<div *ngIf="isEmpty">
+    <p>It seems no scenario has been imported inside JSatOrb.<br>Luplink won't be able to import data from JSatOrb.</p>
+</div>

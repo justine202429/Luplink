@@ -1,0 +1,66 @@
+<section class="section pb-0 pt-5">
+  <ul class="steps is-medium is-centered has-content-centered">
+    <li class="steps-segment" [ngClass]="{'is-active': isActive('geometry')}">
+      <span class="steps-marker" [ngClass]="{
+          'is-warning': validity.steps.geometry === 'invalid',
+          'is-success': validity.steps.geometry === 'valid'
+        }">
+        <span class="icon">
+          <!-- <i class="fa fa-exclamation" *ngIf="validity.steps.geometry === 'invalid'"></i> -->
+          <fa-icon [icon]="faExclamation" *ngIf="validity.steps.geometry === 'invalid'"></fa-icon>
+          <fa-icon [icon]="faCheck" *ngIf="validity.steps.geometry === 'valid'"></fa-icon>
+        </span>
+      </span>
+
+      <div class="steps-content">
+        <p class="heading">Geometry</p>
+      </div>
+
+    </li>
+    <li class="steps-segment" [ngClass]="{'is-active': isActive('uplink')}">
+      <span class="steps-marker" [ngClass]="{
+            'is-warning': validity.steps.uplink === 'invalid',
+            'is-success': validity.steps.uplink === 'valid'
+          }">
+        <span class="icon">
+          <!-- <i class="fa fa-exclamation" *ngIf="validity.steps.uplink === 'invalid'"></i> -->
+          <fa-icon [icon]="faExclamation" *ngIf="validity.steps.uplink === 'invalid'"></fa-icon>
+          <fa-icon [icon]="faCheck" *ngIf="validity.steps.uplink === 'valid'"></fa-icon>
+        </span>
+      </span>
+      <div class="steps-content">
+        <p class="heading">Uplink</p>
+      </div>
+    </li>
+    <li class="steps-segment" [ngClass]="{'is-active': isActive('downlink')}">
+      <span class="steps-marker" [ngClass]="{
+            'is-warning': validity.steps.downlink === 'invalid',
+            'is-success': validity.steps.downlink === 'valid'
+          }">
+        <span class="icon">
+          <!-- <i class="fa fa-exclamation" *ngIf="validity.steps.downlink === 'invalid'"></i> -->
+          <!-- <i class="fa fa-check" *ngIf="validity.steps.downlink === 'valid'"></i> -->
+          <fa-icon [icon]="faExclamation" *ngIf="validity.steps.downlink === 'invalid'"></fa-icon>
+          <fa-icon [icon]="faCheck" *ngIf="validity.steps.downlink === 'valid'"></fa-icon>
+        </span>
+      </span>
+      <div class="steps-content">
+        <p class="heading">Downlink</p>
+      </div>
+    </li>
+    <li class="steps-segment" [ngClass]="{'is-active': isActive('result')}">
+      <span class="steps-marker"></span>
+      <!-- <span class="steps-marker" [ngClass]="{
+            'is-warning': validity.steps.downlink === 'invalid',
+            'is-success': validity.steps.downlink === 'valid'
+          }">
+            <span class="icon">
+              <i class="fa fa-exclamation" *ngIf="validity.steps.downlink === 'invalid'"></i>
+            </span>
+          </span> -->
+      <div class="steps-content">
+        <p class="heading">Result</p>
+      </div>
+    </li>
+  </ul>
+</section>

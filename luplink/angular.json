@@ -1,0 +1,196 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ngx-luplink": {
+      "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/ngx-luplink",
+      "sourceRoot": "projects/ngx-luplink/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ngx-luplink/tsconfig.lib.json",
+            "project": "projects/ngx-luplink/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-luplink/tsconfig.lib.prod.json"
+            }
+          },
+          "styles": [
+            "projects/ngx-luplink/src/styles.scss",
+            "node_modules/bulma-o-steps/index.sass",
+            "node_modules/ngx-toastr/toastr.css",
+            "@creativebulma/bulma-tooltip/src/sass/index.sass",
+            {
+              "input": "node_modules/katex/dist/katex.css",
+              "bundleName": "katex/katex"
+            }
+          ]
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-luplink/src/test.ts",
+            "tsConfig": "projects/ngx-luplink/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-luplink/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ngx-luplink/**/*.ts",
+              "projects/ngx-luplink/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "luplink-app": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/luplink-app",
+      "sourceRoot": "projects/luplink-app/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/luplink-app",
+            "index": "projects/luplink-app/src/index.html",
+            "main": "projects/luplink-app/src/main.ts",
+            "polyfills": "projects/luplink-app/src/polyfills.ts",
+            "tsConfig": "projects/luplink-app/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/luplink-app/src/favicon.ico",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@luplink/ngx-luplink/assets",
+                "output": "/assets/"
+              }
+            ],
+            "styles": [
+              "node_modules/@luplink/ngx-luplink/src/styles.scss",
+              "node_modules/ngx-toastr/toastr.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/luplink-app/src/environments/environment.ts",
+                  "with": "projects/luplink-app/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            },
+            "debug": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/luplink-app/src/environments/environment.ts",
+                  "with": "projects/luplink-app/src/environments/environment.debug.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "luplink-app:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "luplink-app:build:production"
+            },
+            "debug": {
+              "browserTarget": "luplink-app:build:debug"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "luplink-app:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/luplink-app/src/test.ts",
+            "polyfills": "projects/luplink-app/src/polyfills.ts",
+            "tsConfig": "projects/luplink-app/tsconfig.spec.json",
+            "karmaConfig": "projects/luplink-app/karma.conf.js",
+            "assets": [
+              "projects/luplink-app/src/favicon.ico",
+              "projects/luplink-app/src/assets"
+            ],
+            "styles": [
+              "projects/luplink-app/src/styles.scss"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/luplink-app/**/*.ts",
+              "projects/luplink-app/**/*.html"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/luplink-app/e2e/protractor.conf.js",
+            "devServerTarget": "luplink-app:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "luplink-app:serve:production"
+            }
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ngx-luplink",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
+}

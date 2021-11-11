@@ -1,0 +1,24 @@
+<svg id="antenna" width="16.438mm" height="46.755mm" version="1.1" viewBox="0 0 16.438 46.755" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="a" x1="36.839" x2="47.828" y1="101.21" y2="101.21" gradientTransform="matrix(1.1223,0,0,1.2246,-6.6383,-2.5344)" gradientUnits="userSpaceOnUse">
+   <stop style="stop-color:#005c94" offset="0"/>
+   <stop style="stop-color:#009100" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g transform="matrix(1 0 0 1.0279 -40.129 -99.778)">
+  <g transform="matrix(0 .97286 -1.0279 0 171.5 72.777)">
+   <g id="tx" transform="matrix(1.236 0 0 1.3487 .69077 -18.24)">
+    <path d="m31.768 102.36-11.941 5.7454v-11.491l5.9708 2.8727z" style="fill:#19aeff;stroke-linejoin:round;stroke-width:.36623;stroke:#005c94"/>
+    <text transform="matrix(0 -.89156 1.1216 0 0 0)" x="-117.29402" y="22.509054" style="fill:#ffffff;font-family:sans-serif;font-size:8.922px;letter-spacing:0px;line-height:1.25;stroke-width:.22304;word-spacing:0px" xml:space="preserve"><tspan x="-117.29402" y="22.509054" style="fill:#ffffff;font-size:4.1635px;stroke-width:.22304">Tx</tspan></text>
+   </g>
+   <g id="line-tx" transform="matrix(1.2574,0,0,1,-3.9287,-1.604)" style="paint-order:stroke fill markers">
+    <path d="m34.935 121.41h11.878" style="fill:#ba00ff;paint-order:stroke fill markers;stroke-linejoin:round;stroke-width:.46895;stroke:url(#a)"/>
+   </g>
+   <g id="antenna-tx" transform="matrix(0 1.0918 -1.2588 0 182.33 60.585)" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:.42985;stroke:#009100">
+    <path d="m54.24 101.21v-13.122" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:.42985;stroke:#009100"/>
+    <path d="m50.271 88.088 3.9688 6.8792" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:.42985;stroke:#009100"/>
+    <path d="m58.208 88.088-3.9688 6.8792" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:.42985;stroke:#009100"/>
+   </g>
+  </g>
+ </g>
+</svg>

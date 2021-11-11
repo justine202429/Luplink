@@ -1,0 +1,34 @@
+@import '~bulma/sass/utilities/derived-variables.sass';
+
+.active-row {
+
+  // color: darkslategray;
+  border:solid;
+  border-width:0;
+  border-left-width: 5px;
+  // border-color: #ffde59;
+  border-color: $info;
+
+  animation-name: emphasis;
+  animation-direction: alternate;
+  animation-duration: .4s;
+  animation-delay: .0s;
+}
+// app-card > .card {
+//   overflow: none !important;
+// }
+.link-closed-container {
+  display: flex;
+  align-items: center;
+}
+.link-closed {
+  margin: 0;
+  display: inline-block;
+  margin-left: 15px;
+}
+@keyframes emphasis {
+  from {background-color: $info;
+        color: white;
+      }
+  to{}
+}

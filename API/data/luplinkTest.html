@@ -1,0 +1,389 @@
+
+<p>
+  link-budget-form works!
+</p>
+
+<form enctype='application/json'>
+  <input name='name' value='Bender'>
+  <select name='hind'>
+    <option selected>Bitable</option>
+    <option>Kickable</option>
+  </select>
+  <input type='checkbox' name='shiny' checked>
+        
+        <a routerLink="">
+          <mat-icon color="accent">arrow_back_ios</mat-icon>
+        </a>  
+
+</form>
+
+<div>
+  <button mat-stroked-button (click)="computeLB()" color="accent">Compute Link Budget</button>
+</div>
+  
+      <div class="form-header">
+        <h2>GROUND_STATION_TRANSMITTER </h2>
+
+
+          <div class="example-container">
+            <div class="LinkBudgetInput">
+            
+              <mat-form-field>
+                <mat-label>GS_ant_gain_tx</mat-label>
+                <input matInput [(ngModel)]="GS_ant_gain_tx" placeholder="14.4">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>GS_loss_connector_tx</mat-label>
+                <input matInput [(ngModel)]="GS_loss_connector_tx" placeholder="0.612">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>GS_loss_point_rx</mat-label>
+                <input matInput [(ngModel)]="GS_loss_point_rx" placeholder="0.8">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>GS_power_tx</mat-label>
+                <input matInput [(ngModel)]="GS_power_tx" placeholder="10">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>GS_line_loss_tx</mat-label>
+                <input matInput [(ngModel)]="GS_line_loss_tx" placeholder="2.79">
+              </mat-form-field>
+          
+          </div>  
+         </div>  
+        
+          
+      <div class="form-header">
+        <h2>DOWNLINK </h2>
+
+
+          <div class="example-container">
+            <div class="LinkBudgetInput">
+            
+              <mat-form-field>
+                <mat-label>fromBER_BPSKrequierment</mat-label>
+                <input matInput [(ngModel)]="fromBER_BPSKrequierment" placeholder="11.6">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>T_rx</mat-label>
+                <input matInput [(ngModel)]="T_rx" placeholder="200">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>frequency</mat-label>
+                <input matInput [(ngModel)]="frequency" placeholder="['437e6', '(Hz)']">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>code_rate</mat-label>
+                <input matInput [(ngModel)]="code_rate" placeholder="0.5">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>mod_sym</mat-label>
+                <input matInput [(ngModel)]="mod_sym" placeholder="['2', '#BPSK']">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>cortL_bandwidth</mat-label>
+                <input matInput [(ngModel)]="cortL_bandwidth" placeholder="152.05">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>data_rate</mat-label>
+                <input matInput [(ngModel)]="data_rate" placeholder="1200">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>margin</mat-label>
+                <input matInput [(ngModel)]="margin" placeholder="0">
+              </mat-form-field>
+          
+          </div>  
+         </div>  
+        
+          
+      <div class="form-header">
+        <h2>GROUNDSTATION_LOCATION </h2>
+
+
+          <div class="example-container">
+            <div class="LinkBudgetInput">
+            
+              <mat-form-field>
+                <mat-label>minElevation</mat-label>
+                <input matInput [(ngModel)]="minElevation" placeholder="['10', '(degree)']">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>altitude</mat-label>
+                <input matInput [(ngModel)]="altitude" placeholder="115">
+              </mat-form-field>
+          
+          </div>  
+         </div>  
+        
+          
+      <div class="form-header">
+        <h2>SPACECRAFT_FLIGHT_DYNAMICS </h2>
+
+
+          <div class="example-container">
+            <div class="LinkBudgetInput">
+            
+              <mat-form-field>
+                <mat-label>altitude</mat-label>
+                <input matInput [(ngModel)]="altitude" placeholder="650">
+              </mat-form-field>
+          
+          </div>  
+         </div>  
+        
+          
+      <div class="form-header">
+        <h2>PROPAGATION_LOSSES </h2>
+
+
+          <div class="example-container">
+            <div class="LinkBudgetInput">
+            
+              <mat-form-field>
+                <mat-label>loss_scin</mat-label>
+                <input matInput [(ngModel)]="loss_scin" placeholder="0.12">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>loss_atm</mat-label>
+                <input matInput [(ngModel)]="loss_atm" placeholder="0.5">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>loss_cloud</mat-label>
+                <input matInput [(ngModel)]="loss_cloud" placeholder="0.14">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>loss_si</mat-label>
+                <input matInput [(ngModel)]="loss_si" placeholder="0.0">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>loss_misc</mat-label>
+                <input matInput [(ngModel)]="loss_misc" placeholder="1.5">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>loss_pol</mat-label>
+                <input matInput [(ngModel)]="loss_pol" placeholder="1.1">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>loss_rain</mat-label>
+                <input matInput [(ngModel)]="loss_rain" placeholder="0.0013">
+              </mat-form-field>
+          
+          </div>  
+         </div>  
+        
+          
+      <div class="form-header">
+        <h2>SPACECFRACT_TRANSMITTER </h2>
+
+
+          <div class="example-container">
+            <div class="LinkBudgetInput">
+            
+              <mat-form-field>
+                <mat-label>SC_loss_point_tx</mat-label>
+                <input matInput [(ngModel)]="SC_loss_point_tx" placeholder="3">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>SC_misc</mat-label>
+                <input matInput [(ngModel)]="SC_misc" placeholder="0.85">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>SC_loss_connector_tx</mat-label>
+                <input matInput [(ngModel)]="SC_loss_connector_tx" placeholder="0.5">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>SC_power_tx</mat-label>
+                <input matInput [(ngModel)]="SC_power_tx" placeholder="-3">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>SC_ant_gain_tx</mat-label>
+                <input matInput [(ngModel)]="SC_ant_gain_tx" placeholder="2.15">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>SC_loss_cable_tx</mat-label>
+                <input matInput [(ngModel)]="SC_loss_cable_tx" placeholder="0.5292">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>SC_loss_feeder_tx</mat-label>
+                <input matInput [(ngModel)]="SC_loss_feeder_tx" placeholder="0">
+              </mat-form-field>
+          
+          </div>  
+         </div>  
+        
+          
+      <div class="form-header">
+        <h2>UPLINK </h2>
+
+
+          <div class="example-container">
+            <div class="LinkBudgetInput">
+            
+              <mat-form-field>
+                <mat-label>fromBER_AFSKrequierment</mat-label>
+                <input matInput [(ngModel)]="fromBER_AFSKrequierment" placeholder="25.2">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>T_rx</mat-label>
+                <input matInput [(ngModel)]="T_rx" placeholder="200">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>code_rate</mat-label>
+                <input matInput [(ngModel)]="code_rate" placeholder="0.5">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>mod_sym</mat-label>
+                <input matInput [(ngModel)]="mod_sym" placeholder="['2', '#AFSK']">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>margin</mat-label>
+                <input matInput [(ngModel)]="margin" placeholder="0">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>data_rate</mat-label>
+                <input matInput [(ngModel)]="data_rate" placeholder="9600">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>frequency</mat-label>
+                <input matInput [(ngModel)]="frequency" placeholder="145960000">
+              </mat-form-field>
+          
+          </div>  
+         </div>  
+        
+          
+      <div class="form-header">
+        <h2>GROUND_STATION_RECEIVER </h2>
+
+
+          <div class="example-container">
+            <div class="LinkBudgetInput">
+            
+              <mat-form-field>
+                <mat-label>GS_NF</mat-label>
+                <input matInput [(ngModel)]="GS_NF" placeholder="0">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>GS_loss_cable_rx</mat-label>
+                <input matInput [(ngModel)]="GS_loss_cable_rx" placeholder="['0.81', '#+', '4.1']">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>GS_loss_connector_rx</mat-label>
+                <input matInput [(ngModel)]="GS_loss_connector_rx" placeholder="0.7">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>GS_ant_gain_rx</mat-label>
+                <input matInput [(ngModel)]="GS_ant_gain_rx" placeholder="16.3">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>GS_G_T</mat-label>
+                <input matInput [(ngModel)]="GS_G_T" placeholder="0">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>GS_loss_cable_D_rx</mat-label>
+                <input matInput [(ngModel)]="GS_loss_cable_D_rx" placeholder="4.1">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>GS_loss_point_rx</mat-label>
+                <input matInput [(ngModel)]="GS_loss_point_rx" placeholder="1.8">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>GS_noise_T</mat-label>
+                <input matInput [(ngModel)]="GS_noise_T" placeholder="200">
+              </mat-form-field>
+          
+          </div>  
+         </div>  
+        
+          
+      <div class="form-header">
+        <h2>SPACECRAFT_RECEIVER </h2>
+
+
+          <div class="example-container">
+            <div class="LinkBudgetInput">
+            
+              <mat-form-field>
+                <mat-label>SC_loss_connector_rx</mat-label>
+                <input matInput [(ngModel)]="SC_loss_connector_rx" placeholder="0.5">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>SC_noise_T</mat-label>
+                <input matInput [(ngModel)]="SC_noise_T" placeholder="0">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>SC_LNA_gain</mat-label>
+                <input matInput [(ngModel)]="SC_LNA_gain" placeholder="20">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>SC_G_T</mat-label>
+                <input matInput [(ngModel)]="SC_G_T" placeholder="0">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>SC_loss_cable_rx</mat-label>
+                <input matInput [(ngModel)]="SC_loss_cable_rx" placeholder="0.29952">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>SC_NF_rx</mat-label>
+                <input matInput [(ngModel)]="SC_NF_rx" placeholder="-23.6">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>SC_loss_point_rx</mat-label>
+                <input matInput [(ngModel)]="SC_loss_point_rx" placeholder="3">
+              </mat-form-field>
+        
+              <mat-form-field>
+                <mat-label>SC_ant_gain_rx</mat-label>
+                <input matInput [(ngModel)]="SC_ant_gain_rx" placeholder="2.15">
+              </mat-form-field>
+          
+          </div>  
+         </div>  
+        
+                
+      </div>
+      

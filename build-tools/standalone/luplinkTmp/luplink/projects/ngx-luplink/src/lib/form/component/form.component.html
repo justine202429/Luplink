@@ -1,0 +1,48 @@
+<div class="columns is-multiline">
+  <!-- style="display: flex; margin:12px;"> -->
+  <div class="column">
+    <form role="form" [formGroup]="localForm">
+      <div *ngFor="let field of formTemplate.params">
+        <div class="columns is-multiline">
+          <div class="column">
+            <div class="field basic-input">
+              <label class="label">{{asField(field).desc}}:
+                <span style="color: lightgray; dislay: inline-block; float:right"
+                  class="has-tooltip-arrow has-tooltip-right has-tooltip-multiline" *ngIf="field.type === 'loss'"
+                  data-tooltip="Losses are algebraic. They should be written as negative number (e.g. -3.0dB)">
+
+                  <fa-icon [icon]="faInterrogation"></fa-icon>
+                </span>
+              </label>
+              <div class="field has-addons" formGroupName="{{field.id}}">
+                <div class="control is-expanded">
+                  <input class="input" type="text" formControlName="value"
+                    [ngClass]="{'is-danger': !this.localForm.get(field.id)?.valid}">
+                </div>
+                <span class="select" *ngIf="asField(field).units.length > 1">
+                  <select formControlName="unit" value="{{ asField(field).units[0] }}">
+                    <option *ngFor="let unit of asField(field).units">
+                      {{ unit }}
+                    </option>
+                  </select>
+                </span>
+                <a class="button is-static" *ngIf="asField(field).units.length == 1">
+                  {{ asField(field).units[0] }}
+                </a>
+              </div>
+              <p class="help is-danger m-0" *ngIf="!this.localForm.get(field.id)?.valid">
+                {{getErrorMessage(this.localForm.get(field.id)).error}}
+              </p>
+              <p class="help is-warning m-0" *ngIf="this.localForm.get(field.id)?.valid">
+                {{getWarningMessage(asFormWarn(this.localForm.get(field.id)))}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="column" style="text-align:center;" *ngIf="hasImage">
+    <img style="max-width:180px;" src="{{this.displayedImage}}" />
+  </div>
+</div>

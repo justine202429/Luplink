@@ -1,0 +1,24 @@
+Antenna representations:
+
+AMSAT : monopole, dipole, turnstyle, quadrifilar, patch
+linkpredict-python : omnidirectional (includes monopole), main_lobe, measured_antenna (interpolates from a dict of angles:gains) -> equivalent to AMSAT system
+
+Interestingly, AMSAT seem to account for losses directly in the receiver temperature through the feed line coefficient (alpha)
+
+In AMSAT, beware of theta2 angle definition, 0dB loss @ 90°
+
+linkpredict - rx_antenna_pointing_loss disappears when set to 90°
+
+linkpredict - Handling of polarization less advanced than AMSAT : in link._get_polarization_mismatch_loss() "Currently this implementation is rather crude and simply returns 3 dB
+        for a polarization mismatch and 0 dB otherwise.". This explains the 3dB difference I found with AMSAT on the total_path_loss of 149 instead of 146. Polarization loss equation is available in AMSAT sheet
+
+linkpredict - requires slant_range already calculated, whereas luplink does it for us
+===========================================
+Results : 
+
+AMSAT : 17.6dB link margin w/ Eb/N0 method (1200bps desired) | 21.2dB w/ SNR computation (5kHz bandwidth (enough?))
+
+Comparing w/ link-predict :
+
+
+For now, different ways to take noise temperature into account for AMSAT (more detailed) and link-predict

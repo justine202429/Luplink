@@ -1,0 +1,163 @@
+<div id="sidebar" class="column is-narrow is-fullheight p-0 m-0" [ngClass]="collapsed ? 'is-hidden' : ''">
+  <section class="section pr-0 pl-0">
+
+    <aside class="menu">
+      <ul class="menu-list">
+        <li>
+          <a routerLink="/luplink/welcome" class="navbar-menu" href="#" routerLinkActive="is-active">Welcome</a>
+        </li>
+        <p class="menu-label">Link Budget</p>
+
+        <li>
+          <a class="navbar-menu" routerLink="/luplink" [queryParams]="{component: 'geometry'}"
+            [ngClass]="{ 'is-active': this.currentComponent === 'geometry' }">Geometry</a>
+        </li>
+        <li>
+          <a>
+            <span class="icon" style="float: right" (click)="this.collapseUplink = !this.collapseUplink">
+              <fa-icon [icon]="faAngleDown" [ngClass]="{ 'fa-rotate-90': !this.collapseUplink }"></fa-icon>
+            </span>
+            Uplink</a>
+        </li>
+        <li>
+          <ul class="menu-list" *ngIf="collapseUplink">
+            <li>
+              <a class="navbar-menu" routerLink="/luplink" [queryParams]="{component: 'ULCarrier'}" [ngClass]="{
+                  'is-active': this.currentComponent === 'ULCarrier'
+                }">Carrier & Environment</a>
+            </li>
+            <li>
+              <a class="navbar-menu" routerLink="/luplink" [queryParams]="{component: 'ULTransmitter'}" [ngClass]="{
+                  'is-active': this.currentComponent === 'ULTransmitter'
+                }">Transmitter</a>
+            </li>
+            <li>
+              <a class="navbar-menu" routerLink="/luplink" [queryParams]="{component: 'ULReceiver'}" [ngClass]="{
+                  'is-active': this.currentComponent === 'ULReceiver'
+                }">Receiver</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a>
+            <!-- <span class="icon" style="float: right">
+              <i class="fas fa-angle-down" [ngClass]="{ 'fa-rotate-90': !this.collapseUplink }"></i>
+            </span> -->
+            <span class="icon" style="float: right" (click)="this.collapseDownlink = !this.collapseDownlink">
+              <fa-icon [icon]="faAngleDown" [ngClass]="{ 'fa-rotate-90': !this.collapseDownlink }"></fa-icon>
+            </span>Downlink
+          </a>
+        </li>
+        <li>
+          <ul class="menu-list" *ngIf="collapseDownlink" [@panelInOut]>
+            <!-- <ul class="menu-list" [ngClass]="{'is-hidden': !collapseDownlink}"> -->
+            <li><a class="navbar-menu" routerLink="/luplink" [queryParams]="{component: 'DLCarrier'}" [ngClass]="{
+              'is-active': this.currentComponent === 'DLCarrier'
+            }">Carrier & Environment</a></li>
+            <li><a class="navbar-menu" routerLink="/luplink" [queryParams]="{component: 'DLTransmitter'}" [ngClass]="{
+              'is-active': this.currentComponent === 'DLTransmitter'
+            }">Transmitter</a></li>
+            <li><a class="navbar-menu" routerLink="/luplink" [queryParams]="{component: 'DLReceiver'}" [ngClass]="{
+              'is-active': this.currentComponent === 'DLReceiver'
+            }">Receiver</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="navbar-menu" routerLink="/luplink/results" href="#" routerLinkActive="active-route" [ngClass]="{
+            'is-active': this.currentComponent === 'results'
+          }">Results</a>
+        </li>
+        <li>
+          <a class="navbar-menu" (click)="this.showAbout=true;"
+            style="bottom:0px; position:relative; right:0px;">About</a>
+        </li>
+      </ul>
+      <!-- <p class="menu-label">Tools</p>
+      <ul class="menu-list">
+        <li>
+          <a routerLink="/luplink2/ui_experiments" class="is-disabled" href="#" routerLinkActive="active-route">UI Experiments</a>
+        </li>
+        <li><a class="is-disabled">VSWR Pattern Calculation</a></li>
+        <li><a class="is-disabled">LUTs</a></li>
+      </ul> -->
+
+    </aside>
+
+    <!-- <div style="position:fixed; bottom:0; left:0; width:200px; pointer-events: none; ">
+      <span class="version">{{"v"+version}}</span><br>
+
+</div> -->
+
+  </section>
+
+</div>
+<div id="modal" class="modal" [ngClass]="{'is-active': this.showAbout}">
+  <div class="modal-background" (click)="this.showAbout = false;"></div>
+  <div class="modal-content">
+    <!-- <div>
+      <p>
+        
+      </p>
+    </div> -->
+    <div class="box">
+      <h3 style="display:inline-block; margin:0px;">Luplink</h3><small style="display:inline-block; margin-left:5px;"
+        class="has-text-grey">{{'v'+version}}</small><br>
+      <a class="has-text-grey" style="display: block; margin-bottom:15px;"
+        href="https://www.gnu.org/licenses/agpl-3.0-standalone.html">License AGPL v3</a>
+      <article class="media">
+        <!-- <div class="media-left">
+          <figure class="image is-64x64">
+            <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+          </figure>
+        </div> -->
+        <div class="media-content">
+          <div class="content">
+            <p>
+              <strong>Luplink: </strong><a target="_blank" class="has-text-link"
+                href="https://gitlab.isae-supaero.fr/jsatorb-dev/stage/stage-2021-julien_prissimitzis">See on Gitlab
+              </a><br>
+              <strong>ngx-luplink: </strong><a target="_blank" class="has-text-link"
+                href="https://www.npmjs.com/package/@luplink/ngx-luplink">See on
+                npmjs.com</a><br>
+              <strong>python-linkpredict (backend): </strong><a target="_blank" class="has-text-link"
+                href="https://gitlab.com/librecube/lib/python-linkpredict/-/blob/master/README.md">https://gitlab.com/librecube/lib/python-linkpredict/</a><br>
+              <!-- <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small> -->
+
+              <br>
+              <strong>Built by:</strong> Julien Prissimitzis / <small><a target="_blank"
+                  href="mailto:julienprissi@protonmail.com">
+                  <fa-icon [icon]="mail"></fa-icon> Contact
+                </a></small><br>
+              <strong>Supervisor:</strong> Thibault Gateau<br>
+            </p>
+          </div>
+          <div class="logos">
+            <a target="_blank" href="https://angular.io/">
+              <img src="/assets/images/angular.png" alt="logo angular">
+              <!-- "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/220px-Angular_full_color_logo.svg.png" -->
+            </a>
+            <a target="_blank" href="https://www.isae-supaero.fr/fr/">
+              <img src="/assets/images/isae.png" alt="logo isae">
+              <!-- https://upload.wikimedia.org/wikipedia/commons/3/3d/ISAE_SUPAERO_72_cmjn.png -->
+            </a>
+            <a target="_blank" href="http://nanostarproject.eu/">
+              <img
+                src="data:image/png;base64,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"
+                alt="logo nanostar">
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+  <button class="modal-close is-large" aria-label="close" (click)="this.showAbout = false;"></button>
+</div>
+<button class="button is-primary" style="left: 10px; z-index: 1; bottom: 10px; position: fixed;"
+  (click)="collapseSidebar()">
+  {{ this.collapsed ? ">" : "<" }} </button>
+    <!-- <div class="is-divider-vertical" data-content="OR"></div> -->
+
+
+    <!-- <button class="button is-primary fixed" (click)="collapseSidebar()">
+  Collapse
+</button>-->

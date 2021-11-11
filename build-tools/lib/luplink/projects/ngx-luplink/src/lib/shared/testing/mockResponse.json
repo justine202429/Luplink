@@ -1,0 +1,216 @@
+{
+  "downlink": [
+    {
+      "name": "tx_amplifier_power",
+      "unit": "dBW",
+      "value": 10.0
+    },
+    {
+      "name": "tx_circuit_loss",
+      "unit": "dB",
+      "value": 9.5
+    },
+    {
+      "name": "tx_antenna_gain",
+      "unit": "dBi",
+      "value": 2.15
+    },
+    {
+      "name": "eirp",
+      "unit": "dBW",
+      "value": 2.65
+    },
+    {
+      "name": "slant_range",
+      "unit": "m",
+      "value": 2045000.0
+    },
+    {
+      "name": "tx_antenna_angle",
+      "unit": "deg",
+      "value": 0
+    },
+    {
+      "name": "free_space_path_loss",
+      "unit": "dB",
+      "value": 141.94870658443932
+    },
+    {
+      "name": "medium_loss",
+      "unit": "dB",
+      "value": 5.4
+    },
+    {
+      "name": "total_path_loss",
+      "unit": "dB",
+      "value": 147.34870658443933
+    },
+    {
+      "name": "received_isotropic_signal_level",
+      "unit": "dB",
+      "value": -144.69870658443932
+    },
+    {
+      "name": "rx_antenna_angle",
+      "unit": "deg",
+      "value": 0
+    },
+    {
+      "name": "rx_antenna_gain",
+      "unit": "dBi",
+      "value": 14.0
+    },
+    {
+      "name": "rx_circuit_loss",
+      "unit": "dB",
+      "value": 0.870000000000001
+    },
+    {
+      "name": "rx_system_noise_temperature",
+      "unit": "K",
+      "value": 654.0956861519742
+    },
+    {
+      "name": "g_t_figure_of_merit",
+      "unit": "dB/K",
+      "value": -15.026412849115538
+    },
+    {
+      "name": "received_noise_power_density",
+      "unit": "dBW/Hz",
+      "value": -200.44275432410214
+    },
+    {
+      "name": "cno_ratio",
+      "unit": "dB-Hz",
+      "value": 68.87404773966281
+    },
+    {
+      "name": "bit_rate",
+      "unit": "bit/s",
+      "value": 1200.0
+    },
+    {
+      "name": "ebno_ratio",
+      "unit": "dB",
+      "value": 38.08223527918656
+    },
+    {
+      "name": "ebno_ratio_threshold",
+      "unit": "dB",
+      "value": 23.2
+    },
+    {
+      "name": "ebno_ratio_margin",
+      "unit": "dB",
+      "value": 14.882235279186563
+    }
+  ],
+  "uplink": [
+    {
+      "name": "tx_amplifier_power",
+      "unit": "dBW",
+      "value": 10.0
+    },
+    {
+      "name": "tx_circuit_loss",
+      "unit": "dB",
+      "value": 4.99
+    },
+    {
+      "name": "tx_antenna_gain",
+      "unit": "dBi",
+      "value": 14.0
+    },
+    {
+      "name": "eirp",
+      "unit": "dBW",
+      "value": 19.009999999999998
+    },
+    {
+      "name": "slant_range",
+      "unit": "m",
+      "value": 2045000.0
+    },
+    {
+      "name": "tx_antenna_angle",
+      "unit": "deg",
+      "value": 0
+    },
+    {
+      "name": "free_space_path_loss",
+      "unit": "dB",
+      "value": 141.94870658443932
+    },
+    {
+      "name": "medium_loss",
+      "unit": "dB",
+      "value": 5.4
+    },
+    {
+      "name": "total_path_loss",
+      "unit": "dB",
+      "value": 147.34870658443933
+    },
+    {
+      "name": "received_isotropic_signal_level",
+      "unit": "dB",
+      "value": -128.33870658443934
+    },
+    {
+      "name": "rx_antenna_angle",
+      "unit": "deg",
+      "value": 0
+    },
+    {
+      "name": "rx_antenna_gain",
+      "unit": "dBi",
+      "value": 2.15
+    },
+    {
+      "name": "rx_circuit_loss",
+      "unit": "dB",
+      "value": -0.0
+    },
+    {
+      "name": "rx_system_noise_temperature",
+      "unit": "K",
+      "value": 579.93
+    },
+    {
+      "name": "g_t_figure_of_merit",
+      "unit": "dB/K",
+      "value": -25.483755755484534
+    },
+    {
+      "name": "received_noise_power_density",
+      "unit": "dBW/Hz",
+      "value": -200.96541141773312
+    },
+    {
+      "name": "cno_ratio",
+      "unit": "dB-Hz",
+      "value": 74.77670483329379
+    },
+    {
+      "name": "bit_rate",
+      "unit": "bit/s",
+      "value": 1200.0
+    },
+    {
+      "name": "ebno_ratio",
+      "unit": "dB",
+      "value": 43.98489237281754
+    },
+    {
+      "name": "ebno_ratio_threshold",
+      "unit": "dB",
+      "value": 23.2
+    },
+    {
+      "name": "ebno_ratio_margin",
+      "unit": "dB",
+      "value": 20.78489237281754
+    }
+  ]
+}

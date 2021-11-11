@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+
+// @import 'bulma';
+// @import '~animate.css/animate.min';
+
+// // @import '~bulma-switch';
+// @import '~katex/dist/katex.css';
+// @import "../../../node_modules/bulma-o-steps/index.sass";
+@import "bulma";
+@import "~bulma/sass/utilities/derived-variables.sass";
+@import "@creativebulma/bulma-tooltip/src/sass/index.sass";
+@import "~bulma-o-steps/index.sass";
+@import "~katex/dist/katex.css";
+@import "~ngx-toastr/toastr.css";
+
+// a:not([href]):not([tabindex]){
+//   color: initial !important; //Overriding the 'inherit' property from bootstrap
+// }
+#main-content {
+  width: 100%;
+}
+
+.row.no-double-margin {
+  //This removes the row negative margin causing columns to look like : simple margin | col1 | double margin | col2 | simple margin
+  margin-left: 0px;
+  margin-right: 0px;
+}
+html,
+body {
+  height: 100%; //full height app at least
+}
+
+.is-disabled {
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+.fas::before {
+  display: inline-block; //removes underlining from fontawesome-icons
+}
+a {
+  text-decoration: none !important; //Remove underline from links created by bootstrap
+}
+a .icon.success {
+  float: right;
+  color: $success;
+}
+
+a .icon.warn {
+  float: right;
+  color: $warning;
+}
+a .icon.danger {
+  float: right;
+  color: $danger;
+}
+ul {
+  padding-left: 0 !important; // Bootstrap fix
+}
+.card-header {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.is-warning {
+  color: #ffa700 !important;
+}

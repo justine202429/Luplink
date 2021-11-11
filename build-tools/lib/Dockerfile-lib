@@ -1,0 +1,81 @@
+# This is intended to allow building the angular app without having an access to Internet.#
+# Also see this part of Docker documentation about bind mounts : https://docs.docker.com/storage/bind-mounts/
+#docker run -it --mount type=bind,source="$(pwd)"/link-budget-nss-v0,target=/app --rm build-tool:test
+# See : https://vsupalov.com/docker-shared-permissions/  for permissions issues 
+# docker build -t build-tool .
+# docker run -it --mount type=bind,source="$(pwd)"/link-budget-nss-v0,target=/app --user "$(id -u):$(id -g)" --rm build-tool
+
+# base image
+FROM node:14.15.5 as build
+
+#RUN addgroup -S app \
+ #   && adduser -S -G app -h /home/app -D app
+#ARG USER_ID
+#ARG GROUP_ID
+
+#RUN addgroup --gid $GROUP_ID user
+#RUN adduser --disabled
+
+## install chrome for protractor tests
+#RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+#RUN sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/#sources.list.d/google.list'
+#RUN apt-get update && apt-get install -yq google-chrome-stable
+
+# set working directory
+WORKDIR /app
+
+# add `/app/node_modules/.bin` to $PATH
+ENV PATH /app/node_modules/.bin:$PATH
+
+# install and cache app dependencies
+
+COPY luplink/ /app/
+#RUN rm /app/luplink/package.json 
+#COPY package.json /app/luplink/
+#RUN cat /app/luplink/package.json
+
+
+#COPY helper.sh /
+#RUN chmod +x /helper.sh
+
+RUN npm install --also=dev
+
+
+#Installing angular cli is required to have access to the 'ng' command
+#If not, there is no 'ng' inside node_modules/.bin
+RUN npm install -g @angular/cli@^11
+
+
+#RUN npm install -g @angular/cli@11
+
+#RUN npm audit fix
+#RUN npm audit fix --force
+
+# add app (FIXME: Use parameter insteadof direct path)
+#COPY ../link-budget-nss-v0/ /app
+#use build context instead : 
+#
+#
+#cd ~/git/dcas-soft-espace/stage-2021-julien_prissimitzis/link-budget-nss-v0
+#docker build -f ../build-tools/Dockerfile .
+#build app
+#RUN pwd
+#RUN ls -al
+#RUN ls -al /
+#WORKDIR /
+
+#RUN /helper.sh
+#CMD ["/helper.sh"]
+
+#CMD ["/bin/sh"]
+#ADD helper.sh .
+#RUN chmod +x helper.sh
+#CMD ["ng", "build"]
+#CMD ["ng", "serve"]
+#CMD ["ls", "-al"].
+#CMD ["ng", "build", "--project=ngx-luplink", "--output-path=dist/", "&&", "npm", "pack", "dist/"]
+
+CMD ["sh", "-c", "ng build && cp package.json dist/ngx-luplink/. && npm pack /app/dist/ngx-luplink && cp *.tgz dist/. "]
+
+
+#CMD ["sh", "-c", "npm pack"]

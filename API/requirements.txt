@@ -1,0 +1,3 @@
+pyquaternion
+pint
+git+https://gitlab.com/librecube/lib/python-linkpredict#egg=linkpredict

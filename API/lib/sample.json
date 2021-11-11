@@ -1,0 +1,12 @@
+{
+    "GS_Transmitter": {
+        "GS_antenna_gain_tx": "3",
+        "GS_line_losses_tx": "2",
+        "GS_power_tx": "10"
+    },
+    "Carrier": {
+        "bandwidth": "1000000",
+        "ber": "0.0001",
+        "frequency": "136000000"
+    }
+}

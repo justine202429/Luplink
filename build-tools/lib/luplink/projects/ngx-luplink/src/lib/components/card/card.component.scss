@@ -1,0 +1,30 @@
+@import '~bulma/sass/utilities/derived-variables.sass';
+// @import '~bulma/bulma.sass';
+
+.card-header-title {
+  margin-bottom:0;
+}
+
+.card {
+  margin-bottom: 20px;
+  // overflow:hidden; //disabled to allow tooltips to overflow
+  //width : 361.2px;
+}
+.card.is-danger {
+  background-color: $danger;
+  color: white;
+}
+.card.is-success {
+  background-color: $success;
+  color: white;
+}
+.card.is-warning {
+  background-color: $warning;
+  color: darkslategray;
+}
+.wide {
+  width: auto !important;
+}
+.card-header {
+  background-color: rgb(255, 255, 255);
+}

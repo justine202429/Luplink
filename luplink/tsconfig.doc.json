@@ -1,0 +1,4 @@
+{
+    "include": ["projects/ngx-luplink/src/**/*.ts"],
+    "exclude": ["projects/ngx-luplink/src/test.ts", "projects/ngx-luplink/src/**/*.spec.ts"]
+  }

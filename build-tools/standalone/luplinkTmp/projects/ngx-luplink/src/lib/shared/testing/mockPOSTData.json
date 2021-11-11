@@ -1,0 +1,83 @@
+{
+  "downlink": {
+    "atmosphere": {
+      "atm_gas": { "unit": "dB", "value": -1.1 },
+      "ionospheric": { "unit": "dB", "value": -0.4 },
+      "x_pol": { "unit": "dB", "value": -3 },
+      "depointing_loss": { "unit": "dB", "value": -0.9 }
+    },
+    "carrier": {
+      "bandwidth": { "unit": "Hz", "value": 3 },
+      "bit_rate": { "unit": "bps", "value": 1200 },
+      "ebno_threshold": { "unit": "dB", "value": 23.2 },
+      "frequency": { "unit": "MHz", "value": 146 },
+      "impl_loss": { "unit": "dB", "value": -1 }
+    },
+    "receiver": {
+      "LNANoiseTemp": { "unit": "K", "value": 66.78 },
+      "LNA_gain": { "unit": "dB", "value": 20 },
+      "receiverTemp": { "unit": "K", "value": 280 },
+      "rxAntennaTemp": { "unit": "K", "value": 230.4 },
+      "rxInlineLoss": { "unit": "dB", "value": -0.87 }
+    },
+    "receiver_antenna": {
+      "antBeamWidth": { "unit": "°", "value": 35 },
+      "antMaxGain": { "unit": "dBi", "value": 14 },
+      "depointingAngle": { "unit": "°", "value": 1 }
+    },
+    "transmitter": {
+      "power": { "unit": "dBW", "value": 10 },
+      "txAntennaMismatch": { "unit": "dB", "value": -0.5 },
+      "txCableLoss": { "unit": "dB", "value": -2.79 },
+      "txConnectorLoss": { "unit": "dB", "value": -1.7 }
+    },
+    "transmitter_antenna": {
+      "antBeamWidth": { "unit": "°", "value": 138 },
+      "antMaxGain": { "unit": "dBi", "value": 2.15 },
+      "depointingAngle": { "unit": "°", "value": 0 }
+    }
+  },
+  "geometry": {
+    "altitude": { "unit": "km", "value": 650 },
+    "elevation": { "unit": "°", "value": 10 },
+    "slantRange": { "unit": "km", "value": 2045 }
+  },
+  "uplink": {
+    "atmosphere": {
+      "atm_gas": { "unit": "dB", "value": -1.1 },
+      "ionospheric": { "unit": "dB", "value": -0.4 },
+      "x_pol": { "unit": "dB", "value": -3 },
+      "depointing_loss": { "unit": "dB", "value": -0.9 }
+    },
+    "carrier": {
+      "bandwidth": { "unit": "Hz", "value": 3 },
+      "bit_rate": { "unit": "bps", "value": 1200 },
+      "ebno_threshold": { "unit": "dB", "value": 23.2 },
+      "frequency": { "unit": "MHz", "value": 146 },
+      "impl_loss": { "unit": "dB", "value": -1 }
+    },
+    "receiver": {
+      "LNANoiseTemp": { "unit": "K", "value": 66.78 },
+      "LNA_gain": { "unit": "dB", "value": 20 },
+      "receiverTemp": { "unit": "K", "value": 280 },
+      "rxAntennaTemp": { "unit": "K", "value": 233.15 },
+      "rxInlineLoss": { "unit": "dB", "value": 0 }
+    },
+    "receiver_antenna": {
+      "antBeamWidth": { "unit": "°", "value": 238 },
+      "antMaxGain": { "unit": "dBi", "value": 2.15 },
+      "depointingAngle": { "unit": "°", "value": 0 }
+    },
+    "transmitter": {
+      "power": { "unit": "dBW", "value": 10 },
+      "txAntennaMismatch": { "unit": "dB", "value": -0.5 },
+      "txCableLoss": { "unit": "dB", "value": -2.79 },
+      "txConnectorLoss": { "unit": "dB", "value": -1.7 }
+    },
+    "transmitter_antenna": {
+      "antBeamWidth": { "unit": "°", "value": 35 },
+      "antMaxGain": { "unit": "dBi", "value": 14 },
+      "depointingAngle": { "unit": "°", "value": 1 }
+    }
+  }
+}

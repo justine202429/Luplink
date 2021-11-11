@@ -1,0 +1,144 @@
+{
+  "header": {
+    "mission": "JSatOrb4LB1",
+    "celestialBody": "EARTH",
+    "timeStart": "2010-01-01T02:00:00",
+    "timeEnd": "2010-01-02T02:00:00",
+    "step": "60"
+  },
+  "satellites": [
+    {
+      "name": "SunSynchronous",
+      "type": "keplerian",
+      "sma": 7000000,
+      "ecc": 0,
+      "inc": 97.8736,
+      "pa": 0,
+      "raan": 0,
+      "meanAnomaly": 0
+    },
+    {
+      "name": "CALSPHERE 1",
+      "type": "tle",
+      "line1": "1 00900U 64063C   21173.84548169  .00000235  00000-0  24159-3 0  9991",
+      "line2": "2 00900  90.1626  34.5516 0028893  27.0031  90.8509 13.73547930821297"
+    },
+    {
+      "name": "CALSPHERE 2",
+      "type": "tle",
+      "line1": "1 00902U 64063E   21173.66392337  .00000055  00000-0  68798-4 0  9995",
+      "line2": "2 00902  90.1745  37.3945 0020222 109.9446 315.1066 13.52696677610136"
+    },
+    {
+      "name": "LCS 1",
+      "type": "tle",
+      "line1": "1 01361U 65034C   21173.93594008  .00000024  00000-0  20948-2 0  9992",
+      "line2": "2 01361  32.1362 178.9014 0011312  43.0042 317.1338  9.89299797 29625"
+    },
+    {
+      "name": "TEMPSAT 1",
+      "type": "tle",
+      "line1": "1 01512U 65065E   21173.67152492  .00000024  00000-0  30485-4 0  9991",
+      "line2": "2 01512  89.8937 221.9890 0068582 322.1475 166.0360 13.33435986717427"
+    },
+    {
+      "name": "CALSPHERE 4A",
+      "type": "tle",
+      "line1": "1 01520U 65065H   21173.89542559  .00000035  00000-0  49772-4 0  9992",
+      "line2": "2 01520  90.0143 130.0161 0068819 195.5679 219.8975 13.35845069719656"
+    },
+    {
+      "name": "ISS (ZARYA)",
+      "type": "tle",
+      "line1": "1 25544U 98067A   21173.65515341 -.00000451  00000-0  00000+0 0  9994",
+      "line2": "2 25544  51.6428 315.6803 0003919 122.6547 356.3586 15.49000460289445"
+    },
+    {
+      "name": "SWISSCUBE",
+      "type": "tle",
+      "line1": "1 35932U 09051B   21173.50730819  .00000145  00000-0  43500-4 0  9990",
+      "line2": "2 35932  98.6024  13.6871 0008800  74.6266 285.5903 14.56543941623696"
+    },
+    {
+      "name": "NOAA 15",
+      "type": "tle",
+      "line1": "1 25338U 98030A   21173.83925067  .00000088  00000-0  55433-4 0  9995",
+      "line2": "2 25338  98.6810 202.3160 0009181 264.3116  95.7017 14.26039417201763"
+    },
+    {
+      "name": "INTELSAT 5 (IS-5)",
+      "type": "tle",
+      "line1": "1 24916U 97046A   21173.56844120  .00000087  00000-0  00000-0 0  9997",
+      "line2": "2 24916   6.4710  63.4179 0004185  16.5128 258.6638  1.00270282 87367"
+    },
+    {
+      "name": "satellite",
+      "type": "keplerian",
+      "color": "#f44295",
+      "sma": 9000,
+      "ecc": 0.15,
+      "inc": 18,
+      "pa": 0,
+      "raan": 0,
+      "meanAnomaly": 0
+    }
+  ],
+  "constellations": [
+    {
+      "name": "ConstellationA",
+      "satellites": []
+    },
+    {
+      "name": "ConstellationB",
+      "satellites": [
+        "SunSynchronous",
+        "CALSPHERE 1",
+        "CALSPHERE 2",
+        "LCS 1",
+        "TEMPSAT 1",
+        "CALSPHERE 4A",
+        "ISS (ZARYA)",
+        "SWISSCUBE",
+        "NOAA 15",
+        "INTELSAT 5 (IS-5)"
+      ]
+    }
+  ],
+  "groundStations": [
+    {
+      "name": "isae",
+      "latitude": 43,
+      "longitude": 1.5,
+      "altitude": 150,
+      "elevation": 12
+    }
+  ],
+  "options": {
+    "CARTESIAN": [],
+    "KEPLERIAN": [],
+    "LLA": [],
+    "ECLIPSE": [],
+    "VISIBILITY": [],
+    "ATTITUDE": {
+      "law": "NADIR"
+    },
+    "COVERAGE": {
+      "timeStart": "2010-01-01T02:00:00",
+      "timeEnd": "2010-01-02T02:00:00",
+      "step": "10",
+      "elevation": "5",
+      "nbSatsToCover": 1,
+      "satConstMode": "constellation",
+      "satConstName": "ConstellationB",
+      "regionLatitudes": [
+        32.5,
+        62
+      ],
+      "regionLongitudes": [
+        -13.5,
+        18.5
+      ],
+      "plotType": "PERCENT_COV"
+    }
+  }
+}

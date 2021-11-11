@@ -1,0 +1,65 @@
+================ DOWNLINK ===============
+------Downlink TRANSMITTER-----
+SC_power_tx (W)     : 2.0
+SC_power_tx         : 3.0102999566398116
+gain_tx_dB          : 6.5
+SC_EIRP_TX          : 9.510299956639813
+tx_losses           : 10.6
+EIRP depointing     : -1.089700043360187
+------Downlink PATH        -----
+k_dB                : -228.6
+SR (km)             : 2155.2785433627423
+FSL_dB              : 166.2134613058743
+supp Atm Losses (dB): 5.6
+path_loss           : 171.81346130587428
+------Downlink RECEIVER      -----
+T_r (K)             : 200.0
+T_r_dB (dB)         : 23.01029995663981
+eta_rx              : 0.5
+D (m)               : 3.0
+gain_r (dBi)        : 34.034318509702985
+G/T_rx (dB)         : 11.024018553063176
+LNA rx (dB)         : 10.0
+total gain (dB)     : 44.034318509702985
+rx_losses           : 7.1
+------Downlink SYNTHESIS   -----
+TOT losses          : 189.51346130587427
+C/N0 Downlink       : 69.6208572038287
+system_margin (dB)  : 3.0
+data_rate (bps)     : 85000.0
+data_rate (dB)      : 49.29418925714292
+Eb_N0 downlink      : 17.326667946685788
+EB/N0 if 250kbps    : 15.641457117108338
+Eb/N0 Threshold     : 10.5
+Downlink margin     : 6.826667946685788
+================ UPLINK =================
+------Uplink Transmitter-----
+P_t (W)             : 50.0
+P_t (dB)            : 16.989700043360184
+gain_tx_dB (dB)     : 35.4
+GS_EIRP_TX          : 52.38970004336018
+tx_losses           : 7.1
+EIRP depointing     : 45.28970004336018
+------Uplink PATH       -----
+k_dB (dB)           : -228.6
+SR (km)             : 2155.2785433627423
+FSL_dB              : 166.2134613058743
+supp Atm Losses (dB): 5.6
+path_loss           : 171.81346130587428
+------Uplink RECEIVER   -----
+T_r (K)             : 500.0
+T_r_dB (dB)         : 26.989700043360184
+rx_losses           : 6.6
+Antenna gain (dBi)  : 6.5
+LNA rx (dB)         : 0.0
+total gain (dB)     : 6.5
+------Uplink SYNTHESIS   -----
+TOT losses          : 185.51346130587427
+C/N0 Uplink         : 74.98653869412571
+EB/N0 if 250kbps    : 21.007138607405345
+Eb/N0 Threshold     : 10.5
+system_margin (dB)  : 3.0
+data_rate (bps)     : 16000.0
+data_rate (dB)      : 42.04119982655924
+Eb_N0 uplink        : 29.94533886756647
+Uplink margin       : 19.44533886756647

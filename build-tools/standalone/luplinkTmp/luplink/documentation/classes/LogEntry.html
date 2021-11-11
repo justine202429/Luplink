@@ -1,0 +1,633 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>luplink documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">luplink documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Classes</li>
+  <li >LogEntry</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>projects/ngx-luplink/src/lib/shared/logger/logger.service.ts</code>
+        </p>
+
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#entryDate" >entryDate</a>
+                            </li>
+                            <li>
+                                <a href="#extraInfo" >extraInfo</a>
+                            </li>
+                            <li>
+                                <a href="#level" >level</a>
+                            </li>
+                            <li>
+                                <a href="#logWithDate" >logWithDate</a>
+                            </li>
+                            <li>
+                                <a href="#message" >message</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#buildLogString" >buildLogString</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#formatParams" >formatParams</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="entryDate"></a>
+                    <span class="name">
+                        <span ><b>entryDate</b></span>
+                        <a href="#entryDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank" >Date</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Date()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">projects/ngx-luplink/src/lib/shared/logger/logger.service.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="extraInfo"></a>
+                    <span class="name">
+                        <span ><b>extraInfo</b></span>
+                        <a href="#extraInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">projects/ngx-luplink/src/lib/shared/logger/logger.service.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="level"></a>
+                    <span class="name">
+                        <span ><b>level</b></span>
+                        <a href="#level"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/enumerations.html#LogLevel" target="_self" >LogLevel</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>LogLevel.Debug</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">projects/ngx-luplink/src/lib/shared/logger/logger.service.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="logWithDate"></a>
+                    <span class="name">
+                        <span ><b>logWithDate</b></span>
+                        <a href="#logWithDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">projects/ngx-luplink/src/lib/shared/logger/logger.service.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="message"></a>
+                    <span class="name">
+                        <span ><b>message</b></span>
+                        <a href="#message"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">projects/ngx-luplink/src/lib/shared/logger/logger.service.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buildLogString"></a>
+                    <span class="name">
+                        <span ><b>buildLogString</b></span>
+                        <a href="#buildLogString"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>buildLogString()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="34"
+                            class="link-to-prism">projects/ngx-luplink/src/lib/shared/logger/logger.service.ts:34</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="formatParams"></a>
+                    <span class="name">
+                        <span class="modifier">Static</span>
+                        <span ><b>formatParams</b></span>
+                        <a href="#formatParams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>formatParams(params: any[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="50"
+                            class="link-to-prism">projects/ngx-luplink/src/lib/shared/logger/logger.service.ts:50</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>params</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { ToastrService } from &#x27;ngx-toastr&#x27;;
+import { LoggerModule } from &#x27;./logger.module&#x27;;
+
+export enum LogLevel {
+  All &#x3D; 0,
+  Debug &#x3D; 1,
+  Info &#x3D; 2,
+  Warn &#x3D; 3,
+  Error &#x3D; 4,
+  Fatal &#x3D; 5,
+  Off &#x3D; 6,
+}
+
+export class LogEntry {
+  // Public Properties
+  entryDate: Date &#x3D; new Date();
+
+  message: string &#x3D; &#x27;&#x27;;
+
+  level: LogLevel &#x3D; LogLevel.Debug;
+
+  extraInfo: any[] &#x3D; [];
+
+  logWithDate: boolean &#x3D; true;
+
+  buildLogString(): string {
+    let ret: string &#x3D; &#x27;&#x27;;
+
+    if (this.logWithDate) {
+      ret &#x3D; &#x60;${new Date()} - &#x60;;
+    }
+
+    ret +&#x3D; LogLevel[this.level];
+    ret +&#x3D; &#x60; - ${this.message}&#x60;;
+    if (this.extraInfo.length) {
+      ret +&#x3D; &#x60; - Extra Info: ${LogEntry.formatParams(this.extraInfo)}&#x60;;
+    }
+
+    return ret;
+  }
+
+  static formatParams(params: any[]): string {
+    let ret: string &#x3D; params.join(&#x27;,&#x27;);
+
+    // Is there at least one object in the array?
+    if (params.some((p) &#x3D;&gt; typeof p &#x3D;&#x3D;&#x3D; &#x27;object&#x27;)) {
+      ret &#x3D; &#x27;&#x27;;
+
+      // Build comma-delimited string
+      params.forEach((item) &#x3D;&gt; {
+        ret +&#x3D; &#x60;${JSON.stringify(item)},&#x60;;
+      });
+      // for (const item of params) {
+
+      // }
+    }
+
+    return ret;
+  }
+}
+
+@Injectable({
+  providedIn: &#x27;root&#x27;,
+})
+export class LoggerService {
+  /**
+   * A custom service to log errors https://www.codemag.com/Article/1711021/Logging-in-Angular-Applications
+   */
+  constructor(private toastr: ToastrService) { }
+
+  // Miscellanious debugging variables
+  developer: boolean &#x3D; false;
+
+  // End
+
+  level: LogLevel &#x3D; LogLevel.Debug;
+
+  logWithDate: boolean &#x3D; false;
+
+  logWithToast: boolean &#x3D; true;
+
+  debug(msg: string, ...optionalParams: any[]) {
+    this.writeToLog(msg, LogLevel.Debug, optionalParams);
+  }
+
+  info(msg: string, ...optionalParams: any[]) {
+    this.writeToLog(msg, LogLevel.Info, optionalParams);
+  }
+
+  warn(msg: string, ...optionalParams: any[]) {
+    this.writeToLog(msg, LogLevel.Warn, optionalParams);
+    this.sendToast(msg, LogLevel.Warn, LogEntry.formatParams(optionalParams));
+  }
+
+  error(msg: string, ...optionalParams: any[]) {
+    this.writeToLog(msg, LogLevel.Error, optionalParams);
+    // console.log(typeof optionalParams[0])
+    // if (optionalParams.length&gt;0){
+    // let entry &#x3D; new LogEntry
+    this.sendToast(msg, LogLevel.Error, LogEntry.formatParams(optionalParams));
+  }
+
+  success(msg: string, ...optionalParams: any[]) {
+    this.writeToLog(msg, LogLevel.Info, optionalParams);
+    this.sendToast(msg, LogLevel.Info, LogEntry.formatParams(optionalParams));
+  }
+
+  fatal(msg: string, ...optionalParams: any[]) {
+    this.writeToLog(msg, LogLevel.Fatal, optionalParams);
+  }
+
+  log(msg: string, ...optionalParams: any[]) {
+    this.writeToLog(msg, LogLevel.All, optionalParams);
+  }
+
+  private sendToast(title: string, level: LogLevel, message?:string, params?: any[]) {
+    if (this.shouldLog(level) &amp;&amp; this.logWithToast) {
+      switch (level) {
+        case LogLevel.Error:
+          this.toastr.error(message, title);
+          break;
+        case LogLevel.Warn:
+          this.toastr.warning(message, title);
+          break;
+        case LogLevel.Info:
+          this.toastr.success(message, title);
+          break;
+        default:
+          this.toastr.show(title);
+      }
+    }
+  }
+
+  private writeToLog(msg: string, level: LogLevel, params: any[]) {
+    if (this.shouldLog(level)) {
+      const entry: LogEntry &#x3D; new LogEntry();
+      entry.message &#x3D; msg;
+      entry.level &#x3D; level;
+      entry.extraInfo &#x3D; params;
+      entry.logWithDate &#x3D; this.logWithDate;
+      switch (level) {
+        case LogLevel.Warn: console.warn(entry.buildLogString()); break;
+        case LogLevel.Error: console.error(entry.buildLogString()); break;
+        case LogLevel.Debug: console.debug(entry.buildLogString()); break;
+        default: console.log(entry.buildLogString());
+      }
+    }
+  }
+
+  private shouldLog(level: LogLevel): boolean {
+    let ret: boolean &#x3D; false;
+    if ((level &gt;&#x3D; this.level &amp;&amp; level !&#x3D;&#x3D; LogLevel.Off) || this.level &#x3D;&#x3D;&#x3D; LogLevel.All) {
+      ret &#x3D; true;
+    }
+    return ret;
+  }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'LogEntry.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       
+       <script type="module" src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

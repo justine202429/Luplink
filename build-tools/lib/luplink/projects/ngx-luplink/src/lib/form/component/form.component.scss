@@ -1,0 +1,23 @@
+label {
+  padding:6px; //just as the input
+  margin: 0;
+  margin-bottom:0 !important;
+}
+.input-wrapper {
+  display:inline-flex;
+}
+.form-control {
+  min-width: 90px; max-width:90px;// 90px is enough for 1MW
+}
+.spacing {
+  margin:24px;
+  padding:0px 24px 0px 24px;
+}
+.field {
+  margin:auto;
+  max-width:360px;
+}
+form {
+  // max-width:480px;
+  margin:auto;
+}

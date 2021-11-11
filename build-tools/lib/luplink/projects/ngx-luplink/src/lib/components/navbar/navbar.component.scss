@@ -1,0 +1,32 @@
+.navbar {
+  min-height: auto;
+}
+.navbar {
+  padding-top: 0; //Remove the padding for smaller navbar
+  padding-bottom: 0;
+}
+.navbar .navbar-link:focus-within {
+  background-color: #00b89c;
+}
+.navbar-dropdown > .navbar-item {
+  color: #4a4a4a !important;
+}
+.navbar-end {
+  display: inline-flex;
+  align-items: center;
+}
+.navbar-link:not(.is-arrowless)::after {
+  border-color: #fff !important;
+}
+.button.is-secondary {
+  color: initial;
+}
+.buttons {
+  color: initial;
+}
+// .has-dropdown > .navbar-link a:not([href]):not([tabindex]) {
+//   color: initial;
+// }
+.navbar-link {
+  color: #fff;
+}

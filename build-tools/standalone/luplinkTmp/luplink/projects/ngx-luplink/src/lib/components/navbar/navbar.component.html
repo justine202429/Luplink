@@ -1,0 +1,109 @@
+<nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <div class="navbar-item">Luplink</div>
+    <span class="navbar-burger burger" [ngClass]="{ 'is-active': isMenuBarVisible }" aria-label="menu"
+      aria-expanded="false" (click)="isMenuBarVisible = !isMenuBarVisible">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </span>
+  </div>
+  <div id="navbar" class="navbar-menu" [ngClass]="{ 'is-active': isMenuBarVisible }">
+    <div class="navbar-start">
+      <a class="navbar-item" [routerLink]="'/luplink/diagram'"> Diagram </a>
+      <a class="navbar-item" [routerLink]="'/luplink'"> Simple Link Budget </a>
+      <!-- <a class="navbar-item is-disabled"> Full Link Budget </a> -->
+      <div class="is-hidden-desktop">
+        <a class="navbar-item">New Link Budget</a>
+        <a class="navbar-item is-hoverable" style="padding-right: 16px;"
+          (click)="this.logger.developer = !this.logger.developer">
+          Developer mode
+          <input style="margin-left:auto" id="dev" type="checkbox" [(ngModel)]="this.logger.developer" />
+        </a>
+        <a class="navbar-item" style="padding-right: 16px;"
+          (click)="this.isNanospaceEnabled = !this.isNanospaceEnabled">
+          Enable Nanospace
+          <input style="margin-left:auto" type="checkbox" [(ngModel)]="this.isNanospaceEnabled" />
+        </a>
+
+        <hr class="navbar-divider" />
+        <a class="navbar-item" (click)="save()">Save</a>
+        <a class="navbar-item">
+          <div class="file-input">
+            <input id="file" class="file" type="file" accept=".json" #file (change)="load(file.files)">
+            <label for="file" class="btn btn-primary btn-file">Import</label>
+          </div>
+          Load
+        </a>
+        <a class="navbar-item">
+          <input id="file" class="file" type="file" accept=".json" #file (change)="load(file.files)">
+        </a>
+
+      </div>
+    </div>
+  </div>
+  <div class="navbar-end">
+    <ng-content></ng-content>
+    <div class="navbar-item has-dropdown is-hoverable is-hidden-touch">
+      <a class="navbar-link" (click)="editTitle()">
+        <fa-icon [icon]="pencil" style="margin-right: 10px;"></fa-icon>
+        <strong id="scenario-title"
+          *ngIf="!isEditingTitle">{{this.formService.title}}{{!this.formService.isCurrentFormSaved ? '*' :
+          ''}}</strong>
+        <input #titleInput type="text" [ngClass]="{'is-hidden': !this.isEditingTitle}" value={{this.formService.title}}
+          class="input" (focusout)="onBlur($event)" autofocus />
+      </a>
+      <div class="navbar-menu navbar-dropdown">
+        <a class="navbar-item">New Link Budget</a>
+        <a class="navbar-item is-hoverable" style="padding-right: 16px;"
+          (click)="this.logger.developer = !this.logger.developer">
+          Developer mode
+          <input style="margin-left:auto" id="dev" type="checkbox" [(ngModel)]="this.logger.developer" />
+        </a>
+        <a class="navbar-item" style="padding-right: 16px;"
+          (click)="this.isNanospaceEnabled = !this.isNanospaceEnabled">
+          Enable Nanospace
+          <input style="margin-left:auto" type="checkbox" [(ngModel)]="this.isNanospaceEnabled" />
+        </a>
+
+        <hr class="navbar-divider" />
+        <a class="navbar-item" (click)="save()">Save</a>
+        <a class="navbar-item">
+          <div class="file-input">
+            <input id="file" class="file" type="file" accept=".json" #file (change)="load(file.files)">
+            <label for="file" class="btn btn-primary btn-file">Import</label>
+          </div>
+          Load
+        </a>
+        <a class="navbar-item">
+          <input id="file" class="file" type="file" accept=".json" #file (change)="load(file.files)">
+        </a>
+
+      </div>
+    </div>
+    <div class="navbar-item is-hidden-desktop">
+      <a class="navbar-link is-arrowless" (click)="editTitle()">
+        <fa-icon [icon]="pencil" style="margin-right: 10px;"></fa-icon>
+        <strong id="scenario-title"
+          *ngIf="!isEditingTitle">{{this.formService.title}}{{!this.formService.isCurrentFormSaved ? '*' :
+          ''}}</strong>
+        <input #titleInput type="text" [ngClass]="{'is-hidden': !this.isEditingTitle}" value={{this.formService.title}}
+          class="input" (focusout)="onBlur($event)" autofocus />
+      </a>
+    </div>
+    <div class="navbar-item">
+      <div class="buttons">
+        <a class="button is-secondary compute" [ngClass]="{ 'is-loading': this.loading }"
+          (click)="this.compute()"><strong>Compute</strong></a>
+      </div>
+    </div>
+    <!-- </div> -->
+  </div>
+</nav>
+
+<!-- <div class="columns is-fullheight"> -->
+
+<!-- <app-synthesis></app-synthesis> -->
+<!-- <router-outlet></router-outlet> -->
+
+<!-- </div> -->

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="222.2429mm"
+   height="79.648842mm"
+   viewBox="0 0 222.2429 79.648842"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="slant_range.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="481.25822"
+     inkscape:cy="83.696346"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1920"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-1.9512345,-7.4847339)">
+    <path
+       style="fill:none;stroke:#28bca3;stroke-width:2.32482743;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 427.29492,29.451172 A 445.56011,445.56011 0 0 0 8.5371094,324.42969 H 846.18555 A 445.56011,445.56011 0 0 0 427.29492,29.451172 Z"
+       transform="scale(0.26458333)"
+       id="rect817"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:type="star"
+       style="fill:#a10705;stroke:none;stroke-width:2.01099992;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path858"
+       sodipodi:sides="3"
+       sodipodi:cx="113.41955"
+       sodipodi:cy="68.930161"
+       sodipodi:r1="5.9057803"
+       sodipodi:r2="2.9528904"
+       sodipodi:arg1="1.3089969"
+       sodipodi:arg2="2.3561945"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 114.94808,74.634706 -7.23308,-7.233074 9.88057,-2.647489 z"
+       inkscape:transform-center-x="-0.032097789"
+       inkscape:transform-center-y="-1.4485585"
+       transform="rotate(-45.622834,113.41955,68.930161)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 113.58955,71.441221 24.946428,47.535713"
+       id="path854"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 113.58955,72.226325 112.78774,8.0816407"
+       id="path856"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:#f37329;stroke:none;stroke-width:0.51091039;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect852"
+       width="16.036169"
+       height="14.165282"
+       x="15.501633"
+       y="39.886711" />
+    <path
+       style="fill:#9bdb4d;stroke:#9bdb4d;stroke-width:7.60062981;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 427.29492,273.99219 A 201.02035,201.02035 0 0 0 293.25781,325.52344 H 561.36719 A 201.02035,201.02035 0 0 0 427.29492,273.99219 Z"
+       transform="scale(0.26458333)"
+       id="path815"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 92.698659,65.86756 c 0,0 -3.590774,4.913688 -0.283483,9.543896"
+       id="path862"
+       inkscape:connector-curvature="0" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot864"
+       style="font-style:normal;font-weight:normal;font-size:13.33333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.25743214,0.06109855,-0.06109855,0.25743214,14.059248,-2.9615145)"><flowRegion
+         id="flowRegion866"><rect
+           id="rect868"
+           width="102.85714"
+           height="22.857143"
+           x="211.42857"
+           y="164.66254" /></flowRegion><flowPara
+         id="flowPara870">Slant Range</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot872"
+       style="font-style:normal;font-weight:normal;font-size:13.33333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-1.3229167,2.078869)"><flowRegion
+         id="flowRegion874"><rect
+           id="rect876"
+           width="87.85714"
+           height="97.14286"
+           x="439.28571"
+           y="103.94826" /></flowRegion><flowPara
+         id="flowPara878">Altitude</flowPara></flowRoot>  </g>
+</svg>

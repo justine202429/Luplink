@@ -1,0 +1,11 @@
+<!-- <div id="sidebar-result" class="column is-narrow animate__animated animate__slideInRight" -->
+<!-- *ngIf="this.computeLinkBudget.displayingResults && this.computeLinkBudget.computeLayout == 'sidebar'"> -->
+<!-- <section class="section pt-0 pb-0"> -->
+<!-- <aside class="result"> -->
+<lib-results [minimal]="true" *ngIf="this.computeLinkBudget.displayingResults"></lib-results>
+<!-- </aside> -->
+<!-- </section> -->
+<!-- </div> -->
+<button class="button" style="position: fixed; bottom: 10px; right: 10px"
+  *ngIf="this.computeLinkBudget.computeLayout == 'sidebar'" (click)="computeLinkBudget.toggleResults()">
+  {{ this.computeLinkBudget.displayingResults ? ">" : "<" }} </button>

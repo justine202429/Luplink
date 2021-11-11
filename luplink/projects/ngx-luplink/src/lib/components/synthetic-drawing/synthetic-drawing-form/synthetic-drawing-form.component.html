@@ -1,0 +1,37 @@
+<form id="form" [formGroup]="drawingForm">
+  <div class="field">
+    <label class="label">Power in: </label><input class="input" formControlName="power" type="number" />
+  </div>
+
+  <div class="field">
+    <div formArrayName="gains">
+      <div class="field">
+        <label class="label">Tx Cable Loss: </label><input class="input" formControlName="cableTx" type="number" />
+      </div>
+      <div class="field">
+        <label class="label">Tx Antenna Gain: </label><input class="input" formControlName="antTx" type="number" />
+      </div>
+      <div class="field">
+        <label class="label">FSL: </label><input class="input" formControlName="fsl" type="number" />
+      </div>
+      <div class="field">
+        <label class="label">Rx Antenna Gain: </label><input class="input" formControlName="antRx" type="number" />
+      </div>
+      <div class="field">
+        <label class="label">Rx Cable Loss: </label><input class="input" formControlName="cableRx" type="number" />
+      </div>
+    </div>
+  </div>
+  <div class="field is-grouped">
+    <div class="control">
+      <button class="button is-primary" form="form" type="submit" (click)="onSubmit()">
+        Update Graph
+      </button>
+    </div>
+    <div class="control">
+      <button class="button is-secondary" id="randomize" (click)="randomizeInputs()">
+        Random values
+      </button>
+    </div>
+  </div>
+</form>

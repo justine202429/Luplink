@@ -1,0 +1,60 @@
+- Observation AMSAT : ce qui peut être amélioré, adapté, ...
+
+To-Do:
+
+    -Identifier cas d'utilisations, qui sont les utilisateurs : Partie synthétique avec visualisation des informations importantes / Partie entrée de données, outils ("link model operator").
+    -Comparaison avec STK Communications et TFP (Telecom Forecaster Predictor)
+    - Savoir où se situe l'information : Bonne décomposition AMSAT (à agréger un peu plus?) / linkpredict-python 
+    
+    - Fonctionnalités et donc données qui dépendront de l'API REST (se baser sur celles de lp ?)
+                {<LinkBudgetKeys.rx_antenna_gain [dBi]>: 35.1,
+                 <LinkBudgetKeys.power_flux_density [dBW/m^2]>: -83.58846733187815,
+                 <LinkBudgetKeys.power_flux_density_limit [dBW/m^2]>: None,
+                 <LinkBudgetKeys.free_space_path_loss [dB]>: 202.70595165337943,
+                 <LinkBudgetKeys.total_path_loss [dB]>: 192.70595165337943,
+                 <LinkBudgetKeys.received_isotropic_signal_level [dB]>: -123.10595165337944,
+                 <LinkBudgetKeys.rx_antenna_angle [deg]>: 0,
+                 <LinkBudgetKeys.tx_antenna_angle [deg]>: 0,
+                 <LinkBudgetKeys.tx_antenna_gain [dBi]>: 51.6,
+                 <LinkBudgetKeys.tx_circuit_loss [dB]>: 2,
+                 <LinkBudgetKeys.eirp [dBW]>: 69.6,
+                 <LinkBudgetKeys.medium_loss [dB]>: -10.0,
+                 <LinkBudgetKeys.tx_antenna_pointing_loss [dB]>: 0.0,
+                 <LinkBudgetKeys.slant_range [m]>: 40721000,
+                 <LinkBudgetKeys.tx_amplifier_power [dBW]>: 20,
+                 <LinkBudgetKeys.g_t_figure_of_merit [dB/K]>: -1.0341894503457283,
+                 <LinkBudgetKeys.cno_ratio [dB-Hz]>: 104.4590260694925,
+                 <LinkBudgetKeys.cno_ratio_threshold [dB-Hz]>: None,
+                 <LinkBudgetKeys.modulation_loss [dB]>: None,
+                 <LinkBudgetKeys.bandwidth [Hz]>: 2000000.0,
+                 <LinkBudgetKeys.received_noise_power [dBW]>: -129.45467776623212,
+                 <LinkBudgetKeys.snr [dB]>: 41.44872611285268,
+                 <LinkBudgetKeys.snr_threshold [dB]>: None,
+                 <LinkBudgetKeys.rx_antenna_pointing_loss [dB]>: 0.0,
+                 <LinkBudgetKeys.rx_circuit_loss [dB]>: 0,
+                 <LinkBudgetKeys.received_power [dBW]>: -88.00595165337944,
+                 <LinkBudgetKeys.received_power_threshold [dBW]>: None,
+                 <LinkBudgetKeys.rx_antenna_noise_temperature [K]>: 300,
+                 <LinkBudgetKeys.rx_system_noise_temperature [K]>: 4106.0,
+                 <LinkBudgetKeys.received_noise_power_density [dBW/Hz]>: -192.46497772287194,
+                 <LinkBudgetKeys.time [datetime]>: None}
+                 
+    - Comment intégrer les LUTs et outils de manière "non intrusive" ?
+    
+    
+    
+Remarques :
+
+- Beaucoup d'informations inutiles selon le scénario (cf Orbit tab, 4 scénarios) : possible d'afficher seulement le scénario utilisé
+- Très extensif, beaucoup de données disponibles : compromis lisibilité/informations détaillés
+- Schéma très utiles
+- Explications optionnelles = bon point, évite de surcharger l'interface
+- Downlink/Uplink Receiver/Transmitter : 4 blocs assez similaire à bien différencier
+
+-Présence d'outils "annexes"
+
+-Manière de présenter un LB sous forme de tableau très spécifique, à reprendre
+
+- Pas de moyens aisé de connaître les informations manquantes
+
+- linkpredict : symétrie uplink / downlink | AMSAT : gestion des deux en parallèle

@@ -1,0 +1,156 @@
+<lib-card *ngIf="minimal">
+  <div class="tabs is-centered">
+    <ul style="margin:auto;">
+      <li [ngClass]="{ 'is-active': showUplink }" (click)="showUplink = true">
+        <a>Uplink</a>
+      </li>
+      <li [ngClass]="{ 'is-active': !showUplink }" (click)="showUplink = false">
+        <a>Downlink</a>
+      </li>
+    </ul>
+  </div>
+  <!-- <div class="buttons has-addons is-round is-centered">
+    <button class="button" type="button" id="full" href='#' (click)="minimal=false; displayedResult=fullResult" [ngClass]="{'is-success': !minimal}">Full</button>
+    <button class="button" type="button" id="minimal" href='#' (click)="minimal=true; displayedResult=minimalResult"[ngClass]="{'is-success': minimal}">Minimal</button>
+  </div> -->
+  <table class="table" class="animate__animated"  [ngClass]="showUplink ? 'animate__slideInLeft' : 'animate__slideInRight'">
+    <tbody>
+      <ng-container *ngFor="let section of (showUplink ? this.fullResult2.uplink : this.fullResult2.downlink)">
+        <th colspan="2" style="display: block;">
+          <b>{{ section.group }}</b>
+          <a class="is-text is-link" (click)="showUplink ?  collapsed.uplink[section.group] = !collapsed.uplink[section.group] : collapsed.downlink[section.group] = !collapsed.downlink[section.group]" aria-label="collapse">
+            <span class="icon"><fa-icon [icon]="faAngleDown" transform="rotate-{{(showUplink ? collapsed.uplink[section.group] : collapsed.downlink[section.group]) ? 0 : 180}}" aria-hidden="true"></fa-icon></span>
+          </a>
+        </th>
+        <ng-container *ngIf="showUplink ? !collapsed.uplink[section.group] : !collapsed.downlink[section.group]">
+          <ng-container *ngFor="let elt of section.elt">
+            <tr class="result-row" [ngClass]="{
+                'active-row': showUplink ? this.deltaUL.includes(elt.name) : this.deltaDL.includes(elt.name)
+              }">
+              <td class="result-label">{{ params[elt.name].label }}</td>
+              <td class="result-value" align="right">
+                <!-- {{ elt.value.toPrecision(2) }} {{ elt.unit }} -->
+                {{ elt.value | number: ".1-2"}} {{ elt.unit }}
+              </td>
+            </tr>
+          </ng-container>
+        </ng-container>
+      </ng-container>
+    </tbody>
+  </table>
+
+  <!-- <a type="button" class="link" style="float:right;" (click)="minimal=!minimal; displayedResult= minimal ? minimalResult:fullResult">{{minimal ? 'Show more' : 'Show less'}}</a> -->
+  <!-- <pre>{{this.key | json }}</pre> -->
+</lib-card>
+<div class="columns">
+  <lib-navigation-sidebar  class="column is-narrow" [currentComponent]="'results'" *ngIf="!minimal"></lib-navigation-sidebar>
+  <div class="column is-wide">
+    <section class="pt-3 pr-3">
+    <!-- <lib-stepbar [step]="'results'" *ngIf="!minimal"></lib-stepbar> -->
+      <section class="section p-0 pb3-3 export-bar">
+        <div class="buttons is-grouped">
+          <a class="button" (click)="exportResults('md')">
+            <fa-icon style = "margin-right:12px" size="lg" [icon]="download"></fa-icon>
+            <div>Export results as .md</div>
+          </a>
+          <!-- <a class="button" (click)="exportResults('pdf')">
+            <fa-icon style = "margin-right:12px" size="lg" [icon]="download"></fa-icon>
+            <div>Export results as .pdf</div>
+          </a> -->
+          <a class="button" (click)="exportResults('json')">
+            <fa-icon style = "margin-right:12px" size="lg" [icon]=download></fa-icon>
+            <div>Export results as .json</div>
+          </a>
+        </div>
+      </section>
+      <div class="columns" *ngIf="!minimal">
+        <!-- <a class="button" href='#'>Save Results</a> -->
+
+        <div class="column is-one-quarter">
+          <lib-card [title]="'Uplink'">
+            <lib-card *ngIf="this.linkStatus" [styleClass]="this.linkStatus.uplink.status || ''">
+              <div class="link-closed-container">
+                <fa-icon size="2x" [icon]="faCheck" *ngIf="this.linkStatus.uplink.status === 'is-success'"></fa-icon>
+                  <fa-icon size="2x" [icon]="faWarn" *ngIf="this.linkStatus.uplink.status === 'is-warning'"></fa-icon>
+                  <fa-icon size="2x" [icon]="faError" *ngIf="this.linkStatus.uplink.status === 'is-danger'" ></fa-icon>
+                <p class="link-closed" [innerHTML]="this.linkStatus.uplink.message"></p>
+              </div>
+            </lib-card>
+                <!-- <b class="title is-centered">Uplink</b> -->
+                <table class="table">
+                  <tbody>
+                    <ng-container *ngFor="let section of this.fullResult2.uplink">
+                      <th colspan="2" style="display: block;">
+                        <b>{{ section.group }}</b>
+                        <a class="is-text is-link" (click)="collapsed.uplink[section.group] = !collapsed.uplink[section.group]" aria-label="collapse">
+                          <span class="icon"><fa-icon [icon]="faAngleDown" transform="rotate-{{collapsed.uplink[section.group] ? 0 : 180}}" aria-hidden="true"></fa-icon></span>
+                        </a>
+                      </th>
+                      <ng-container *ngIf="!collapsed.uplink[section.group]">
+                        <ng-container *ngFor="let elt of section.elt">
+                          <tr class="result-row" [ngClass]="{
+                              'active-row': this.deltaUL.includes(elt.name)
+                            }">
+                            <td class="result-label">{{ params[elt.name].label }}</td>
+                            <td class="result-value" align="right">
+                              {{ elt.value | number: ".1-2" }} {{ elt.unit }}
+                            </td>
+                          </tr>
+                        </ng-container>
+                      </ng-container>
+                    </ng-container>
+                  </tbody>
+                </table>
+          </lib-card>
+        </div>
+        <div class="column is-half" >
+          <lib-card [title]="'Synthesis Uplink'">
+            <lib-synthetic-drawing [scenarioId]="'uplink'" [components]="this.diagramParamsUplink.diagramComponents" [linkType]="'uplink'" [powerIn]="this.diagramParamsUplink.powerIn"></lib-synthetic-drawing>
+          </lib-card>
+          <lib-card [title]="'Synthesis Downlink'">
+            <lib-synthetic-drawing [scenarioId]="'downlink'" [components]="this.diagramParamsDownlink.diagramComponents"  [linkType]="'downlink'" [powerIn]="this.diagramParamsDownlink.powerIn"></lib-synthetic-drawing>
+          </lib-card>
+          </div>
+            <div class="column is-one-quarter">
+              <lib-card [title]="'Downlink'" >
+
+                <lib-card *ngIf="this.linkStatus" [styleClass]="this.linkStatus.downlink.status || ''">
+                  <div class="link-closed-container">
+                    <fa-icon size="2x" [icon]="faCheck" *ngIf="this.linkStatus.downlink.status === 'is-success'"></fa-icon>
+                    <fa-icon size="2x" [icon]="faWarn" *ngIf="this.linkStatus.downlink.status === 'is-warning'"></fa-icon>
+                    <fa-icon size="2x" [icon]="faError" *ngIf="this.linkStatus.downlink.status === 'is-danger'" ></fa-icon>
+                    <p class="link-closed" [innerHTML]="this.linkStatus.downlink.message"></p>
+                  </div>
+                </lib-card>
+                <!-- <b class="title is-centered">Downlink</b> -->
+                <table class="table">
+                  <tbody>
+                    <ng-container *ngFor="let section of this.fullResult2.downlink">
+                      <th colspan="2" style="display: block;">
+                        <b>{{ section.group }}</b>
+                        <a class="is-text is-link" (click)="collapsed.downlink[section.group] = !collapsed.downlink[section.group]" aria-label="collapse">
+                          <span class="icon"><fa-icon [icon]="faAngleDown" transform="rotate-{{collapsed.downlink[section.group] ? 0 : 180}}" aria-hidden="true"></fa-icon></span>
+                        </a>
+                      </th>
+                      <ng-container *ngIf="!collapsed.downlink[section.group]">
+                        <ng-container *ngFor="let elt of section.elt">
+                          <tr class="result-row" [ngClass]="{
+                              'active-row': this.deltaDL.includes(elt.name)
+                            }">
+                            <td class="result-label">{{ params[elt.name].label }}</td>
+                            <td class="result-value" align="right">
+                              {{ elt.value | number: ".1-2" }} {{ elt.unit }}
+                            </td>
+                          </tr>
+                        </ng-container>
+                      </ng-container>
+                    </ng-container>
+                  </tbody>
+                </table>
+              </lib-card>
+            </div>
+            <!-- <a type="button" class="link" style="float:right;" (click)="minimal=!minimal; displayedResult= minimal ? minimalResult:fullResult">{{minimal ? 'Show more' : 'Show less'}}</a> -->
+        </div>
+  </section>
+  </div>
+</div>

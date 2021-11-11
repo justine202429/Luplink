@@ -1,0 +1,14 @@
+<div class="card" [ngClass]="styleClass" >
+  <header class="card-header" *ngIf="title">
+    <p class="card-header-title">{{title}}</p>
+    <a class="card-header-icon is-text is-link" (click)="collapseCard()" aria-label="collapse">
+      <span class="icon"><fa-icon [icon]="faAngleDown" transform="rotate-{{collapsed ? 0 : 180}}" aria-hidden="true"></fa-icon></span>
+    </a>
+  </header>
+
+  <div class="card-content" *ngIf="!collapsed">
+    <div class="content" >
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

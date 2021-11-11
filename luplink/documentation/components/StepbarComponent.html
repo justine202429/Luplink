@@ -1,0 +1,890 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>luplink documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">luplink documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  StepbarComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>projects/ngx-luplink/src/lib/components/stepbar/stepbar.component.ts</code>
+</p>
+
+
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>lib-stepbar</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./stepbar.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./stepbar.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_step" >_step</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_validity" >_validity</a>
+                            </li>
+                            <li>
+                                <a href="#faCheck" >faCheck</a>
+                            </li>
+                            <li>
+                                <a href="#faExclamation" >faExclamation</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isActive" >isActive</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#updateValidity" >updateValidity</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#step" >step</a>
+                            </li>
+                            <li>
+                                <a href="#validity" >validity</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#validity" >validity</a>
+                                </li>
+                                <li>
+                                    <a href="#step" >step</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">projects/ngx-luplink/src/lib/components/stepbar/stepbar.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="step"></a>
+                        <b>step</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">projects/ngx-luplink/src/lib/components/stepbar/stepbar.component.ts:26</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="validity"></a>
+                        <b>validity</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">projects/ngx-luplink/src/lib/components/stepbar/stepbar.component.ts:16</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isActive"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>isActive</b></span>
+                        <a href="#isActive"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isActive(step: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="41"
+                            class="link-to-prism">projects/ngx-luplink/src/lib/components/stepbar/stepbar.component.ts:41</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>step</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateValidity"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>updateValidity</b></span>
+                        <a href="#updateValidity"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateValidity()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="40"
+                            class="link-to-prism">projects/ngx-luplink/src/lib/components/stepbar/stepbar.component.ts:40</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_step"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_step</b></span>
+                        <a href="#_step"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;geometry&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">projects/ngx-luplink/src/lib/components/stepbar/stepbar.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_validity"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_validity</b></span>
+                        <a href="#_validity"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">projects/ngx-luplink/src/lib/components/stepbar/stepbar.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="faCheck"></a>
+                    <span class="name">
+                        <span ><b>faCheck</b></span>
+                        <a href="#faCheck"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>faCheck</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">projects/ngx-luplink/src/lib/components/stepbar/stepbar.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="faExclamation"></a>
+                    <span class="name">
+                        <span ><b>faExclamation</b></span>
+                        <a href="#faExclamation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>faExclamation</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">projects/ngx-luplink/src/lib/components/stepbar/stepbar.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="validity"></a>
+                        <span class="name"><b>validity</b><a href="#validity"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>validity()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">projects/ngx-luplink/src/lib/components/stepbar/stepbar.component.ts:16</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>validity(value: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">projects/ngx-luplink/src/lib/components/stepbar/stepbar.component.ts:19</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>value</td>
+                                                    
+                                                            <td>
+                                                                            <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="step"></a>
+                        <span class="name"><b>step</b><a href="#step"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>step()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">projects/ngx-luplink/src/lib/components/stepbar/stepbar.component.ts:26</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>step(value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">projects/ngx-luplink/src/lib/components/stepbar/stepbar.component.ts:29</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>value</td>
+                                                    
+                                                            <td>
+                                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Input } from &#x27;@angular/core&#x27;;
+import { faCheck, faExclamation } from &#x27;@fortawesome/free-solid-svg-icons&#x27;;
+
+// interface Validity {
+//   steps: { [key: string]: string };
+//   forms: { [key: string]: string };
+// }
+
+@Component({
+  selector: &#x27;lib-stepbar&#x27;,
+  templateUrl: &#x27;./stepbar.component.html&#x27;,
+  styleUrls: [&#x27;./stepbar.component.scss&#x27;],
+})
+export class StepbarComponent {
+  @Input()
+  get validity(): any {
+    return this._validity;
+  }
+  set validity(value: any) {
+    if (value) {
+      this._validity &#x3D; value;
+    }
+  }
+
+  @Input()
+  get step(): string {
+    return this._step;
+  }
+  set step(value: string) {
+    this._step &#x3D; value;
+  }
+  private _validity: any; // Validity &#x3D; { steps: {}, forms: {} };
+
+  faCheck &#x3D; faCheck;
+  faExclamation &#x3D; faExclamation;
+
+  private _step: string &#x3D; &#x27;geometry&#x27;;
+  constructor() {}
+
+  public updateValidity(): void {}
+  public isActive(step: string): boolean {
+    /**
+     * Determines if one of the step is active depending on other steps validity
+     */
+    // eslint-disable-next-line no-restricted-syntax
+    for (const key in this.validity.steps) {
+      if (Object.prototype.hasOwnProperty.call(this.validity.steps, key)) {
+        if (this.validity.steps[key] !&#x3D;&#x3D; &#x27;valid&#x27; || this.step &#x3D;&#x3D;&#x3D; step) {
+          // We don&#x27;t want the progress bar to continue after a warning
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;section class&#x3D;&quot;section pb-0 pt-5&quot;&gt;
+  &lt;ul class&#x3D;&quot;steps is-medium is-centered has-content-centered&quot;&gt;
+    &lt;li class&#x3D;&quot;steps-segment&quot; [ngClass]&#x3D;&quot;{&#x27;is-active&#x27;: isActive(&#x27;geometry&#x27;)}&quot;&gt;
+      &lt;span class&#x3D;&quot;steps-marker&quot; [ngClass]&#x3D;&quot;{
+          &#x27;is-warning&#x27;: validity.steps.geometry &#x3D;&#x3D;&#x3D; &#x27;invalid&#x27;,
+          &#x27;is-success&#x27;: validity.steps.geometry &#x3D;&#x3D;&#x3D; &#x27;valid&#x27;
+        }&quot;&gt;
+        &lt;span class&#x3D;&quot;icon&quot;&gt;
+          &lt;!-- &lt;i class&#x3D;&quot;fa fa-exclamation&quot; *ngIf&#x3D;&quot;validity.steps.geometry &#x3D;&#x3D;&#x3D; &#x27;invalid&#x27;&quot;&gt;&lt;/i&gt; --&gt;
+          &lt;fa-icon [icon]&#x3D;&quot;faExclamation&quot; *ngIf&#x3D;&quot;validity.steps.geometry &#x3D;&#x3D;&#x3D; &#x27;invalid&#x27;&quot;&gt;&lt;/fa-icon&gt;
+          &lt;fa-icon [icon]&#x3D;&quot;faCheck&quot; *ngIf&#x3D;&quot;validity.steps.geometry &#x3D;&#x3D;&#x3D; &#x27;valid&#x27;&quot;&gt;&lt;/fa-icon&gt;
+        &lt;/span&gt;
+      &lt;/span&gt;
+
+      &lt;div class&#x3D;&quot;steps-content&quot;&gt;
+        &lt;p class&#x3D;&quot;heading&quot;&gt;Geometry&lt;/p&gt;
+      &lt;/div&gt;
+
+    &lt;/li&gt;
+    &lt;li class&#x3D;&quot;steps-segment&quot; [ngClass]&#x3D;&quot;{&#x27;is-active&#x27;: isActive(&#x27;uplink&#x27;)}&quot;&gt;
+      &lt;span class&#x3D;&quot;steps-marker&quot; [ngClass]&#x3D;&quot;{
+            &#x27;is-warning&#x27;: validity.steps.uplink &#x3D;&#x3D;&#x3D; &#x27;invalid&#x27;,
+            &#x27;is-success&#x27;: validity.steps.uplink &#x3D;&#x3D;&#x3D; &#x27;valid&#x27;
+          }&quot;&gt;
+        &lt;span class&#x3D;&quot;icon&quot;&gt;
+          &lt;!-- &lt;i class&#x3D;&quot;fa fa-exclamation&quot; *ngIf&#x3D;&quot;validity.steps.uplink &#x3D;&#x3D;&#x3D; &#x27;invalid&#x27;&quot;&gt;&lt;/i&gt; --&gt;
+          &lt;fa-icon [icon]&#x3D;&quot;faExclamation&quot; *ngIf&#x3D;&quot;validity.steps.uplink &#x3D;&#x3D;&#x3D; &#x27;invalid&#x27;&quot;&gt;&lt;/fa-icon&gt;
+          &lt;fa-icon [icon]&#x3D;&quot;faCheck&quot; *ngIf&#x3D;&quot;validity.steps.uplink &#x3D;&#x3D;&#x3D; &#x27;valid&#x27;&quot;&gt;&lt;/fa-icon&gt;
+        &lt;/span&gt;
+      &lt;/span&gt;
+      &lt;div class&#x3D;&quot;steps-content&quot;&gt;
+        &lt;p class&#x3D;&quot;heading&quot;&gt;Uplink&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class&#x3D;&quot;steps-segment&quot; [ngClass]&#x3D;&quot;{&#x27;is-active&#x27;: isActive(&#x27;downlink&#x27;)}&quot;&gt;
+      &lt;span class&#x3D;&quot;steps-marker&quot; [ngClass]&#x3D;&quot;{
+            &#x27;is-warning&#x27;: validity.steps.downlink &#x3D;&#x3D;&#x3D; &#x27;invalid&#x27;,
+            &#x27;is-success&#x27;: validity.steps.downlink &#x3D;&#x3D;&#x3D; &#x27;valid&#x27;
+          }&quot;&gt;
+        &lt;span class&#x3D;&quot;icon&quot;&gt;
+          &lt;!-- &lt;i class&#x3D;&quot;fa fa-exclamation&quot; *ngIf&#x3D;&quot;validity.steps.downlink &#x3D;&#x3D;&#x3D; &#x27;invalid&#x27;&quot;&gt;&lt;/i&gt; --&gt;
+          &lt;!-- &lt;i class&#x3D;&quot;fa fa-check&quot; *ngIf&#x3D;&quot;validity.steps.downlink &#x3D;&#x3D;&#x3D; &#x27;valid&#x27;&quot;&gt;&lt;/i&gt; --&gt;
+          &lt;fa-icon [icon]&#x3D;&quot;faExclamation&quot; *ngIf&#x3D;&quot;validity.steps.downlink &#x3D;&#x3D;&#x3D; &#x27;invalid&#x27;&quot;&gt;&lt;/fa-icon&gt;
+          &lt;fa-icon [icon]&#x3D;&quot;faCheck&quot; *ngIf&#x3D;&quot;validity.steps.downlink &#x3D;&#x3D;&#x3D; &#x27;valid&#x27;&quot;&gt;&lt;/fa-icon&gt;
+        &lt;/span&gt;
+      &lt;/span&gt;
+      &lt;div class&#x3D;&quot;steps-content&quot;&gt;
+        &lt;p class&#x3D;&quot;heading&quot;&gt;Downlink&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class&#x3D;&quot;steps-segment&quot; [ngClass]&#x3D;&quot;{&#x27;is-active&#x27;: isActive(&#x27;result&#x27;)}&quot;&gt;
+      &lt;span class&#x3D;&quot;steps-marker&quot;&gt;&lt;/span&gt;
+      &lt;!-- &lt;span class&#x3D;&quot;steps-marker&quot; [ngClass]&#x3D;&quot;{
+            &#x27;is-warning&#x27;: validity.steps.downlink &#x3D;&#x3D;&#x3D; &#x27;invalid&#x27;,
+            &#x27;is-success&#x27;: validity.steps.downlink &#x3D;&#x3D;&#x3D; &#x27;valid&#x27;
+          }&quot;&gt;
+            &lt;span class&#x3D;&quot;icon&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-exclamation&quot; *ngIf&#x3D;&quot;validity.steps.downlink &#x3D;&#x3D;&#x3D; &#x27;invalid&#x27;&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+          &lt;/span&gt; --&gt;
+      &lt;div class&#x3D;&quot;steps-content&quot;&gt;
+        &lt;p class&#x3D;&quot;heading&quot;&gt;Result&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/section&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./stepbar.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">// @import &quot;~node_modules/bulma&quot;;
+@import &#x27;~bulma/sass/utilities/derived-variables.sass&#x27;;
+@import &quot;~node_modules/bulma-o-steps/bulma-steps.sass&quot;;
+@import &quot;~node_modules/bulma-o-steps/index.sass&quot;;
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><section class="section pb-0 pt-5">  <ul class="steps is-medium is-centered has-content-centered">    <li class="steps-segment" [ngClass]="{\'is-active\': isActive(\'geometry\')}">      <span class="steps-marker" [ngClass]="{          \'is-warning\': validity.steps.geometry === \'invalid\',          \'is-success\': validity.steps.geometry === \'valid\'        }">        <span class="icon">          <!-- <i class="fa fa-exclamation" *ngIf="validity.steps.geometry === \'invalid\'"></i> -->          <fa-icon [icon]="faExclamation" *ngIf="validity.steps.geometry === \'invalid\'"></fa-icon>          <fa-icon [icon]="faCheck" *ngIf="validity.steps.geometry === \'valid\'"></fa-icon>        </span>      </span>      <div class="steps-content">        <p class="heading">Geometry</p>      </div>    </li>    <li class="steps-segment" [ngClass]="{\'is-active\': isActive(\'uplink\')}">      <span class="steps-marker" [ngClass]="{            \'is-warning\': validity.steps.uplink === \'invalid\',            \'is-success\': validity.steps.uplink === \'valid\'          }">        <span class="icon">          <!-- <i class="fa fa-exclamation" *ngIf="validity.steps.uplink === \'invalid\'"></i> -->          <fa-icon [icon]="faExclamation" *ngIf="validity.steps.uplink === \'invalid\'"></fa-icon>          <fa-icon [icon]="faCheck" *ngIf="validity.steps.uplink === \'valid\'"></fa-icon>        </span>      </span>      <div class="steps-content">        <p class="heading">Uplink</p>      </div>    </li>    <li class="steps-segment" [ngClass]="{\'is-active\': isActive(\'downlink\')}">      <span class="steps-marker" [ngClass]="{            \'is-warning\': validity.steps.downlink === \'invalid\',            \'is-success\': validity.steps.downlink === \'valid\'          }">        <span class="icon">          <!-- <i class="fa fa-exclamation" *ngIf="validity.steps.downlink === \'invalid\'"></i> -->          <!-- <i class="fa fa-check" *ngIf="validity.steps.downlink === \'valid\'"></i> -->          <fa-icon [icon]="faExclamation" *ngIf="validity.steps.downlink === \'invalid\'"></fa-icon>          <fa-icon [icon]="faCheck" *ngIf="validity.steps.downlink === \'valid\'"></fa-icon>        </span>      </span>      <div class="steps-content">        <p class="heading">Downlink</p>      </div>    </li>    <li class="steps-segment" [ngClass]="{\'is-active\': isActive(\'result\')}">      <span class="steps-marker"></span>      <!-- <span class="steps-marker" [ngClass]="{            \'is-warning\': validity.steps.downlink === \'invalid\',            \'is-success\': validity.steps.downlink === \'valid\'          }">            <span class="icon">              <i class="fa fa-exclamation" *ngIf="validity.steps.downlink === \'invalid\'"></i>            </span>          </span> -->      <div class="steps-content">        <p class="heading">Result</p>      </div>    </li>  </ul></section></div>'
+    var COMPONENTS = [{'name': 'CardComponent', 'selector': 'lib-card'},{'name': 'FormComponent', 'selector': 'lib-form'},{'name': 'JSatOrbLinkComponent', 'selector': 'lib-luplink-jsatorb-import'},{'name': 'LayoutComponent', 'selector': 'lib-layout'},{'name': 'NavbarComponent', 'selector': 'lib-navbar'},{'name': 'NavigationSidebarComponent', 'selector': 'lib-navigation-sidebar'},{'name': 'ResultsComponent', 'selector': 'lib-results'},{'name': 'ResultSidebarComponent', 'selector': 'lib-result-sidebar'},{'name': 'SimpleDocumentationComponent', 'selector': 'lib-simple-documentation'},{'name': 'StepbarComponent', 'selector': 'lib-stepbar'},{'name': 'SynthesisComponent', 'selector': 'lib-synthesis'},{'name': 'SyntheticDrawingComponent', 'selector': 'lib-synthetic-drawing'},{'name': 'SyntheticDrawingFormComponent', 'selector': 'lib-synthetic-drawing-form'},{'name': 'ViewComponent', 'selector': 'lib-view'},{'name': 'WelcomeComponent', 'selector': 'lib-welcome'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'StepbarComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'StepbarComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       
+       <script type="module" src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

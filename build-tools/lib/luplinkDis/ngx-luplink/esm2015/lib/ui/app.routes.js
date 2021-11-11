@@ -1,0 +1,18 @@
+import { ResultsComponent } from '../components/results/components/results/results.component';
+import { SynthesisComponent } from '../components/synthesis/synthesis.component';
+import { WelcomeComponent } from '../components/welcome/welcome.component';
+import { LayoutComponent } from './link-budget/layout.component';
+// https://github.com/wesleygrimes/angular-routing-best-practices
+export const routes = [
+    {
+        path: 'luplink',
+        children: [
+            { path: 'welcome', component: WelcomeComponent },
+            { path: '', component: LayoutComponent },
+            { path: 'diagram', component: SynthesisComponent },
+            { path: 'results', component: ResultsComponent },
+        ],
+    },
+    { path: '', redirectTo: 'luplink', pathMatch: 'full' },
+];
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwLnJvdXRlcy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uL3Byb2plY3RzL25neC1sdXBsaW5rL3NyYy9saWIvdWkvYXBwLnJvdXRlcy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQSxPQUFPLEVBQUUsZ0JBQWdCLEVBQUUsTUFBTSw0REFBNEQsQ0FBQztBQUM5RixPQUFPLEVBQUUsa0JBQWtCLEVBQUUsTUFBTSw2Q0FBNkMsQ0FBQztBQUVqRixPQUFPLEVBQUUsZ0JBQWdCLEVBQUUsTUFBTSx5Q0FBeUMsQ0FBQztBQUMzRSxPQUFPLEVBQUUsZUFBZSxFQUFFLE1BQU0sZ0NBQWdDLENBQUM7QUFFakUsaUVBQWlFO0FBQ2pFLE1BQU0sQ0FBQyxNQUFNLE1BQU0sR0FBVztJQUM1QjtRQUNFLElBQUksRUFBRSxTQUFTO1FBQ2YsUUFBUSxFQUFFO1lBQ1IsRUFBRSxJQUFJLEVBQUUsU0FBUyxFQUFFLFNBQVMsRUFBRSxnQkFBZ0IsRUFBRTtZQUNoRCxFQUFFLElBQUksRUFBRSxFQUFFLEVBQUUsU0FBUyxFQUFFLGVBQWUsRUFBRTtZQUN4QyxFQUFFLElBQUksRUFBRSxTQUFTLEVBQUUsU0FBUyxFQUFFLGtCQUFrQixFQUFFO1lBQ2xELEVBQUUsSUFBSSxFQUFFLFNBQVMsRUFBRSxTQUFTLEVBQUUsZ0JBQWdCLEVBQUU7U0FDakQ7S0FDRjtJQUNELEVBQUUsSUFBSSxFQUFFLEVBQUUsRUFBRSxVQUFVLEVBQUUsU0FBUyxFQUFFLFNBQVMsRUFBRSxNQUFNLEVBQUU7Q0FFdkQsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFJvdXRlcyB9IGZyb20gJ0Bhbmd1bGFyL3JvdXRlcic7XG5pbXBvcnQgeyBSZXN1bHRzQ29tcG9uZW50IH0gZnJvbSAnLi4vY29tcG9uZW50cy9yZXN1bHRzL2NvbXBvbmVudHMvcmVzdWx0cy9yZXN1bHRzLmNvbXBvbmVudCc7XG5pbXBvcnQgeyBTeW50aGVzaXNDb21wb25lbnQgfSBmcm9tICcuLi9jb21wb25lbnRzL3N5bnRoZXNpcy9zeW50aGVzaXMuY29tcG9uZW50JztcbmltcG9ydCB7IFN5bnRoZXNpc01vZHVsZSB9IGZyb20gJy4uL2NvbXBvbmVudHMvc3ludGhlc2lzL3N5bnRoZXNpcy5tb2R1bGUnO1xuaW1wb3J0IHsgV2VsY29tZUNvbXBvbmVudCB9IGZyb20gJy4uL2NvbXBvbmVudHMvd2VsY29tZS93ZWxjb21lLmNvbXBvbmVudCc7XG5pbXBvcnQgeyBMYXlvdXRDb21wb25lbnQgfSBmcm9tICcuL2xpbmstYnVkZ2V0L2xheW91dC5jb21wb25lbnQnO1xuXG4vLyBodHRwczovL2dpdGh1Yi5jb20vd2VzbGV5Z3JpbWVzL2FuZ3VsYXItcm91dGluZy1iZXN0LXByYWN0aWNlc1xuZXhwb3J0IGNvbnN0IHJvdXRlczogUm91dGVzID0gW1xuICB7XG4gICAgcGF0aDogJ2x1cGxpbmsnLFxuICAgIGNoaWxkcmVuOiBbXG4gICAgICB7IHBhdGg6ICd3ZWxjb21lJywgY29tcG9uZW50OiBXZWxjb21lQ29tcG9uZW50IH0sXG4gICAgICB7IHBhdGg6ICcnLCBjb21wb25lbnQ6IExheW91dENvbXBvbmVudCB9LFxuICAgICAgeyBwYXRoOiAnZGlhZ3JhbScsIGNvbXBvbmVudDogU3ludGhlc2lzQ29tcG9uZW50IH0sXG4gICAgICB7IHBhdGg6ICdyZXN1bHRzJywgY29tcG9uZW50OiBSZXN1bHRzQ29tcG9uZW50IH0sXG4gICAgXSxcbiAgfSxcbiAgeyBwYXRoOiAnJywgcmVkaXJlY3RUbzogJ2x1cGxpbmsnLCBwYXRoTWF0Y2g6ICdmdWxsJyB9LFxuXG5dO1xuIl19

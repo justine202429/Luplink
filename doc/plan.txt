@@ -1,0 +1,104 @@
+
+
+But : 
+- interfeca ergo a dev
+- code metier a réutiliser (python linkpredict... ou autre)
+reference de base: AMSAT
+
+en parallèle, regarder: 
+- version dynamique du linkbudget
+- documentation
+- test unitaire / fonctionnel / non regression
+- test echec...
+- standard - json 
+
+
+dans un second temps: 
+- dockerisation
+- deploiement sur machines de test (MV / voire server)
+
+
+A court terme : 
+ - test lib existantes
+ - propose 1er squelette d'interface
+ - tester les install (jsatorb - version docker + luplink GUI)
+ - exploration techno / note technique
+
+
+
+
+Satorb
+https://sourceforge.isae.fr/projects/miniproject_intro_space_systems
+installeur
+-> spec produit minimum
+
+Exo : faire un link budget de "reference"
+
+Outils
+
+technos
+-Angular
+-DOCKER 
+-REACT ?
+-raw JS ?
+
+gitlab 
+ -repo [tag] msg explicite
+ - issues dashboard
+
+Prototype actuel: 
+NSS/nanospace-tutorial/material/src-python $
+NSS/link-budget-nss
+https://sourceforge.isae.fr/git/link-budget-nss
+-> front end angular
+https://sourceforge.isae.fr/git/nanospace-tutorial
+branch demo
+-> API REST python
+
+
+basée sur luplink/Dosa :
+	url = https://sourceforge.isae.fr/git/dosa_link_budget_analysis
+et dev :
+// luplink : 
+	url = https://openforge.isae.fr/git/luplink
+
+ref en remplacement/merge
+=> Arthurc Scholtz
+    URL 
+
+
+
+Demo (Stand Alone)
+=============
+cd ~/git/NSS/link-budget-nss
+ng serve 
+
+cd ~/git/NSS/nanospace-tutorial/material/src-python
+python3 LinkBudgetAnalysisREST.py
+(-> branch demo !!!)
+
+firefox -new-tab -url http://localhost:4200/
+
+
+=======================
+JSATORB
+https://gitlab.isae-supaero.fr/nanostar/jsatorb/-/tree/stable
+docker-compose
+
+===========================
+NSS
+(culture G)
+
+===========================
+JSATROB - CESIUM - LITE
+sourceforge.isae.fr/projects/jsatorb-all (tout le projet)
+avec un deployer dockerisé sous: sourceforge.isae.fr/projects/jsatorb-docker-demo/repository
+
+bash load-docker-images.bash
+bash jsatorb-start.bash
+
+
+
+
+
+

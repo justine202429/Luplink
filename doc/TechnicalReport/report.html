@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>report.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="meta">Meta</h1>
+<ul>
+<li>Markdown PDF extension for VSCode</li>
+</ul>
+<h1 id="what-framework">What Framework ?</h1>
+<p>Angular for now but what about new versions and compatibilities ? Is it broken each time ? Which version ? 11 released in november 2020, will be replaced in May 2021 but will be kept under LTS until May 2022</p>
+<p>Would it be easier to use Vue.js or React ?</p>
+<p><img src="./src/graph.png" alt="Comparison of Vue, React and Angular in terms of GH stars"></p>
+<ul>
+<li><strong>Angular</strong>, provides good abstraction, forces good coding practices, seems adapted to the objectives
+<em>For later reference : https://angular.io/guide/styleguide</em></li>
+</ul>
+<p>Alternatives:</p>
+<ul>
+<li>Vue.js (https://fr.vuejs.org/v2/guide/comparison.html) (<strong>pros</strong>: easier, lighter / <strong>cons</strong>: harder to test )</li>
+<li>React (FB)</li>
+</ul>
+<p><em>More or less the same functionalities, probably easier to stay on angular at first</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Angular</th>
+<th>React</th>
+<th>Vue.js</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maintained by</td>
+<td>Google</td>
+<td>Facebook</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>pros</strong></td>
+<td>Lots of functionnalities out of the box</td>
+<td></td>
+<td>Extensive built-in capabilities</td>
+</tr>
+<tr>
+<td></td>
+<td>Convenient to refactor old code</td>
+<td></td>
+<td>Really Light</td>
+</tr>
+<tr>
+<td></td>
+<td>Better reusability of components</td>
+<td></td>
+<td>Convenient to use</td>
+</tr>
+<tr>
+<td><strong>cons</strong></td>
+<td>High threshold of entry</td>
+<td>Not a complete framework but instead alibray, more time consuming. 3rd party tools might become outdates, adds cost to development</td>
+<td>Runtime errors frequent and frustrating (linked to convenience of usage)</td>
+</tr>
+<tr>
+<td></td>
+<td>Lot of conceptual overhead / Considered a bit over-engineered</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>https://sloboda-studio.com/blog/the-ultimate-comparison-angular-vs-react-vs-vue/</p>
+<p>https://itnext.io/dont-be-afraid-and-just-ng-update-1ad096147640</p>
+<p>Clean code should not be too much of an issue to maintain. Angular updates happend regularly, at fixed times and aren't too much breaking. Google is known for closing projects, yet Angular has a big user base and is MIT-licensed so it should be fine.</p>
+<p>No real outcomer, choice might end up being based on personal preferences. It would be interesting to build the next version in Vue.js to see both approaches.</p>
+<h1 id="styling">Styling</h1>
+<p>Angular handles SCSS natively. SCSS extends the capabilities of CSS. What can it do ? https://sass-lang.com/guide. License MIT</p>
+<p>SCSS provides inheritance, variables &amp; operators. This can come in handy to make the CSS much cleaner. DRY (Don't Repeat Yourself) philosophy.</p>
+<p>How to learn : https://learnxinyminutes.com/docs/sass/</p>
+<p><strong>Summary of advantages of SCSS</strong> : no overhead work (already well-handled), more readability, intuitive to understand (no formation required it seems), cleaner CSS.</p>
+<h1 id="what-css-framework">What CSS framework ?</h1>
+<p>Complicated choice, lots of possibilities, should test them on personal projects before deciding.</p>
+<p>They often provide similar capabilities. I'm currently hesitating between Bulma (fresher &amp; lighter, gaining lot of momentum, no JS) and Boostrap (more users but can be considered a bit bland, requires JQuery)</p>
+<p>ngx-bootstrap / ng-bootstrap : two different teams working on similar goals, making Bootstrap usable without jQuery for angular / couldn't get ngx to work and ng isn't working with Angular 11</p>
+<p>Material Design ? Not sure if this is adapted, looks modern but takes a lot of space. Material Design Lite as an alternative</p>
+<p>-&gt; From the nanospace-client-lib README, bootstrap might be required for displaying (<nano-nanospace-input>) components</p>
+<h1 id="diagrams">Diagrams</h1>
+<p>The use of SVGs is suitable : robust, easy to create / edit programmatically.
+Adding annotations is a bit more problematic : text positionning in SVG can be tricky. A first solution is to use absolute positionning and DIV elements. This is <strong>a first solution</strong></p>
+<p>The next question is &quot;how to make it scalable?&quot;, this seems doable using JavaScript.</p>
+<h1 id="others">Others</h1>
+<p><strong>Popper.js</strong>, handles tool-tips positioning and overflowing for us, open source (included in bootstrap.<strong>bundle</strong>.min.js), used by BS for dropdowns menus</p>
+<p>ngx-nanospace-client-lib depends on <strong>'@fortawesome/free-solid-svg-icons'</strong> et <strong>'@fortawesome/angular-fontawesome'</strong> this is open-source yet they have pro plans and such. Are we allowed to release something using these ? #TODO understand TOS</p>
+<p>installation : ng add @fortawesome/free-solid-svg-icons @fortawesome/angular-fontawesome ngx-nanospace-client-lib #TODO move this to some README
+<strong>/!\ REALLY IMPORTANT /!\ : Don't ever forget to import FormsModule along with nanospace-client-lib if you don't want an useless error message haunt you for way too long. Refer to ngx-nanospace-client-lib README and strictly follow it!</strong></p>
+<p><strong>To test:</strong> Alternatively, we can use foreign elements inside the SVG (https://stackoverflow.com/questions/6725288/svg-text-inside-rect)</p>
+<h1 id="building-the-interface">Building the interface</h1>
+<h2 id="v0"><strong>V0</strong></h2>
+<h3 id="card-layout">Card layout</h3>
+<p>All fine, some issues with positioning for ultra-wide monitors.</p>
+<h3 id="sidebar"><strong>Sidebar</strong></h3>
+<p>There was the idea of using a sidebar to show calculation at all times. At first, tried to add a column but too complex, not possible to use as a component. Tried implementing it with classic HTML, some result but not ideal I think.</p>
+<p>ng-sidebar exists but not actively maintained.</p>
+<p>angular-material has sidenav which seems to fit the use case.</p>
+<p>-&gt;  <strong>Next</strong> : Clarify the need, is there another way to show it ? more adapted than a navbar</p>
+<p>Also this sidebar isn't responsive. #FIXME: add responsiveness to sidebar</p>
+<h3 id="forms"><strong>Forms</strong></h3>
+<p><strong>Units:</strong>
+Two ways to represent units, with each its perks. I'll probably put a global variable somewhere allowing to switch from one to another while I'm not sure.</p>
+<p><em>Also should an input field be a component ?</em> (https://dev.to/tsuzukayama/angular-5---how-many-components-is-too-many-components--2l9c). These inputs require setting a unit and some logic so it might be a good idea to make it into a component.</p>
+<p>On a side note, I think building the forms from .json assets would be interesting. This adds reusability and would result in probably cleaner components for a small added complexity</p>
+<p>==</p>
+<p>In angular there are two techniques to create forms : template-driven and reactive.</p>
+<table>
+<thead>
+<tr>
+<th>Template-Driven</th>
+<th>Reactive</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Asynchronous</td>
+<td>Mostly Synchronous</td>
+</tr>
+<tr>
+<td>Logic driving by template</td>
+<td>Logic in component</td>
+</tr>
+<tr>
+<td>Legacy</td>
+<td>Modern</td>
+</tr>
+<tr>
+<td>Limited to e2e tests</td>
+<td>Form validation can be unit tested</td>
+</tr>
+<tr>
+<td>adapted to small/medium forms</td>
+<td>A bit overkill for small forms</td>
+</tr>
+</tbody>
+</table>
+<p>(reference: https://blog.angular-university.io/introduction-to-angular-2-forms-template-driven-vs-model-driven/)</p>
+<p>From this comparison, it appears clear that Reactive is the way to go as it is more adapted for complex forms.</p>
+<p>==</p>
+<p>The data is split into many sub-forms. I started to implement it before stumbling upon this example which corresponds to our goal: https://itnext.io/partial-reactive-form-with-angular-components-443ca06d8419
+https://coryrylan.com/blog/building-reusable-forms-in-angular
+https://medium.com/angular-in-depth/angular-nested-reactive-forms-using-cvas-b394ba2e5d0d (composite Control Value Accessors)</p>
+<p>This will require a bit more thought than initially expected. The main solutions for this would be:</p>
+<ul>
+<li>Parent to child communication with @Input and @Ouputs</li>
+<li>Communication using RxJs and services</li>
+<li>Making sure every form has a same common parent</li>
+</ul>
+<p>The child-parent solutions would have some impact on the layout. It would also become really confusing real quick with these chains of @Inputs/@Outputs.</p>
+<p>Using services seems like the obvious solution after some comparison. However using RxJs is not simple.</p>
+<p>Merging Observables : https://github.com/ReactiveX/rxjs/issues/1308</p>
+<p>https://angular.io/guide/dynamic-form</p>
+<p>-&gt; ArrayForms handles multiple FormGroup thus allowing to get notified from each change in forms.</p>
+<p>Next problem : Routing destroys components. We have to make form data persistent.
+Ideas :</p>
+<ul>
+<li>Recover the state on tab change</li>
+<li>Don't use routing (make a full-page form and hide sections as required)</li>
+<li>RouteReuseStrategy -&gt; This works but this doesn't feel totally right. #FIXME: Go back here, clean up and find if it's still a good idea</li>
+</ul>
+<p>https://github.com/angular/angular/issues/5275 -&gt; see RouteReuseStrategy / Sticky routes
+https://samerabdelkafi.wordpress.com/2020/12/14/angular-rout-with-sticky-state/
+https://medium.com/@disane1987/angular-router-and-tab-based-navigation-within-a-spa-c0a8ca2b3bc4
+This can be handled more easily by UI-Router library</p>
+<p><strong>Finally have something working for the form, maybe a bit convoluted, should compare with other frameworks</strong></p>
+<p><em>How to handle data not entered ?</em></p>
+<p>We cannot guess, in the future persistance of data, possibility to import. Right now maybe some generic data automatically inputed to save time when using the interface.</p>
+<ul>
+<li>import inputs from a file (will be useful later)</li>
+<li>construct the JSON request from this</li>
+</ul>
+<p><strong>In the end, all data will be known, whether the components are created or not</strong></p>
+<h2 id="v1"><strong>V1</strong></h2>
+<p>Here goes some ideas for next iteration of the interface</p>
+<ul>
+<li>Try using Vue.js</li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+#Mockup uplink used to compare different budget link tools
+
+Parameters :
+
+===
+650km circular orbit
+146Mhz uplink frequency
+10° minimum angle
+2045km slant range (calculated by AMSAT)
+
+===
+[G/S transmitter system] 
+10W
+2.79dB cable losses
+1.7 dB connectors losses
+0.5dB antenna mismatch
+
+===
+[Sat receiver system]
+
+0.87dB total in-line losses from antenna to LNA (including 0.1dB from directional coupler and 0.5dB from connectors)
+233.15K Antenna/Sky Temp
+280K S/C Temp
+66.78 LNA Temp
+20dB LNA gain
+400K 2nd stage Temp
+
+312.4 System Noise Temperature (Ts) : Calculated by AMSAT
+
+[U/L antenna system]
+G/S : RHCP Yagi 14.0dBiC 35.0° beamwidth 2 meters
+S/C : Linear Monopole 2.15dBiL w/ 156.2° beamwidth
+
+[Pointing Losses]
+Estimated pointing error @ G/S : 10°
+@S/C : 0° until AMSAT calculation is understood (and then 30°)
+
+[Atmospheric / Polarization losses]
+
+X-polarization : 3dB //Optional for now?
+1.1dB (atm gases)
+0.4dB (ionosphere @146Mhz)
+
+[Modulation/Demodulation]
+
+AFSK/FM BER 10e-5 required Eb/N0 23.2dB w/ 1.0 dB implementation loss
+
+
+============================================
+For dynamic LB, should use trajectory data from existing nanosat

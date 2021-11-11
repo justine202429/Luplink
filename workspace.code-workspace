@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "link-budget-nss-v0/docker"
+		},
+		{
+			"path": "link-budget-nss-v0/e2e"
+		},
+		{
+			"path": "link-budget-nss-v0/src"
+		}
+	]
+}

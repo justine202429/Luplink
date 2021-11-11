@@ -1,0 +1,57 @@
+<div class="columns is-fullheight">
+  <lib-navigation-sidebar class="column is-narrow" [currentComponent]="this.componentId"></lib-navigation-sidebar>
+  <div class="columns is-fullheight">
+   <div class="column p-0">
+    <section class="section pt-2">
+
+    <lib-stepbar [validity]="this.validity" [step]="this.currentStep"></lib-stepbar>
+
+      <div class="columns is-multiline" *ngIf="this.componentId !== 'results'">
+        <div class="column is-half">
+          <lib-card [title]="'Import from JSatOrb'" *ngIf="!this.isStandalone && this.componentId == 'geometry'">
+            <lib-luplink-jsatorb-import></lib-luplink-jsatorb-import>
+          </lib-card>
+          <lib-card [title]="this.componentName">
+            <lib-form (formStatus)="handleError($event)" [formTemplate]="this.currentTemplate"></lib-form>
+          </lib-card>
+          <lib-card  [title]="'Atmosphere'" [ngClass]="{
+              'is-hidden': !hasAtmCard
+            }">
+            <lib-form (formStatus)="handleError($event)" [formTemplate]="this.atmosphere"></lib-form>
+          </lib-card>
+        </div>
+        <div class="column is-half">
+          <lib-card [title]="antennaName" [ngClass]="{
+              'is-hidden': !hasAntennaCard
+            }">
+            <lib-form (formStatus)="handleError($event)" [formTemplate]="currentAntenna"></lib-form>
+          </lib-card>
+          <lib-card [title]="'Documentation'" [ngClass]="{
+              'is-hidden': hasAntennaCard
+            }">
+            <lib-simple-documentation [component]="this.componentId"></lib-simple-documentation>
+          </lib-card>
+        </div>
+      </div>
+      <lib-card [title]="'Documentation'" [ngClass]="{
+          'is-hidden': (!hasAntennaCard || this.componentId === 'results')
+        }">
+        <lib-simple-documentation [component]="this.componentId"></lib-simple-documentation>
+      </lib-card>
+    </section>
+  </div>
+  
+  <div class="column p-0 is-one-quarter">
+    <div class="section pl-0">
+    <lib-result-sidebar></lib-result-sidebar>
+    </div>
+  </div>
+  <div class="column pl-0 is-one-fifth" *ngIf="this.logger.developer">
+    <pre >{{ formService.globalForm.value | json }}</pre>
+  </div>
+</div>
+</div>
+<!-- <lib-navigation-sidebar [currentComponent]="this.componentId"></lib-navigation-sidebar>
+<lib-card [title]="this.componentName">
+  <lib-form (formStatus)="handleError($event)" [formTemplate]="this.currentTemplate"></lib-form>
+</lib-card> -->

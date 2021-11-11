@@ -1,0 +1,144 @@
+<div class="columns">
+  <lib-navigation-sidebar class="column is-narrow" [currentComponent]="'welcome'"></lib-navigation-sidebar>
+  <div class="column pl-0 pr-5">
+    <section class="pt-3">
+      <h2>Welcome to Luplink</h2>
+      <p>Start importing data from JSatOrb or use default data to compute a link budget!</p>
+      <!-- <a class="button">
+        <div class="file-input">
+          <input id="file" class="file" type="file" accept=".json">
+        </div>
+        Dummy import
+      </a> -->
+      <div class="columns is-centered">
+        <div class="column is-two-thirds">
+
+          <!-- <input id="file" class="file" type="file" accept=".jso" #file (change)="importJSatOrbData(file.files)"> -->
+          <lib-card [title]="'Import data from JSatOrb'">
+
+            <div style="display: flex; justify-content: space-around; align-items: center;">
+              <a class="button is-primary">
+                <div class="file-input">
+                  <input id="file" class="file" type="file" accept=".jso" #file
+                    (change)="importJSatOrbData(file.files)">
+                  <!-- <label for="file" class="btn btn-primary btn-file">Import</label> -->
+                </div>
+                Load JSatOrb file (.jso)
+              </a>
+              <div style="text-align:center">
+                <p>Imported project: <b>{{this.jsoData.title}}</b><br>Satellites:
+                  <b>({{this.jsoData.satellites?.length}})</b><br>Groundstations:
+                  <b>({{this.jsoData.groundStations?.length}})</b>
+                </p>
+              </div>
+            </div>
+          </lib-card>
+          <lib-card [title]="'Satellite & Groundstation selection'">
+            <div class="column">
+              <p><i>Choose a satellite and a groundstation to import: </i></p>
+              <!-- <div class="columns">
+                <div class="column">
+
+                  <table>
+                    <thead>
+                      <td>Satellites</td>
+                      <td>Characteristics</td>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let satellite of this.data.satellites">
+                        <td>{{satellite.name}}</td>
+                        <td>{{satellite.type}}</td>
+                        <td>
+                          <a class="button" type="button" (click)="this.selectedSatellite = satellite">Select</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="column">
+                  <table>
+                    <thead>
+                      <td>Stations</td>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let station of this.data.groundStations">
+                        <td>{{station.name}}</td>
+                        <td>
+                          <a class="button" type="button" (click)="this.selectedStation = station">Select</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div> -->
+              <form class="form" [formGroup]="this.jsoForm" (ngSubmit)="useSelectedData()">
+                <div class="field is-horizontal">
+                  <div class="field-body">
+                    <div class="field">
+                      <div class="label">Satellite:</div>
+                      <div class="select is-fullwidth">
+                        <select formControlName="satellite">
+                          <option *ngFor="let satellite of this.jsoData.satellites" [ngValue]="satellite">
+                            {{satellite.name}}</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="field is-expanded">
+                      <div class="label">Station:</div>
+                      <div class="select is-fullwidth">
+                        <select formControlName="station">
+                          <option *ngFor="let station of this.jsoData.groundStations" [ngValue]="station">
+                            {{station.name}}
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="field-body">
+                  <div class="label">
+                    <!-- Empty space -->
+                  </div>
+                  <div class="field is-grouped is-grouped-right">
+                    <div class="control">
+                      <button type="submit" class="button is-primary">Import</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <h3>Selected Satellite:</h3>
+            <pre>{{selectedSatellite | json}}</pre>
+            <div *ngIf="selectedSatellite">
+              <p><b>Semi-Major Axis (SMA):</b> {{((selectedSatellite.sma)).toPrecision(3)}}</p>
+              <p><b>Excentricity:</b> {{selectedSatellite.ecc}}</p>
+              <p><b>Minimum Altitude: {{((1-selectedSatellite.ecc)*selectedSatellite.sma).toPrecision(3)}} km</b></p>
+              <p><b>Maximum Altitude (imported into geometry):
+                  {{((1+selectedSatellite.ecc)*selectedSatellite.sma).toPrecision(3)}} km</b></p>
+
+              <!-- <p><b>Mean Altitude: {{(selectedSatellite.sma).toPrecision(3)}} km</b></p> -->
+            </div>
+            <h3>Selected groundstation</h3>
+            <pre>{{selectedStation | json}}</pre>
+            <div *ngIf="selectedStation">
+              <p><b>Elevation:</b> {{(selectedStation.elevation).toPrecision(3)}}</p>
+            </div>
+            <!-- <a class="button is-primary" type="button" (click)="useSelectedData()">Import</a> -->
+          </lib-card>
+
+
+        </div>
+
+        <!-- <a class="button" routerLink="" href="" (click)="importJSatOrbData()"></a> -->
+        <div class="column" *ngIf="this.environment.enableNanospace">
+          <lib-card [title]="'Import from Nanospace'">
+            <div style="display: inline-flex">
+              <nano-dropdown-project></nano-dropdown-project>
+              <nano-input-id></nano-input-id>
+            </div>
+          </lib-card>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

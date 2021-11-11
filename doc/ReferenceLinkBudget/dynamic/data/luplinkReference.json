@@ -1,0 +1,78 @@
+{
+    "SPACECRAFT_TRANSMITTER": {
+        "SC_loss_connector_tx": "0.5", 
+        "SC_ant_gain_tx": "2.15", 
+        "SC_loss_feeder_tx": "0", 
+        "SC_loss_cable_tx": "0.5292", 
+        "SC_misc": "0.85", 
+        "SC_power_tx": "-3", 
+        "SC_loss_point_tx": "3"
+    }, 
+    "SPACECRAFT_RECEIVER": {
+        "SC_ant_gain_rx": "2.15", 
+        "SC_loss_connector_rx": "0.6", 
+        "SC_LNA_gain": "20", 
+        "SC_NF_rx": "3.16", 
+        "SC_loss_point_rx": "0", 
+        "SC_G_T": "-22.6", 
+        "SC_noise_T": "624.4", 
+        "SC_loss_cable_rx": "0.27"
+    }, 
+    "GROUNDSTATION_LOCATION": {
+        "GS_altitude": "0", 
+        "GS_minElevation": "10"
+    }, 
+    "SPACECRAFT_FLIGHT_DYNAMICS": {
+        "SC_altitude": "650"
+    }, 
+    "DOWNLINK": {
+        "data_rate": "1200", 
+        "mod_sym": "2", 
+        "T_rx": "200", 
+        "fromBER_BPSKrequierment": "11.6", 
+        "cortL_bandwidth": "152.05", 
+        "frequency": "437e6", 
+        "margin": "0", 
+        "code_rate": "0.5"
+    }, 
+    "GROUND_STATION_RECEIVER": {
+        "GS_loss_point_rx": "0.9", 
+        "GS_loss_connector_rx": "0.7", 
+        "GS_noise_T": "200", 
+        "GS_G_T": "0", 
+        "GS_loss_cable_rx": "0.81", 
+        "GS_loss_cable_D_rx": "4.1", 
+        "GS_NF": "0", 
+        "GS_ant_gain_rx": "14.0"
+    }, 
+    "PROPAGATION_LOSSES": {
+        "loss_cloud": "0", 
+        "loss_scin": "0.4", 
+        "loss_si": "0.0", 
+        "loss_pol": "3", 
+        "loss_atm": "1.1", 
+        "loss_misc": "0.0", 
+        "loss_rain": "0"
+    }, 
+    "GROUND_STATION_TRANSMITTER": {
+        "GS_power_tx": "10", 
+        "GS_loss_point_rx": "0.9", 
+        "GS_ant_gain_tx": "14.0", 
+        "GS_line_loss_tx": "2.79", 
+        "GS_loss_connector_tx": "2.2"
+    }, 
+    "UPLINK": {
+        "data_rate": "1200", 
+        "mod_sym": "2", 
+        "T_rx": "300", 
+        "frequency": "146e6", 
+        "margin": "0", 
+        "code_rate": "0.5", 
+        "fromBER_AFSKrequierment": "23.2"
+    }, 
+    "CONSTANTS": {
+        "c": "299792458", 
+        "radius_earth": "6378.136", 
+        "k_dB": "-228.6"
+    }
+}

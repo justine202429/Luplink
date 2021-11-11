@@ -1,0 +1,1094 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="413.08594mm"
+   height="362.27341mm"
+   viewBox="0 0 413.08594 362.2734"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="inputHierarchy.svg"
+   inkscape:export-filename="/home/julien/Documents/_Supaero/_Nanostar/stage-2021-julien_prissimitzis/doc/TechnicalReport/src/inputHierarchy.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.6218471"
+     inkscape:cx="842.75548"
+     inkscape:cy="459.32202"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g1430"
+     showgrid="false"
+     fit-margin-top="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5"
+     fit-margin-left="5"
+     inkscape:window-width="1920"
+     inkscape:window-height="1047"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(228.04344,61.215791)">
+    <g
+       id="g2127"
+       transform="translate(-225.92973,-2.1273995)">
+      <g
+         id="g845">
+        <rect
+           style="fill:none;stroke:#0e232e;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect815"
+           width="210.95886"
+           height="113.43871"
+           x="3.4017856"
+           y="5.5803566" />
+        <flowRoot
+           xml:space="preserve"
+           id="flowRoot817"
+           style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+           transform="matrix(0.26458333,0,0,0.26458333,1.1339286,0.37797619)"><flowRegion
+             id="flowRegion819"
+             style="font-size:29.33333397px"><rect
+               id="rect821"
+               width="322.01361"
+               height="45.706539"
+               x="12.857142"
+               y="21.091112"
+               style="font-size:29.33333397px" /></flowRegion><flowPara
+             id="flowPara823">LinkBudget (option 1)</flowPara></flowRoot>      </g>
+      <g
+         id="g845-6"
+         transform="translate(5.3861611,15.686014)">
+        <g
+           transform="translate(138.51994,2.1951341)"
+           id="g886">
+          <g
+             id="g878">
+            <rect
+               style="fill:none;stroke:#9ade00;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               id="rect815-7"
+               width="64.066956"
+               height="92.98214"
+               x="2.6458333"
+               y="3.8794637" />
+          </g>
+          <flowRoot
+             transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"
+             style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#009100;fill-opacity:1;stroke:none"
+             id="flowRoot817-5"
+             xml:space="preserve"><flowRegion
+               style="font-size:29.33333397px;fill:#009100"
+               id="flowRegion819-3"><rect
+                 style="font-size:29.33333397px;fill:#009100"
+                 y="21.091112"
+                 x="12.857142"
+                 height="36.428574"
+                 width="213.57143"
+                 id="rect821-5" /></flowRegion><flowPara
+               id="flowPara823-6">U/L</flowPara></flowRoot>        </g>
+        <g
+           transform="translate(68.513275,1.8898813)"
+           id="g886-2">
+          <g
+             style="stroke:#ff9900"
+             id="g878-9">
+            <rect
+               style="fill:none;stroke:#ff9900;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               id="rect815-7-1"
+               width="64.066956"
+               height="92.98214"
+               x="2.6458333"
+               y="3.8794637" />
+          </g>
+          <flowRoot
+             transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"
+             style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ff6600;fill-opacity:1;stroke:none"
+             id="flowRoot817-5-2"
+             xml:space="preserve"><flowRegion
+               style="font-size:29.33333397px;fill:#ff6600"
+               id="flowRegion819-3-7"><rect
+                 style="font-size:29.33333397px;fill:#ff6600"
+                 y="21.091112"
+                 x="12.857142"
+                 height="36.428574"
+                 width="213.57143"
+                 id="rect821-5-0" /></flowRegion><flowPara
+               id="flowPara823-6-9">D/L</flowPara></flowRoot>        </g>
+        <g
+           transform="translate(-1.7008832,1.8898813)"
+           id="g886-0">
+          <g
+             id="g978">
+            <g
+               style="stroke:#19aeff"
+               id="g878-6">
+              <rect
+                 y="3.8794637"
+                 x="2.6458333"
+                 height="45.767143"
+                 width="64.066956"
+                 id="rect815-7-2"
+                 style="fill:none;stroke:#19aeff;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+            </g>
+            <flowRoot
+               xml:space="preserve"
+               id="flowRoot817-5-6"
+               style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#005c94;fill-opacity:1;stroke:none"
+               transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"><flowRegion
+                 id="flowRegion819-3-1"
+                 style="font-size:29.33333397px;fill:#005c94"><rect
+                   id="rect821-5-8"
+                   width="213.57143"
+                   height="36.428574"
+                   x="12.857142"
+                   y="21.091112"
+                   style="font-size:29.33333397px;fill:#005c94" /></flowRegion><flowPara
+                 id="flowPara823-6-7">Geometry</flowPara></flowRoot>          </g>
+          <g
+             id="g978-9"
+             transform="translate(0.3894922,48.816634)">
+            <g
+               id="g878-6-2">
+              <rect
+                 y="3.8794637"
+                 x="2.6458333"
+                 height="44.339085"
+                 width="64.066956"
+                 id="rect815-7-2-0"
+                 style="fill:none;stroke:#9ade00;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+            </g>
+            <flowRoot
+               xml:space="preserve"
+               id="flowRoot817-5-6-2"
+               style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#009100;fill-opacity:1;stroke:none"
+               transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"><flowRegion
+                 id="flowRegion819-3-1-3"
+                 style="font-size:29.33333397px;fill:#009100"><rect
+                   id="rect821-5-8-7"
+                   width="213.57143"
+                   height="36.428574"
+                   x="12.857142"
+                   y="21.091112"
+                   style="font-size:29.33333397px;fill:#009100" /></flowRegion><flowPara
+                 id="flowPara823-6-7-5">Atmosphere</flowPara></flowRoot>          </g>
+          <g
+             id="g978-92"
+             transform="translate(73.327376,11.512259)">
+            <g
+               transform="translate(0.1889881,6.4255953)"
+               id="g1052">
+              <g
+                 id="g878-6-28"
+                 style="stroke:#19aeff">
+                <rect
+                   style="fill:none;stroke:#9eabb0;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                   id="rect815-7-2-9"
+                   width="57.641361"
+                   height="18.741844"
+                   x="2.6458333"
+                   y="3.8794637" />
+              </g>
+              <flowRoot
+                 transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"
+                 style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0e232e;fill-opacity:1;stroke:none"
+                 id="flowRoot817-5-6-7"
+                 xml:space="preserve"><flowRegion
+                   style="font-size:29.33333397px;fill:#0e232e"
+                   id="flowRegion819-3-1-36"><rect
+                     style="font-size:29.33333397px;fill:#0e232e"
+                     y="21.091112"
+                     x="12.857142"
+                     height="36.428574"
+                     width="213.57143"
+                     id="rect821-5-8-1" /></flowRegion><flowPara
+                   id="flowPara823-6-7-2">Carrier</flowPara></flowRoot>            </g>
+            <g
+               id="g1052-9"
+               transform="translate(0.56696304,32.946402)">
+              <g
+                 id="g878-6-28-3"
+                 style="stroke:#19aeff">
+                <rect
+                   style="fill:none;stroke:#9eabb0;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                   id="rect815-7-2-9-1"
+                   width="57.641361"
+                   height="18.741844"
+                   x="2.6458333"
+                   y="3.8794637" />
+              </g>
+              <flowRoot
+                 transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"
+                 style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0e232e;fill-opacity:1;stroke:none"
+                 id="flowRoot817-5-6-7-9"
+                 xml:space="preserve"><flowRegion
+                   style="font-size:29.33333397px;fill:#0e232e"
+                   id="flowRegion819-3-1-36-4"><rect
+                     style="font-size:29.33333397px;fill:#0e232e"
+                     y="21.091112"
+                     x="12.857142"
+                     height="36.428574"
+                     width="213.57143"
+                     id="rect821-5-8-1-7" /></flowRegion><flowPara
+                   id="flowPara823-6-7-2-8">Tx</flowPara></flowRoot>            </g>
+            <g
+               id="g1052-4"
+               transform="translate(0.03242398,57.568176)">
+              <g
+                 id="g878-6-28-5"
+                 style="stroke:#19aeff">
+                <rect
+                   style="fill:none;stroke:#9eabb0;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                   id="rect815-7-2-9-0"
+                   width="57.641361"
+                   height="18.741844"
+                   x="2.6458333"
+                   y="3.8794637" />
+              </g>
+              <flowRoot
+                 transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"
+                 style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0e232e;fill-opacity:1;stroke:none"
+                 id="flowRoot817-5-6-7-3"
+                 xml:space="preserve"><flowRegion
+                   style="font-size:29.33333397px;fill:#0e232e"
+                   id="flowRegion819-3-1-36-6"><rect
+                     style="font-size:29.33333397px;fill:#0e232e"
+                     y="21.091112"
+                     x="12.857142"
+                     height="36.428574"
+                     width="213.57143"
+                     id="rect821-5-8-1-1" /></flowRegion><flowPara
+                   id="flowPara823-6-7-2-0">Rx</flowPara></flowRoot>            </g>
+            <g
+               transform="translate(69.94617,5.9201143)"
+               id="g1052-6">
+              <g
+                 id="g878-6-28-32"
+                 style="stroke:#19aeff">
+                <rect
+                   style="fill:none;stroke:#9eabb0;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                   id="rect815-7-2-9-06"
+                   width="57.641361"
+                   height="18.741844"
+                   x="2.6458333"
+                   y="3.8794637" />
+              </g>
+              <flowRoot
+                 transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"
+                 style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0e232e;fill-opacity:1;stroke:none"
+                 id="flowRoot817-5-6-7-1"
+                 xml:space="preserve"><flowRegion
+                   style="font-size:29.33333397px;fill:#0e232e"
+                   id="flowRegion819-3-1-36-5"><rect
+                     style="font-size:29.33333397px;fill:#0e232e"
+                     y="21.091112"
+                     x="12.857142"
+                     height="36.428574"
+                     width="213.57143"
+                     id="rect821-5-8-1-5" /></flowRegion><flowPara
+                   id="flowPara823-6-7-2-4">Carrier</flowPara></flowRoot>            </g>
+            <g
+               id="g1052-9-7"
+               transform="translate(70.324146,32.44092)">
+              <g
+                 id="g878-6-28-3-6"
+                 style="stroke:#19aeff">
+                <rect
+                   style="fill:none;stroke:#9eabb0;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                   id="rect815-7-2-9-1-5"
+                   width="57.641361"
+                   height="18.741844"
+                   x="2.6458333"
+                   y="3.8794637" />
+              </g>
+              <flowRoot
+                 transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"
+                 style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0e232e;fill-opacity:1;stroke:none"
+                 id="flowRoot817-5-6-7-9-6"
+                 xml:space="preserve"><flowRegion
+                   style="font-size:29.33333397px;fill:#0e232e"
+                   id="flowRegion819-3-1-36-4-9"><rect
+                     style="font-size:29.33333397px;fill:#0e232e"
+                     y="21.091112"
+                     x="12.857142"
+                     height="36.428574"
+                     width="213.57143"
+                     id="rect821-5-8-1-7-3" /></flowRegion><flowPara
+                   id="flowPara823-6-7-2-8-7">Tx</flowPara></flowRoot>            </g>
+            <g
+               id="g1052-4-4"
+               transform="translate(69.789608,57.062695)">
+              <g
+                 id="g878-6-28-5-5"
+                 style="stroke:#19aeff">
+                <rect
+                   style="fill:none;stroke:#9eabb0;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                   id="rect815-7-2-9-0-2"
+                   width="57.641361"
+                   height="18.741844"
+                   x="2.6458333"
+                   y="3.8794637" />
+              </g>
+              <flowRoot
+                 transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"
+                 style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0e232e;fill-opacity:1;stroke:none"
+                 id="flowRoot817-5-6-7-3-5"
+                 xml:space="preserve"><flowRegion
+                   style="font-size:29.33333397px;fill:#0e232e"
+                   id="flowRegion819-3-1-36-6-4"><rect
+                     style="font-size:29.33333397px;fill:#0e232e"
+                     y="21.091112"
+                     x="12.857142"
+                     height="36.428574"
+                     width="213.57143"
+                     id="rect821-5-8-1-1-7" /></flowRegion><flowPara
+                   id="flowPara823-6-7-2-0-4">Rx</flowPara></flowRoot>            </g>
+          </g>
+          <g
+             transform="translate(51.895064,-67.485551)"
+             id="g1590-4">
+            <g
+               transform="translate(8.0122378,207.24079)"
+               id="g1306-8-8" />
+            <g
+               transform="translate(8.7223343,0.21273986)"
+               id="g1753">
+              <g
+                 transform="translate(8.0122385,207.24079)"
+                 id="g1289-6-9" />
+            </g>
+          </g>
+          <flowRoot
+             transform="matrix(0.26458333,0,0,0.26458333,-11.214465,-17.21018)"
+             style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+             id="flowRoot2016"
+             xml:space="preserve"><flowRegion
+               style="font-size:16px;line-height:1.25"
+               id="flowRegion2018"><rect
+                 style="font-size:16px;line-height:1.25"
+                 y="130.94527"
+                 x="57.992466"
+                 height="109.16229"
+                 width="220.59879"
+                 id="rect2020" /></flowRegion><flowPara
+               id="flowPara2022">3 options :</flowPara><flowPara
+               id="flowPara2024" /><flowPara
+               id="flowPara2026">-Slant range</flowPara><flowPara
+               id="flowPara2030">- Max distance + min elevation</flowPara><flowPara
+               id="flowPara2034">- Orbit params + GS position</flowPara></flowRoot>          <g
+             transform="translate(5.08785,156.62745)"
+             id="g978-7">
+            <g
+               style="stroke:#19aeff"
+               id="g878-6-1">
+              <rect
+                 y="3.8794637"
+                 x="2.6458333"
+                 height="40.235909"
+                 width="57.684761"
+                 id="rect815-7-2-7"
+                 style="fill:none;stroke:#9eabb0;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+            </g>
+            <flowRoot
+               xml:space="preserve"
+               id="flowRoot817-5-6-27"
+               style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0e232e;fill-opacity:1;stroke:none"
+               transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"><flowRegion
+                 id="flowRegion819-3-1-2"
+                 style="font-size:29.33333397px;fill:#0e232e"><rect
+                   id="rect821-5-8-2"
+                   width="213.57143"
+                   height="36.428574"
+                   x="12.857142"
+                   y="21.091112"
+                   style="font-size:29.33333397px;fill:#0e232e" /></flowRegion><flowPara
+                 id="flowPara823-6-7-6">Geometry</flowPara></flowRoot>          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g2006"
+       transform="translate(0,-15.644699)">
+      <g
+         id="g1896">
+        <g
+           id="g1430"
+           transform="translate(24.252344,-182.5308)">
+          <g
+             id="g1052-8"
+             transform="translate(9.4257257,157.33113)">
+            <g
+               id="g1306">
+              <g
+                 id="g878-6-28-4"
+                 style="stroke:#19aeff">
+                <rect
+                   style="fill:none;stroke:#9eabb0;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                   id="rect815-7-2-9-3"
+                   width="53.954113"
+                   height="58.330742"
+                   x="2.6458333"
+                   y="3.8794637" />
+              </g>
+              <g
+                 id="g1289">
+                <flowRoot
+                   xml:space="preserve"
+                   id="flowRoot817-5-6-7-14"
+                   style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0e232e;fill-opacity:1;stroke:none"
+                   transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"><flowRegion
+                     id="flowRegion819-3-1-36-9"
+                     style="font-size:29.33333397px;fill:#0e232e"><rect
+                       id="rect821-5-8-1-2"
+                       width="206.08191"
+                       height="208.38937"
+                       x="12.857142"
+                       y="21.091112"
+                       style="font-size:29.33333397px;fill:#0e232e" /></flowRegion><flowPara
+                     id="flowPara1252">Carrier :</flowPara></flowRoot>                <flowRoot
+                   xml:space="preserve"
+                   id="flowRoot1261"
+                   style="font-style:normal;font-weight:normal;font-size:18.66666603px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+                   transform="matrix(0.26458333,0,0,0.26458333,-10.762074,-157.06386)"><flowRegion
+                     id="flowRegion1263"
+                     style="font-size:18.66666603px;line-height:1.25"><rect
+                       id="rect1265"
+                       width="192.77121"
+                       height="162.6969"
+                       x="64.649765"
+                       y="657.84949"
+                       style="font-size:18.66666603px;line-height:1.25" /></flowRegion><flowPara
+                     id="flowPara1267">- Frequency</flowPara><flowPara
+                     id="flowPara1269">- Bandwidth</flowPara><flowPara
+                     id="flowPara1271">- BER</flowPara><flowPara
+                     id="flowPara1273">- Desired symbol rate</flowPara><flowPara
+                     id="flowPara1275">- ...</flowPara></flowRoot>              </g>
+            </g>
+          </g>
+          <g
+             transform="translate(1.6449898,16.64408)"
+             id="g1590">
+            <g
+               transform="translate(8.0122378,207.24079)"
+               id="g1306-8">
+              <g
+                 id="g878-6-28-4-9"
+                 style="stroke:#19aeff">
+                <rect
+                   style="fill:none;stroke:#9eabb0;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                   id="rect815-7-2-9-3-2"
+                   width="137.28767"
+                   height="57.495922"
+                   x="2.6458333"
+                   y="3.8794637" />
+              </g>
+              <g
+                 id="g1289-6">
+                <flowRoot
+                   xml:space="preserve"
+                   id="flowRoot817-5-6-7-14-6"
+                   style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0e232e;fill-opacity:1;stroke:none"
+                   transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"><flowRegion
+                     id="flowRegion819-3-1-36-9-4"
+                     style="font-size:29.33333397px;fill:#0e232e"><rect
+                       id="rect821-5-8-1-2-9"
+                       width="206.08191"
+                       height="208.38937"
+                       x="12.857142"
+                       y="21.091112"
+                       style="font-size:29.33333397px;fill:#0e232e" /></flowRegion><flowPara
+                     id="flowPara1252-5">Tx</flowPara></flowRoot>                <flowRoot
+                   xml:space="preserve"
+                   id="flowRoot1261-0"
+                   style="font-style:normal;font-weight:normal;font-size:18.66666603px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+                   transform="matrix(0.26458333,0,0,0.26458333,-10.494804,-153.32209)"><flowRegion
+                     id="flowRegion1263-4"
+                     style="font-size:18.66666603px;line-height:1.25"><rect
+                       id="rect1265-8"
+                       width="273.5834"
+                       height="144.51416"
+                       x="64.649765"
+                       y="657.84949"
+                       style="font-size:18.66666603px;line-height:1.25" /></flowRegion><flowPara
+                     id="flowPara1275-7">Architecture of the Tx chain:</flowPara><flowPara
+                     id="flowPara1493"> </flowPara><flowPara
+                     id="flowPara1487">Power in, </flowPara><flowPara
+                     id="flowPara1489">In-line losses, amplification, </flowPara><flowPara
+                     id="flowPara1491">Antenna</flowPara></flowRoot>              </g>
+            </g>
+            <g
+               id="g1518"
+               transform="translate(-48.910324,0.53453906)">
+              <g
+                 id="g1539">
+                <flowRoot
+                   xml:space="preserve"
+                   id="flowRoot1261-0-5"
+                   style="font-style:normal;font-weight:normal;font-size:18.66666603px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+                   transform="matrix(0.26458333,0,0,0.26458333,117.6429,56.006471)"><flowRegion
+                     id="flowRegion1263-4-6"
+                     style="font-size:18.66666603px;line-height:1.25"><rect
+                       id="rect1265-8-3"
+                       width="232.16714"
+                       height="159.66644"
+                       x="64.649765"
+                       y="657.84949"
+                       style="font-size:18.66666603px;line-height:1.25" /></flowRegion><flowPara
+                     id="flowPara1275-7-9">- Type</flowPara><flowPara
+                     id="flowPara1475">- Associated parameters</flowPara><flowPara
+                     id="flowPara1483">- Polarization</flowPara><flowPara
+                     id="flowPara1479">- Depointing (?)</flowPara><flowPara
+                     id="flowPara1481">-&gt; outputs gain</flowPara></flowRoot>                <g
+                   transform="translate(126.54071,213.55194)"
+                   id="g978-9-9">
+                  <g
+                     id="g878-6-2-7">
+                    <rect
+                       style="fill:none;stroke:#9ade00;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                       id="rect815-7-2-0-7"
+                       width="64.066956"
+                       height="44.339085"
+                       x="2.6458333"
+                       y="3.8794637" />
+                  </g>
+                  <flowRoot
+                     transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"
+                     style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#009100;fill-opacity:1;stroke:none"
+                     id="flowRoot817-5-6-2-6"
+                     xml:space="preserve"><flowRegion
+                       style="font-size:29.33333397px;fill:#009100"
+                       id="flowRegion819-3-1-3-7"><rect
+                         style="font-size:29.33333397px;fill:#009100"
+                         y="21.091112"
+                         x="12.857142"
+                         height="36.428574"
+                         width="213.57143"
+                         id="rect821-5-8-7-3" /></flowRegion><flowPara
+                       id="flowPara823-6-7-5-6">Antenna</flowPara></flowRoot>                </g>
+              </g>
+            </g>
+          </g>
+          <g
+             transform="translate(-60.418121,133.60063)"
+             id="g1320">
+            <g
+               id="g878-6-28-4-9-1"
+               style="stroke:#19aeff"
+               transform="translate(72.314913,157.54387)">
+              <rect
+                 style="fill:none;stroke:#9eabb0;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 id="rect815-7-2-9-3-2-2"
+                 width="133.03287"
+                 height="57.495922"
+                 x="2.6458333"
+                 y="3.8794637" />
+            </g>
+            <flowRoot
+               xml:space="preserve"
+               id="flowRoot817-5-6-7-14-6-3"
+               style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0e232e;fill-opacity:1;stroke:none"
+               transform="matrix(0.26458333,0,0,0.26458333,73.070868,156.59893)"><flowRegion
+                 id="flowRegion819-3-1-36-9-4-9"
+                 style="font-size:29.33333397px;fill:#0e232e"><rect
+                   id="rect821-5-8-1-2-9-0"
+                   width="206.08191"
+                   height="208.38937"
+                   x="12.857142"
+                   y="21.091112"
+                   style="font-size:29.33333397px;fill:#0e232e" /></flowRegion><flowPara
+                 id="flowPara1252-5-8">Rx</flowPara></flowRoot>            <flowRoot
+               xml:space="preserve"
+               id="flowRoot1261-0-8"
+               style="font-style:normal;font-weight:normal;font-size:18.66666603px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+               transform="matrix(0.26458333,0,0,0.26458333,61.82011,4.2217841)"><flowRegion
+                 id="flowRegion1263-4-5"
+                 style="font-size:18.66666603px;line-height:1.25"><rect
+                   id="rect1265-8-0"
+                   width="273.5834"
+                   height="144.51416"
+                   x="64.649765"
+                   y="657.84949"
+                   style="font-size:18.66666603px;line-height:1.25" /></flowRegion><flowPara
+                 id="flowPara1275-7-96">Architecture of the Tx chain:</flowPara><flowPara
+                 id="flowPara1493-3"> </flowPara><flowPara
+                 id="flowPara1487-8">Power in,</flowPara><flowPara
+                 id="flowPara1755">Temp Noise ! </flowPara><flowPara
+                 id="flowPara1489-5">In-line losses, amplification, </flowPara><flowPara
+                 id="flowPara1491-6">Antenna</flowPara></flowRoot>            <g
+               id="g1518-1"
+               transform="translate(15.392352,-49.162378)">
+              <g
+                 id="g1539-1">
+                <flowRoot
+                   xml:space="preserve"
+                   id="flowRoot1261-0-5-5"
+                   style="font-style:normal;font-weight:normal;font-size:18.66666603px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+                   transform="matrix(0.26458333,0,0,0.26458333,117.6429,56.006471)"><flowRegion
+                     id="flowRegion1263-4-6-9"
+                     style="font-size:18.66666603px;line-height:1.25"><rect
+                       id="rect1265-8-3-8"
+                       width="232.16714"
+                       height="159.66644"
+                       x="64.649765"
+                       y="657.84949"
+                       style="font-size:18.66666603px;line-height:1.25" /></flowRegion><flowPara
+                     id="flowPara1275-7-9-4">- Type</flowPara><flowPara
+                     id="flowPara1475-8">- Associated parameters</flowPara><flowPara
+                     id="flowPara1483-1">- Polarization</flowPara><flowPara
+                     id="flowPara1479-0">- Depointing (?)</flowPara><flowPara
+                     id="flowPara1481-3">-&gt; outputs gain</flowPara></flowRoot>                <g
+                   transform="translate(126.54071,213.55194)"
+                   id="g978-9-9-0">
+                  <g
+                     id="g878-6-2-7-4">
+                    <rect
+                       style="fill:none;stroke:#9ade00;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                       id="rect815-7-2-0-7-4"
+                       width="61.0886"
+                       height="46.679222"
+                       x="2.6458333"
+                       y="3.8794637" />
+                  </g>
+                  <flowRoot
+                     transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"
+                     style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#009100;fill-opacity:1;stroke:none"
+                     id="flowRoot817-5-6-2-6-4"
+                     xml:space="preserve"><flowRegion
+                       style="font-size:29.33333397px;fill:#009100"
+                       id="flowRegion819-3-1-3-7-4"><rect
+                         style="font-size:29.33333397px;fill:#009100"
+                         y="21.091112"
+                         x="12.857142"
+                         height="36.428574"
+                         width="213.57143"
+                         id="rect821-5-8-7-3-7" /></flowRegion><flowPara
+                       id="flowPara823-6-7-5-6-6">Antenna</flowPara></flowRoot>                </g>
+              </g>
+            </g>
+          </g>
+          <g
+             id="g845-4"
+             transform="translate(1.2338289,137.41418)">
+            <g
+               transform="translate(-1.0690781)"
+               id="g1215">
+              <rect
+                 y="5.5803566"
+                 x="3.4017856"
+                 height="215.15305"
+                 width="151.7081"
+                 id="rect815-3"
+                 style="fill:none;stroke:#9ade00;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+              <flowRoot
+                 transform="matrix(0.26458333,0,0,0.26458333,1.1339286,0.37797619)"
+                 style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#009100;fill-opacity:1;stroke:none"
+                 id="flowRoot817-0"
+                 xml:space="preserve"><flowRegion
+                   style="font-size:29.33333397px;fill:#009100"
+                   id="flowRegion819-7"><rect
+                     style="font-size:29.33333397px;fill:#009100"
+                     y="21.091112"
+                     x="12.857142"
+                     height="36.428574"
+                     width="213.57143"
+                     id="rect821-8" /></flowRegion><flowPara
+                   id="flowPara823-68">U/L or D/L</flowPara></flowRoot>            </g>
+          </g>
+        </g>
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.76499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M -79.377796,35.277911 27.244391,-39.849687"
+           id="path1434"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cc" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.76499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M -79.377796,128.26005 27.818878,175.61678"
+           id="path1436"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cc" />
+      </g>
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2008"
+       style="font-style:normal;font-weight:normal;font-size:53.33333588px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-134.43791,0.91581604)"><flowRegion
+         id="flowRegion2010"
+         style="font-size:53.33333588px"><rect
+           id="rect2012"
+           width="1664.8545"
+           height="62.312325"
+           x="-350.07788"
+           y="1056.3888"
+           style="font-size:53.33333588px" /></flowRegion><flowPara
+         id="flowPara2014"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:53.33333588px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle">Hierarchy of Inputs</flowPara></flowRoot>    <g
+       id="g2127-3"
+       transform="translate(-224.17253,139.19565)">
+      <g
+         id="g845-67">
+        <rect
+           style="fill:none;stroke:#0e232e;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect815-5"
+           width="210.95886"
+           height="113.43871"
+           x="3.4017856"
+           y="5.5803566" />
+        <flowRoot
+           xml:space="preserve"
+           id="flowRoot817-3"
+           style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+           transform="matrix(0.26458333,0,0,0.26458333,1.1339286,0.37797619)"><flowRegion
+             id="flowRegion819-5"
+             style="font-size:29.33333397px"><rect
+               id="rect821-6"
+               width="305.93246"
+               height="37.665977"
+               x="12.857142"
+               y="21.091112"
+               style="font-size:29.33333397px" /></flowRegion><flowPara
+             id="flowPara823-2">LinkBudget (option 2)</flowPara></flowRoot>      </g>
+      <g
+         id="g845-6-9"
+         transform="translate(5.3861611,15.686014)">
+        <g
+           transform="translate(138.51994,2.1951341)"
+           id="g886-1">
+          <g
+             id="g878-2">
+            <rect
+               style="fill:none;stroke:#9ade00;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               id="rect815-7-7"
+               width="64.066956"
+               height="92.98214"
+               x="2.6458333"
+               y="3.8794637" />
+          </g>
+          <flowRoot
+             transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"
+             style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#009100;fill-opacity:1;stroke:none"
+             id="flowRoot817-5-0"
+             xml:space="preserve"><flowRegion
+               style="font-size:29.33333397px;fill:#009100"
+               id="flowRegion819-3-9"><rect
+                 style="font-size:29.33333397px;fill:#009100"
+                 y="21.091112"
+                 x="12.857142"
+                 height="36.428574"
+                 width="213.57143"
+                 id="rect821-5-3" /></flowRegion><flowPara
+               id="flowPara823-6-6">U/L</flowPara></flowRoot>        </g>
+        <g
+           transform="translate(68.513275,1.8898813)"
+           id="g886-2-0">
+          <g
+             style="stroke:#ff9900"
+             id="g878-9-6">
+            <rect
+               style="fill:none;stroke:#ff9900;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               id="rect815-7-1-2"
+               width="64.066956"
+               height="92.98214"
+               x="2.6458333"
+               y="3.8794637" />
+          </g>
+          <flowRoot
+             transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"
+             style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ff6600;fill-opacity:1;stroke:none"
+             id="flowRoot817-5-2-6"
+             xml:space="preserve"><flowRegion
+               style="font-size:29.33333397px;fill:#ff6600"
+               id="flowRegion819-3-7-1"><rect
+                 style="font-size:29.33333397px;fill:#ff6600"
+                 y="21.091112"
+                 x="12.857142"
+                 height="36.428574"
+                 width="213.57143"
+                 id="rect821-5-0-8" /></flowRegion><flowPara
+               id="flowPara823-6-9-7">D/L</flowPara></flowRoot>        </g>
+        <g
+           transform="translate(-1.7008832,1.8898813)"
+           id="g886-0-9">
+          <g
+             id="g978-2">
+            <g
+               style="stroke:#19aeff"
+               id="g878-6-0">
+              <rect
+                 y="3.8794637"
+                 x="2.6458333"
+                 height="94.205536"
+                 width="64.066956"
+                 id="rect815-7-2-2"
+                 style="fill:none;stroke:#19aeff;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+            </g>
+            <flowRoot
+               xml:space="preserve"
+               id="flowRoot817-5-6-3"
+               style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#005c94;fill-opacity:1;stroke:none"
+               transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"><flowRegion
+                 id="flowRegion819-3-1-7"
+                 style="font-size:29.33333397px;fill:#005c94"><rect
+                   id="rect821-5-8-5"
+                   width="213.57143"
+                   height="36.428574"
+                   x="12.857142"
+                   y="21.091112"
+                   style="font-size:29.33333397px;fill:#005c94" /></flowRegion><flowPara
+                 id="flowPara823-6-7-9">Path</flowPara></flowRoot>          </g>
+          <g
+             id="g978-92-2"
+             transform="translate(73.327376,11.512259)">
+            <g
+               transform="translate(0.1889881,6.4255953)"
+               id="g1052-93">
+              <g
+                 id="g878-6-28-1"
+                 style="stroke:#19aeff">
+                <rect
+                   style="fill:none;stroke:#9eabb0;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                   id="rect815-7-2-9-9"
+                   width="57.641361"
+                   height="18.741844"
+                   x="2.6458333"
+                   y="3.8794637" />
+              </g>
+              <flowRoot
+                 transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"
+                 style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0e232e;fill-opacity:1;stroke:none"
+                 id="flowRoot817-5-6-7-4"
+                 xml:space="preserve"><flowRegion
+                   style="font-size:29.33333397px;fill:#0e232e"
+                   id="flowRegion819-3-1-36-7"><rect
+                     style="font-size:29.33333397px;fill:#0e232e"
+                     y="21.091112"
+                     x="12.857142"
+                     height="36.428574"
+                     width="213.57143"
+                     id="rect821-5-8-1-8" /></flowRegion><flowPara
+                   id="flowPara823-6-7-2-45">Carrier</flowPara></flowRoot>            </g>
+            <g
+               id="g1052-9-0"
+               transform="translate(0.56696304,32.946402)">
+              <g
+                 id="g878-6-28-3-3"
+                 style="stroke:#19aeff">
+                <rect
+                   style="fill:none;stroke:#9eabb0;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                   id="rect815-7-2-9-1-6"
+                   width="57.641361"
+                   height="18.741844"
+                   x="2.6458333"
+                   y="3.8794637" />
+              </g>
+              <flowRoot
+                 transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"
+                 style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0e232e;fill-opacity:1;stroke:none"
+                 id="flowRoot817-5-6-7-9-1"
+                 xml:space="preserve"><flowRegion
+                   style="font-size:29.33333397px;fill:#0e232e"
+                   id="flowRegion819-3-1-36-4-0"><rect
+                     style="font-size:29.33333397px;fill:#0e232e"
+                     y="21.091112"
+                     x="12.857142"
+                     height="36.428574"
+                     width="213.57143"
+                     id="rect821-5-8-1-7-6" /></flowRegion><flowPara
+                   id="flowPara823-6-7-2-8-3">Tx</flowPara></flowRoot>            </g>
+            <g
+               id="g1052-4-2"
+               transform="translate(0.03242398,57.568176)">
+              <g
+                 id="g878-6-28-5-0"
+                 style="stroke:#19aeff">
+                <rect
+                   style="fill:none;stroke:#9eabb0;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                   id="rect815-7-2-9-0-6"
+                   width="57.641361"
+                   height="18.741844"
+                   x="2.6458333"
+                   y="3.8794637" />
+              </g>
+              <flowRoot
+                 transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"
+                 style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0e232e;fill-opacity:1;stroke:none"
+                 id="flowRoot817-5-6-7-3-1"
+                 xml:space="preserve"><flowRegion
+                   style="font-size:29.33333397px;fill:#0e232e"
+                   id="flowRegion819-3-1-36-6-5"><rect
+                     style="font-size:29.33333397px;fill:#0e232e"
+                     y="21.091112"
+                     x="12.857142"
+                     height="36.428574"
+                     width="213.57143"
+                     id="rect821-5-8-1-1-5" /></flowRegion><flowPara
+                   id="flowPara823-6-7-2-0-47">Rx</flowPara></flowRoot>            </g>
+            <g
+               transform="translate(69.94617,5.9201143)"
+               id="g1052-6-6">
+              <g
+                 id="g878-6-28-32-5"
+                 style="stroke:#19aeff">
+                <rect
+                   style="fill:none;stroke:#9eabb0;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                   id="rect815-7-2-9-06-6"
+                   width="57.641361"
+                   height="18.741844"
+                   x="2.6458333"
+                   y="3.8794637" />
+              </g>
+              <flowRoot
+                 transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"
+                 style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0e232e;fill-opacity:1;stroke:none"
+                 id="flowRoot817-5-6-7-1-9"
+                 xml:space="preserve"><flowRegion
+                   style="font-size:29.33333397px;fill:#0e232e"
+                   id="flowRegion819-3-1-36-5-3"><rect
+                     style="font-size:29.33333397px;fill:#0e232e"
+                     y="21.091112"
+                     x="12.857142"
+                     height="36.428574"
+                     width="213.57143"
+                     id="rect821-5-8-1-5-7" /></flowRegion><flowPara
+                   id="flowPara823-6-7-2-4-4">Carrier</flowPara></flowRoot>            </g>
+            <g
+               id="g1052-9-7-5"
+               transform="translate(70.324146,32.44092)">
+              <g
+                 id="g878-6-28-3-6-2"
+                 style="stroke:#19aeff">
+                <rect
+                   style="fill:none;stroke:#9eabb0;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                   id="rect815-7-2-9-1-5-5"
+                   width="57.641361"
+                   height="18.741844"
+                   x="2.6458333"
+                   y="3.8794637" />
+              </g>
+              <flowRoot
+                 transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"
+                 style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0e232e;fill-opacity:1;stroke:none"
+                 id="flowRoot817-5-6-7-9-6-4"
+                 xml:space="preserve"><flowRegion
+                   style="font-size:29.33333397px;fill:#0e232e"
+                   id="flowRegion819-3-1-36-4-9-7"><rect
+                     style="font-size:29.33333397px;fill:#0e232e"
+                     y="21.091112"
+                     x="12.857142"
+                     height="36.428574"
+                     width="213.57143"
+                     id="rect821-5-8-1-7-3-4" /></flowRegion><flowPara
+                   id="flowPara823-6-7-2-8-7-4">Tx</flowPara></flowRoot>            </g>
+            <g
+               id="g1052-4-4-3"
+               transform="translate(69.789608,57.062695)">
+              <g
+                 id="g878-6-28-5-5-0"
+                 style="stroke:#19aeff">
+                <rect
+                   style="fill:none;stroke:#9eabb0;stroke-width:1.03100002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                   id="rect815-7-2-9-0-2-7"
+                   width="57.641361"
+                   height="18.741844"
+                   x="2.6458333"
+                   y="3.8794637" />
+              </g>
+              <flowRoot
+                 transform="matrix(0.26458333,0,0,0.26458333,0.75595241,-0.94494048)"
+                 style="font-style:normal;font-weight:normal;font-size:29.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0e232e;fill-opacity:1;stroke:none"
+                 id="flowRoot817-5-6-7-3-5-8"
+                 xml:space="preserve"><flowRegion
+                   style="font-size:29.33333397px;fill:#0e232e"
+                   id="flowRegion819-3-1-36-6-4-6"><rect
+                     style="font-size:29.33333397px;fill:#0e232e"
+                     y="21.091112"
+                     x="12.857142"
+                     height="36.428574"
+                     width="213.57143"
+                     id="rect821-5-8-1-1-7-8" /></flowRegion><flowPara
+                   id="flowPara823-6-7-2-0-4-8">Rx</flowPara></flowRoot>            </g>
+            <g
+               transform="translate(-70.1995,31.973288)"
+               id="g1052-93-6" />
+          </g>
+          <g
+             transform="translate(51.895064,-67.485551)"
+             id="g1590-4-4">
+            <g
+               transform="translate(8.0122378,207.24079)"
+               id="g1306-8-8-3" />
+            <g
+               transform="translate(8.7223343,0.21273986)"
+               id="g1753-1">
+              <g
+                 transform="translate(8.0122385,207.24079)"
+                 id="g1289-6-9-4" />
+            </g>
+          </g>
+          <flowRoot
+             transform="matrix(0.25270948,0,0,0.26458333,-7.3275407,-4.0203085)"
+             style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+             id="flowRoot2016-9"
+             xml:space="preserve"><flowRegion
+               style="font-size:16px;line-height:1.25"
+               id="flowRegion2018-2"><rect
+                 style="font-size:16px;line-height:1.25"
+                 y="130.94527"
+                 x="57.992466"
+                 height="109.16229"
+                 width="220.59879"
+                 id="rect2020-0" /></flowRegion><flowPara
+               id="flowPara2022-6">3 options :</flowPara><flowPara
+               id="flowPara2024-8" /><flowPara
+               id="flowPara2026-9">-Slant range</flowPara><flowPara
+               id="flowPara2030-2">- Max distance + min elevation</flowPara><flowPara
+               id="flowPara2034-6">- Orbit params + GS position</flowPara></flowRoot>          <flowRoot
+             transform="matrix(0.25270948,0,0,0.26458333,-0.17598084,36.345468)"
+             style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+             id="flowRoot2016-9-9"
+             xml:space="preserve"><flowRegion
+               style="font-size:16px;line-height:1.25"
+               id="flowRegion2018-2-0"><rect
+                 style="font-size:16px;line-height:1.25"
+                 y="130.94527"
+                 x="57.992466"
+                 height="109.16229"
+                 width="220.59879"
+                 id="rect2020-0-9" /></flowRegion><flowPara
+               id="flowPara2034-6-1">Atmosphere losses</flowPara><flowPara
+               id="flowPara1575">Polarization losses</flowPara><flowPara
+               id="flowPara1577">Depointing losses</flowPara></flowRoot>        </g>
+      </g>
+    </g>
+  </g>
+</svg>
