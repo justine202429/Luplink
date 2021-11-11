@@ -5,6 +5,8 @@
 
 *This is the **main readme** for the Luplink project* 
 
+*author:* Julien Prissimitzis
+
 ## **Introduction**
 
 Luplink is an open-source front-end application for link budget calculations based on the Angular framework. The user can input multiples parameters and luplink handles calculations with its API to compute the resulting link budget.
@@ -80,9 +82,9 @@ and open `http://localhost:81` in your browser.
 
 This is equivalent to
 ```bash
-docker run -p 80:80 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/stage/stage-2021-julien_prissimitzis/luplink-front:dev
+docker run -p 80:80 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/stage/luplink/luplink-front:dev
 
-docker run -p 8001:8001 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/stage/stage-2021-julien_prissimitzis/luplink-api:dev
+docker run -p 8001:8001 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/stage/luplink/luplink-api:dev
 ```
 
 
@@ -94,7 +96,7 @@ docker run -p 8001:8001 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/sta
 First, we need to clone this repository:
 
 ```bash
-git clone https://gitlab.isae-supaero.fr/jsatorb-dev/stage/stage-2021-julien_prissimitzis.git
+git clone https://gitlab.isae-supaero.fr/jsatorb-dev/stage/luplink.git
 ```
 ## **Installing the API**
 
@@ -248,7 +250,7 @@ After adding a feature, or fixing a bug, you can easily change the application v
 ### **ENOENT: no such file or directory**
 You might encounter this error while trying to serve the `luplink-app` project :
 
-`An unhandled exception occurred: ENOENT: no such file or directory, lstat '/home/.../stage-2021-julien_prissimitzis/luplink/node_modules/@luplink/ngx-luplink'
+`An unhandled exception occurred: ENOENT: no such file or directory, lstat '/home/.../luplink/luplink/node_modules/@luplink/ngx-luplink'
 See "/tmp/.../angular-errors.log" for further details.`
 
 
@@ -301,13 +303,15 @@ yum install nano
 
 ##################
 #or on local machine if internet access is not granted
-git clone https://gitlab.isae-supaero.fr/jsatorb-dev/stage/stage-2021-julien_prissimitzis.git
-scp -r stage-2021-julien_prissimitzis root@dcas-gt-dev01:./
+git clone https://gitlab.isae-supaero.fr/jsatorb-dev/luplink
+
+
+scp -r luplink root@myServer:./
 git clone https://github.com/nvm-sh/nvm.git/
-scp -r nvm root@dcas-gt-dev01:./
+scp -r nvm root@myServer:./
 ####################
 
-cd /root/stage-2021-julien_prissimitzis/API
+cd /root/luplink/API
 python3 test_API.py
 
 
@@ -317,13 +321,13 @@ source ~/.bashrc
 #check if ok
 command -v nvm
 
-echo "proxy = http://proxy.isae.fr:3128" >> ~/.curlrc
+echo "proxy = http://myproxy:3128" >> ~/.curlrc
 #check if ok
 cat ~/.curlrc
 
-cd /root/stage-2021-julien_prissimitzis/link-budget-nss-v0
-npm config set proxy http://proxy.isae.fr:3128
-npm config set https-proxy http://proxy.isae.fr:3128
+cd /root/luplink/link-budget-nss-v0
+npm config set proxy http://myproxy:3128
+npm config set https-proxy http://myproxy:3128
 npm view @angular/cli
 npm install -g @angular/cli@11.2.5
 npm install
@@ -331,7 +335,7 @@ npm audit fix
 
 
 #----------------------
-cd /root/stage-2021-julien_prissimitzis/link-budget-nss-v0
+cd /root/luplink/link-budget-nss-v0
 ng build --configuration production 
 sudo cp -r dist/* /var/www/html/
 #OR from local build 
@@ -339,7 +343,7 @@ cd && mkdir git && cd git
 git clone https://gitlab.isae-supaero.fr/jsatorb-dev/stage/dependencies.git
 sudo cp -r dist/* /var/www/html/
 #OR from docker build
-cd ~/git/dcas-soft-espace/stage-2021-julien_prissimitzis/build-tools
+cd ~/git/dcas-soft-espace/luplink/build-tools
 bash build-image.sh
 bash 
 #----------------------
@@ -356,7 +360,7 @@ nvm use 11
 npm install @angular/cli -g
 ```
 
-# With Apache on Fedora for ISAE-SUPAERO SI
+# With Apache on Fedora 
 
 ## application  deployment
 
@@ -364,14 +368,16 @@ npm install @angular/cli -g
 sudo yum update
 
 #required
-export http_proxy=http://proxy.isae.fr:3128
-export https_proxy=https://proxy.isae.fr:3128
+export http_proxy=http://proxy:3128
+export https_proxy=https://myproxy:3128
 sudo yum install git-all
 yum install python3
 yum -y install python3-pip
 sudo yum install wget
-git config --global http.proxy http://proxy.isae.fr:3128
-git clone https://gitlab.isae-supaero.fr/jsatorb-dev/stage/dependencies.git
+git config --global http.proxy http://myproxy:3128
+
+#compile dependencies on local machine and send it on the server
+scp -r me@myHost:luplink_path  root@myServer:./
 
 #Backend preparation
 cd ~/dependencies/API
@@ -454,7 +460,7 @@ on redhat distrib
 Description=Manage LinkBudgetAnalysisREST service
 
 [Service]
-WorkingDirectory=/root/git/stage-2021-julien_prissimitzis/API/
+WorkingDirectory=/root/git/luplink/API/
 ExecStart=/usr/bin/python3 LinkBudgetAnalysisREST.py
 User=root
 Type=simple
@@ -505,7 +511,7 @@ sudo journalctl -f --unit=httpd.service
 
 ### Backend
 ```
-cd /root/git/stage-2021-julien_prissimitzis/API
+cd /root/git/luplink/API
 python3 LinkBudgetAnalysisREST.py
 ```
 
@@ -538,8 +544,8 @@ routing Appache ??
 Description=Manage LinkBudgetAnalysisREST service
 
 [Service]
-WorkingDirectory=/home/harak/git/stage-2021-julien_prissimitzis/API/
-ExecStart=/home/harak/git/stage-2021-julien_prissimitzis/luplink_env/bin/python LinkBudgetAnalysisREST.py
+WorkingDirectory=/home/harak/git/luplink/API/
+ExecStart=/home/harak/git/luplink/luplink_env/bin/python LinkBudgetAnalysisREST.py
 User=root
 Type=simple
 Restart=on-failure
@@ -630,9 +636,9 @@ bash run-luplink-standalone-docker.sh # launch both images
 
 To run the images manually from the container registry, you can also do:
 ```bash
-docker run -p 81:80 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/stage/stage-2021-julien_prissimitzis/luplink-front:dev # Frontend
+docker run -p 81:80 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/stage/luplink/luplink-front:dev # Frontend
 
-docker run -p 8001:8001 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/stage/stage-2021-julien_prissimitzis/luplink-api:dev # API
+docker run -p 8001:8001 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/stage/luplink/luplink-api:dev # API
 ```
 
 (To avoid typing sudo password each time when using Docker, the current $USER must be added to the docker group :
