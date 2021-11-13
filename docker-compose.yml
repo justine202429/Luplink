@@ -1,7 +1,7 @@
 version: '3.0'
 services:
   front-end:
-    image: "gitlab-registry.isae-supaero.fr/jsatorb-dev/stage/stage-2021-julien_prissimitzis/luplink-front:dev"
+    image: "gitlab-registry.isae-supaero.fr/jsatorb-dev/luplink/luplink-front:dev"
     ports:   
       - "81:80"
     restart: always
@@ -11,7 +11,7 @@ services:
       - '/var/cache/nginx'
       - '/usr/share/nginx/html'
   api:
-    image: gitlab-registry.isae-supaero.fr/jsatorb-dev/stage/stage-2021-julien_prissimitzis/luplink-api:dev
+    image: "gitlab-registry.isae-supaero.fr/jsatorb-dev/luplink/luplink-api:dev"
     ports:
       - "8001:8001"
     restart: always

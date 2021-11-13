@@ -82,9 +82,9 @@ and open `http://localhost:81` in your browser.
 
 This is equivalent to
 ```bash
-docker run -p 80:80 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/stage/luplink/luplink-front:dev
+docker run -p 80:80 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/luplink/luplink-front:dev
 
-docker run -p 8001:8001 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/stage/luplink/luplink-api:dev
+docker run -p 8001:8001 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/luplink/luplink-api:dev
 ```
 
 
@@ -96,7 +96,7 @@ docker run -p 8001:8001 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/sta
 First, we need to clone this repository:
 
 ```bash
-git clone https://gitlab.isae-supaero.fr/jsatorb-dev/stage/luplink.git
+git clone https://gitlab.isae-supaero.fr/jsatorb-dev/luplink.git
 ```
 ## **Installing the API**
 
@@ -636,9 +636,9 @@ bash run-luplink-standalone-docker.sh # launch both images
 
 To run the images manually from the container registry, you can also do:
 ```bash
-docker run -p 81:80 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/stage/luplink/luplink-front:dev # Frontend
+docker run -p 81:80 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/luplink/luplink-front:dev # Frontend
 
-docker run -p 8001:8001 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/stage/luplink/luplink-api:dev # API
+docker run -p 8001:8001 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/luplink/luplink-api:dev # API
 ```
 
 (To avoid typing sudo password each time when using Docker, the current $USER must be added to the docker group :
