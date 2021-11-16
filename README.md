@@ -148,6 +148,10 @@ npm install #Installs all the required packages
 
 To test the luplink and ngx-luplink (inside `luplink/` folder), there are multiples custom shorthands:
 
+```bash
+cd luplink
+```
+
 - Run integration tests and unit tests on both luplink standalone and ngx-luplink
   ```bash
   npm run test #This starts the API and run all the tests headless
