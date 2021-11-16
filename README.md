@@ -535,7 +535,6 @@ sudo ufw allow "WWW Full"
 ```
 routing Appache ??
 
-
 ### backend as a service
 
 ```
@@ -626,6 +625,7 @@ Default ports :
 - Luplink Standalone: **81**
 
 ## Building docker images
+
 The project contains several Dockerfiles.
 Containers are available in GitLab's container registry or can be generated using:
 
@@ -643,5 +643,14 @@ docker run -p 8001:8001 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/lup
 
 (To avoid typing sudo password each time when using Docker, the current $USER must be added to the docker group :
 ```sudo usermod -a -G docker $USER```)
+
+## closing all docker container
+
+```
+#stop all containers:
+docker kill $(docker ps -q)
+#remove all containers
+docker rm $(docker ps -a -q)
+```
 
 <!-- ## For Building -->
