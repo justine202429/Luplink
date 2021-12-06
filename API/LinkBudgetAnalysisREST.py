@@ -99,4 +99,7 @@ def notYetImplemented():
 backends = {"linkpredict": calculateLinkPredict, "luplink": notYetImplemented}
 
 if __name__ == "__main__":
-    bottle.run(host="0.0.0.0", port=8001, debug=True)
+    #bottle.run(host="0.0.0.0", port=8001, debug=True)
+    bottle.run(host="localhost", port=8001, debug=True)
+
+
