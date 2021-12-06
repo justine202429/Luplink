@@ -41,31 +41,47 @@ This project both exists as a **standalone application** and as a **library inte
   - [**Introduction**](#introduction)
 - [**Table Of Contents**](#table-of-contents)
 - [Getting started](#getting-started)
+  - [docker-compose](#docker-compose)
+  - [... or simple docker](#-or-simple-docker)
 - [Installation](#installation)
   - [**Installing the API**](#installing-the-api)
+  - [**Testing the API**](#testing-the-api)
+  - [**Installing the luplink-app frontend**](#installing-the-luplink-app-frontend)
+    - [**Node installation**](#node-installation)
+    - [**Angular installation**](#angular-installation)
+  - [**Testing**](#testing)
+- [Usage](#usage)
+- [For Developers:](#for-developers)
+  - [Project Structure](#project-structure)
+  - [Making changes to the application](#making-changes-to-the-application)
+  - [Testing](#testing-1)
   - [Contributing](#contributing)
   - [Troubleshooting](#troubleshooting)
     - [**ENOENT: no such file or directory**](#enoent-no-such-file-or-directory)
     - [**ENOSPC: System limit for number of file watchers reached**](#enospc-system-limit-for-number-of-file-watchers-reached)
 - [Integrating ngx-luplink within JSatorb](#integrating-ngx-luplink-within-jsatorb)
 - [Deployment](#deployment)
-  - [With_Apache](#with_apache)
+  - [confort commands](#confort-commands)
+- [Manual build](#manual-build)
+- [With Apache on Fedora](#with-apache-on-fedora)
+  - [application  deployment](#application-deployment)
+  - [Configure_Apache](#configure_apache)
     - [Troubleshooting:](#troubleshooting-1)
-- [With Apache on Fedora for ISAE-SUPAERO SI](#with-apache-on-fedora-for-isae-supaero-si)
   - [Create and run a service to manage the back-end](#create-and-run-a-service-to-manage-the-back-end)
   - [Trouble shooting](#trouble-shooting)
     - [localhost](#localhost)
     - [reload Front-End](#reload-front-end)
     - [restart Apache](#restart-apache)
-    - [restart Apache](#restart-apache-1)
+    - [Backend](#backend)
   - [On a debian server behind a firewall](#on-a-debian-server-behind-a-firewall)
     - [dependencies](#dependencies)
     - [backend as a service](#backend-as-a-service)
     - [apiEndPoint and firewall](#apiendpoint-and-firewall)
   - [With LiteServer](#with-liteserver)
+- [user on ssh dcas@dcas-luplink](#user-on-ssh-dcasdcas-luplink)
 - [Docker](#docker)
   - [Building docker images](#building-docker-images)
-  - [Docker-compose deploying JSatorb](#docker-compose-jsatorb)
+  - [Docker-compose deploying JSatorb](#docker-compose-deploying-jsatorb)
 
 
 # Getting started
@@ -100,6 +116,7 @@ First, we need to clone this repository:
 ```bash
 git clone https://gitlab.isae-supaero.fr/jsatorb-dev/luplink.git
 ```
+
 ## **Installing the API**
 
 In order to install the API in a virtual python environment, you can run:
@@ -110,11 +127,7 @@ source .luplink_env/bin/activate &&
 pip install -r requirements.txt 
 ```
 
-<!-- ```bash
-pip install -r requirements.txt
-``` -->
 This will install the required dependencies to run the backend.
-
 ## **Testing the API**
 
 ```bash
@@ -365,6 +378,34 @@ nvm alias default 12
 nvm use 11  
 npm install @angular/cli -g
 ```
+
+# Manual build
+
+Once the environment (Node+Angular CLI) has been installed (see [**Installing the luplink-app frontend**](#installing-the-luplink-app-frontend))
+
+We can first build the `ngx-luplink.tgz` package.
+
+Navigate to the `luplink/` folder and run
+
+```bash
+ng build --project=ngx-luplink --configuration=production
+```
+
+Then inside `luplink/dist/ngx-luplink` :
+```bash
+npm pack
+```
+This creates the requirez .tgz package for the library. Then, we can build the standalone application :
+
+Inside `luplink/` :
+```bash
+npm install dist/ngx-luplink/luplink-ngx-luplink-0.2.1.tgz
+
+ng build --project=luplink-app --configuration=production
+```
+
+The resulting build can be found inside `dist/luplink-app/`.
+The adress of the endpoint server can be changed before building the standalone applciation by editing the file `luplink/projects/luplink-app/src/environments/environment.prod.ts`
 
 # With Apache on Fedora 
 
@@ -668,8 +709,6 @@ docker run -p 7777:7777 -it --rm --name celestrak-json-proxy-container thib21/ce
 docker run -p 8000:8000 -it --rm -v "/home/$USER/JSatOrb/mission-data:/root/JSatOrb/mission-data"  jsatorb-backend:prod
 docker run -p 8001:8001 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/luplink/luplink-api:dev
 ```
-
-
 
 <!-- ## For Building -->
 
