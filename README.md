@@ -65,6 +65,8 @@ This project both exists as a **standalone application** and as a **library inte
   - [With LiteServer](#with-liteserver)
 - [Docker](#docker)
   - [Building docker images](#building-docker-images)
+  - [Docker-compose deploying JSatorb](#docker-compose-jsatorb)
+
 
 # Getting started
 
@@ -657,4 +659,36 @@ docker kill $(docker ps -q)
 docker rm $(docker ps -a -q)
 ```
 
+## Running docker images with JSatorb
+
+```
+#docker run -p 80:80 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/luplink/luplink-front:dev
+docker run -p 80:80 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/jsatorb/jsatorb-frontend-luplink:localhost
+docker run -p 7777:7777 -it --rm --name celestrak-json-proxy-container thib21/celestrak-json-proxy:dev
+docker run -p 8000:8000 -it --rm -v "/home/$USER/JSatOrb/mission-data:/root/JSatOrb/mission-data"  jsatorb-backend:prod
+docker run -p 8001:8001 -it --rm gitlab-registry.isae-supaero.fr/jsatorb-dev/luplink/luplink-api:dev
+```
+
+
+
 <!-- ## For Building -->
+
+## Docker-compose deploying JSatorb
+
+```
+# Get User ID and Group UID in two variables to be used in the Docker-compose file.
+export USER_ID=$(id --user) 
+export GROUP_UID=$(id --group)
+
+# Show user id and group uid values in console
+echo "USER_ID=$USER_ID"
+echo "GROUP_UID=$GROUP_UID"
+
+docker-compose -f docker-compose-JSatorb.yml up
+
+```
+
+
+
+
+
