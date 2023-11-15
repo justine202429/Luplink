@@ -1,0 +1,400 @@
+    1  cd
+    2  ls -la
+    3  git clone https://gitlab.isae-supaero.fr/jsatorb-dev/stage/stage-2021-julien_prissimitzis.git
+    4  find . -name "requir* -ls
+    5  find . -name "requir*" -ls
+    6  cat ./stage-2021-julien_prissimitzis/API/requirements.txt
+    7  cd stage-2021-julien_prissimitzis/luplink/
+    8  npm config set proxy http://proxy.isae.fr:3128
+    9  npm config set https-proxy http://proxy.isae.fr:3128
+   10  npm view @angular/cli
+   11  npm install -g @angular/cli@11.2.5
+   12  history
+   13  pwd
+   14  cd ../API/
+   15  python3 test_API.py 
+   16  pip3 install linkpredict
+   17  pip3 install --proxy=https://proxy.isae.fr:3128  linkpredict
+   18  python3 test_API.py 
+   19  exit
+   20  cd stage-2021-julien_prissimitzis/API/
+   21  python3 test_API.py 
+   22  python3 -m site --user-base
+   23  python3 test_API.py 
+   24  pip3 install --user --proxy=https://proxy.isae.fr:3128  linkpredict
+   25  python3 test_API.py 
+   26  pip3 install --user --proxy=https://proxy.isae.fr:3128  pint
+   27  python3 test_API.py 
+   28  cd ../luplink
+   29  ng build --configuration production
+   30  cd ..
+   31  ll
+   32  exit
+   33  pwd
+   34  git clone https://gitlab.isae-supaero.fr/jsatorb-dev/stage/dependencies.git
+   35  ls -la /var/www/html/
+   36  exit
+   37  ll
+   38  ls -la
+   39  rm -rf .local .cache
+   40  vi index.html
+   41  cp index.html /var/www/html/luplink/
+   42  ls -la /var/www/html/luplink/index.html
+   43  exit
+   44  ls -la /var/www/html/luplink/index.html
+   45  cp index.html /var/www/html/luplink/
+   46  ls -la /var/www/html/luplink/index.html
+   47  systemctl restart httpd
+   48  /usr/bin/systemctl restart httpd
+   49  exit
+   50  ll
+   51  ls -al
+   52  git clone https://gitlab.isae-supaero.fr/jsatorb-dev/stage/dependencies.git
+   53  ll 
+   54  ll dependencies/
+   55  cd dependencies/
+   56  ll
+   57  cd dist/
+   58  ll
+   59  cp -r * /var/www/html/luplink
+   60  systemctl start LinkBudgetAnalysisREST-dcas.service
+   61  sudo systemctl start LinkBudgetAnalysisREST-dcas.service
+   62  sudo systemctl status LinkBudgetAnalysisREST-dcas.service
+   63  sudo systemctl cat LinkBudgetAnalysisREST-dcas.service
+   64  cd 
+   65  pwd
+   66  sudo systemctl start LinkBudgetAnalysisREST-dcas.service
+   67  sudo systemctl status LinkBudgetAnalysisREST-dcas.service
+   68  sudo journalctl -f --unit=LinkBudgetAnalysisREST-dcas.service
+   69  ll
+   70  rm index.html 
+   71  ll dependencies/
+   72  vim /var/www/html/luplink/main.js 
+   73  sudo systemctl restart httpd
+   74  ls
+   75  cd dependencies/
+   76  ls
+   77  cd /var/www/html/luplink/
+   78  ls
+   79  nano main.
+   80  cat main.js | grep apiEndPoint
+   81  journalctl -f --unit=LinkBudgetAnalysisREST-dcas.service
+   82  sudo systemctl status LinkBudgetAnalysisREST-dcas.service
+   83  sudo journalctl -f --unit=LinkBudgetAnalysisREST-dcas.service
+   84  sudo systemctl stop LinkBudgetAnalysisREST-dcas.service
+   85  sudo systemctl start LinkBudgetAnalysisREST-dcas.service
+   86  sudo systemctl status LinkBudgetAnalysisREST-dcas.service
+   87  sudo journalctl -f --unit=LinkBudgetAnalysisREST-dcas.service
+   88  sudo systemctl restart LinkBudgetAnalysisREST-dcas.service
+   89  sudo journalctl -f --unit=LinkBudgetAnalysisREST-dcas.service
+   90  sudo systemctl status LinkBudgetAnalysisREST-dcas.service
+   91  sudo journalctl -f --unit=LinkBudgetAnalysisREST-dcas.service
+   92  cd dependencies/API/
+   93  ls
+   94  cat LinkBudgetAnalysisREST.py
+   95  nano LinkBudgetAnalysisREST.py
+   96  cat LinkBudgetAnalysisREST.py
+   97  nano LinkBudgetAnalysisREST.py
+   98  ls -la /var/www/html/luplink/index.html
+   99  nano /var/www/html/luplink/main.js
+  100  ls
+  101  cd dependencies/
+  102  ls
+  103  cd API/
+  104  ls
+  105  cd ..
+  106  cd API/
+  107  ls
+  108  python LinkBudgetAnalysisREST.py
+  109  python3 LinkBudgetAnalysisREST.py
+  110  source .luplink_env/bin/activate
+  111  source luplink_env/bin/activate
+  112  python3 LinkBudgetAnalysisREST.py
+  113  pip install -r requirements.txt 
+  114  git st
+  115  git status
+  116  pip install -r requirements.txt 
+  117  python3 LinkBudgetAnalysisREST.py
+  118  pwd
+  119  nano LinkBudgetAnalysisREST.py 
+  120  systemctl stop LinkBudgetAnalysisREST-dcas.service
+  121  sudo systemctl stop LinkBudgetAnalysisREST-dcas.service
+  122  sudo systemctl start LinkBudgetAnalysisREST-dcas.service
+  123  systemctl status LinkBudgetAnalysisREST-dcas.service
+  124  sudo journalctl -f --unit=LinkBudgetAnalysisREST-dcas.service
+  125  ls
+  126  cd dependencies/
+  127  cd ..
+  128  ls
+  129  cd dependencies/
+  130  lsq
+  131  ls
+  132  cd API/
+  133  ls
+  134  python LinkBudgetAnalysisREST.py 
+  135  python3 LinkBudgetAnalysisREST.py 
+  136  hostname -I
+  137  cd ..
+  138  hitsory
+  139  history
+  140  cd API/
+  141  cat LinkBudgetAnalysisREST.py
+  142  cd /var/www/html
+  143  find . -name '*.js' -exec grep -i '51.178.2.55' {} \; -print
+  144  cd luplink/
+  145  ls
+  146  cat main.js | grep 51.178.2.55
+  147  cat main.js | grep 8001
+  148  cat main.262d82d56fee21042f17.js | grep 8001
+  149  cat main.js | grep 8001
+  150  cat main.262d82d56fee21042f17.js | grep 8001
+  151  sed -i 's/51.178.2.55/dcas-luplink.isae.fr/g' ./main.262d82d56fee21042f17.js
+  152  cat main.262d82d56fee21042f17.js | grep 8001
+  153  cat main.js | grep 8001
+  154  cat *.js | grep 8001
+  155  hostname -I
+  156  cat *.js | grep 8001
+  157  hostname -I
+  158  sed -i 's/dcas-luplink.isae.fr/192.70.110.41/g' ./main.262d82d56fee21042f17.js
+  159  sed -i 's/dcas-luplink.isae.fr/192.70.110.41/g' ./main.js
+  160  sudo systemctl restart LinkBudgetAnalysisREST-dcas.service
+  161  sudo journalctl -f --unit=LinkBudgetAnalysisREST-dcas.service
+  162  cd
+  163  cd dependencies/
+  164  ls
+  165  git pull --rebase
+  166  git status
+  167  git ci -am "[API] testing localhost, back to 0.0.0.0"
+  168  git commit -am "[API] testing localhost, back to 0.0.0.0"
+  169  git config --global user.email thibault.gateau@isae.fr
+  170  git config --global user.name t.gateau
+  171  git commit -am "[API] testing localhost, back to 0.0.0.0"
+  172  git pull --rebase
+  173  git push origin master
+  174  ls
+  175  cd
+  176  cd /var/www
+  177  ls
+  178  cd html/
+  179  ls
+  180  cd luplink/
+  181  ls
+  182  cd ..
+  183  sudo mv luplink/ luplink.bak
+  184  sudo cp -r luplink/ ~/bak/luplink.bak
+  185  cd
+  186  mkdir backup
+  187  cd backup/
+  188  cp -r /var/www/html/luplink/ .
+  189  ls
+  190  cd ..
+  191  ls
+  192  cd dependencies/
+  193  ls
+  194  cd dist
+  195  ls
+  196  cd luplink-app/
+  197  ls
+  198  cd ..
+  199  cp -r luplink-app/* /var/www/html/luplink/
+  200  cd  /var/www/html/luplink/
+  201  ls
+  202  rm -rf *
+  203  ls
+  204  cd ..
+  205  cd 
+  206  cd
+  207  cd dependencies/
+  208  cd dist/luplink-app/
+  209  cd ..
+  210  cp -r luplink-app/* /var/www/html/luplink/
+  211  cd  /var/www/html/luplink/
+  212  ls
+  213  find . -name '*.js' -exec grep -i '51.178.2.55' {} \; -print
+  214  sed -i 's/51.178.2.55/dcas-luplink.isae.fr/g' ./main-es2015.js
+  215  sed -i 's/51.178.2.55/dcas-luplink.isae.fr/g' ./main-es5.js
+  216  find . -name '*.js' -exec grep -i '51.178.2.55' {} \; -print
+  217  find . -name '*.js' -exec grep -i 'luplinkEndpoint' {} \; -print
+  218  ls
+  219  sudo journalctl -f --unit=LinkBudgetAnalysisREST-dcas.service
+  220  ls
+  221  cd ..
+  222  cd var/www/html/luplink/
+  223  ls
+  224  cd ..
+  225  cd luplink/
+  226  sed -i 's/dcas-luplink.isae.fr:8001/dcas-luplink.isae.fr\/compute/g' ./main-es2015.js
+  227  sed -i 's/dcas-luplink.isae.fr:8001/dcas-luplink.isae.fr\/compute/g' ./main-es5.js
+  228  find . -name '*.js' -exec grep -i 'luplinkEndpoint' {} \; -print
+  229  cd
+  230  cd dependencies/API/
+  231  ls
+  232  cat LinkBudgetAnalysisREST.py 
+  233  ps -e
+  234  ls
+  235  cd dependencies/
+  236  ls
+  237  cd dist
+  238  ls
+  239  cd ..
+  240  ls
+  241  cd API/
+  242  ls
+  243  git st
+  244  python LinkBudgetAnalysisREST.py
+  245  python3 LinkBudgetAnalysisREST.py
+  246  python3 test_API.py 
+  247  cat docker-compose.yml 
+  248  ls
+  249  cat Dockerfile 
+  250  docker ps
+  251  ls
+  252  pip3 install -r requirements.txt
+  253  cat requirements.txt 
+  254  pip3 install pyquaternion
+  255  pyton3
+  256  python3
+  257  export https_proxy=proxy.isae.fr:3128 
+  258  pip3 install pyquaternion
+  259  pwd
+  260  ls
+  261  cat README.md 
+  262  systemctl
+  263  sudo journalctl -f --unit=LinkBudgetAnalysisREST-dcas.service
+  264  sudo systemctl status LinkBudgetAnalysisREST-dcas.service
+  265  cat /etc/systemd/system/LinkBudgetAnalysisREST-dcas.service
+  266  ls
+  267  cd
+  268  cd /var/www/html/
+  269  ls
+  270  cd luplink/
+  271  ls
+  272  grep -r "8001" .
+  273  cat main-es2015.js | grep 8001
+  274  cd ..
+  275  ls
+  276  cp -r luplink luplink.bak
+  277  ls
+  278  sudo cp -r luplink luplink.bak
+  279  pwd
+  280  systemctl
+  281  ls
+  282  cd ../..
+  283  ls
+  284  cd www
+  285  cd 
+  286  cd dependencies/
+  287  ls
+  288  cd API/
+  289  ls
+  290  cd luplink_env
+  291  ls
+  292  cd bin/
+  293  ls
+  294  pwd
+  295  cd ..
+  296  ls
+  297  ./home/dcas/dependencies/API/luplink_env/bin/python3 LinkBudgetAnalysisREST.py
+  298  /home/dcas/dependencies/API/luplink_env/bin/python3
+  299  ls -a /home/dcas/dependencies/API/luplink_env/bin/
+  300  ls -l /home/dcas/dependencies/API/luplink_env/bin/
+  301  locate python
+  302  which python
+  303  cd ..
+  304  ls
+  305  cd dependencies/
+  306  ls
+  307  cd API/
+  308  ls
+  309  cat README.md 
+  310  cd /home/dcas/dependencies/API/luplink_env/bin/
+  311  ls
+  312  ./activate
+  313  ls
+  314  cd
+  315  cd /var/www
+  316  ls
+  317  cd html
+  318  ls
+  319  cd
+  320  cd /etc/httpd/conf.d
+  321  ls
+  322  cat dcas-luplink.conf
+  323  pwd
+  324  ss -tuln
+  325  ss -tulnp
+  326  cd
+  327  cd dependencies/API/
+  328  nano LinkBudgetAnalysisREST.py 
+  329  pwd
+  330  cd
+  331  cd 
+  332  nano LinkBudgetAnalysisREST.py 
+  333  ls
+  334  cd dependencies/API/
+  335  ls
+  336  cp LinkBudgetAnalysisREST.py LinkBudgetAnalysisREST.py.bak
+  337  nano LinkBudgetAnalysisREST.py
+  338  history | grep system
+  339  sudo systemctl restart LinkBudgetAnalysisREST-dcas.service
+  340  sudo systemctl stop LinkBudgetAnalysisREST-dcas.service
+  341  python3 LinkBudgetAnalysisREST-dcas.service
+  342  sudo systemctl restart LinkBudgetAnalysisREST-dcas.service
+  343  nano LinkBudgetAnalysisREST.py
+  344  sudo systemctl restart LinkBudgetAnalysisREST-dcas.service
+  345  nano LinkBudgetAnalysisREST.py
+  346  sudo systemctl restart LinkBudgetAnalysisREST-dcas.service
+  347  nano LinkBudgetAnalysisREST.py
+  348  sudo systemctl restart LinkBudgetAnalysisREST-dcas.service
+  349  nano LinkBudgetAnalysisREST.py
+  350  pwd
+  351  nano /etc/httpd/conf.d
+  352  cd /etc/httpd/conf.d
+  353  ls
+  354  cp dcas-luplink.conf dcas-luplink.conf.bak
+  355  sudo cp dcas-luplink.conf dcas-luplink.conf.bak
+  356  cat dcas-luplink.conf
+  357  pwd
+  358  ls
+  359  cat README 
+  360  history
+  361  cd dependencies/API/
+  362  ls
+  363  cat LinkBudgetAnalysisREST.py
+  364  pwd
+  365  cd
+  366  cd /var/www
+  367  ls
+  368  cd html/
+  369  ls
+  370  cd luplink/
+  371  grep -r "8001" .
+  372   ifconfig -a
+  373  hostname -I
+  374  ls
+  375  hostname -I
+  376  docker ps
+  377  ls
+  378  cat /etc/os-releaseip
+  379  cat /etc/os-release
+  380  docker ps
+  381  ls
+  382  cd ..
+  383  ls
+  384  cd ..
+  385  ls
+  386  cd etcµ/www
+  387  cd etc/www
+  388  cd /Etc
+  389  cd /etc
+  390  ls
+  391  docker
+  392  hisotry
+  393  history
+  394  hostname -I
+  395  cd
+  396  ls
+  397  cd dependencies/
+  398  tree
+  399  history
+  400  history > history.txt
