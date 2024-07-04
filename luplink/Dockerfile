@@ -97,3 +97,30 @@ CMD ["nginx", "-g", "daemon off;"]
 #docker push gitlab-registry.isae-supaero.fr/jsatorb-dev/stage/stage-2021-julien_prissimitzis/jsatorb-front .
 
 #Don't forget you can debug the container using : docker exec -ti 376 /bin/sh
+# Utiliser l'image Node.js officielle
+FROM node:18
+
+# Définir le répertoire de travail dans le conteneur
+WORKDIR /app
+
+# Copier package.json et package-lock.json dans le répertoire de travail
+COPY package*.json ./
+
+# Installer les dépendances
+RUN npm install -g @angular/cli
+RUN npm install
+
+# Copier le reste des fichiers de l'application
+COPY . .
+
+# Construire l'application Angular
+RUN ng build --prod --output-path=docs --base-href=/
+
+# Installer un serveur HTTP simple pour servir l'application Angular
+RUN npm install -g http-server
+
+# Définir le port sur lequel l'application sera exposée
+EXPOSE 8080
+
+# Commande pour démarrer l'application
+CMD ["http-server", "docs", "-p", "8080"]

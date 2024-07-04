@@ -191,6 +191,7 @@
   },
   "defaultProject": "ngx-luplink",
   "cli": {
+    "analytics": "627bd87b-9267-4692-8b20-670c6a4b3526",
     "defaultCollection": "@angular-eslint/schematics"
   }
 }
