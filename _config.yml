@@ -1,4 +1,7 @@
 exclude:
   - "luplink/docker"
+  - "build-tools"
+  - "node_modules"
   - "build-tools/lib/luplink/docker"
+  - "build-tools/standalone/luplinkTmp"
   - "build-tools/standalone/luplinkTmp/luplink/docker"
